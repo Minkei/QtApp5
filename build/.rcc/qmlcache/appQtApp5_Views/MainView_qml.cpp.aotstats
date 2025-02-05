@@ -6,234 +6,226 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 22,
-                        "durationMicroseconds": 581,
+                        "durationMicroseconds": 525,
                         "errorMessage": "",
                         "functionName": "onTriggered",
                         "line": 24
                     },
                     {
                         "codegenSuccessfull": true,
-                        "column": 23,
-                        "durationMicroseconds": 80,
-                        "errorMessage": "",
-                        "functionName": "fill",
-                        "line": 74
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 20,
-                        "durationMicroseconds": 130,
+                        "column": 16,
+                        "durationMicroseconds": 113,
                         "errorMessage": "",
                         "functionName": "color",
                         "line": 79
                     },
                     {
                         "codegenSuccessfull": true,
-                        "column": 36,
-                        "durationMicroseconds": 138,
+                        "column": 17,
+                        "durationMicroseconds": 76,
                         "errorMessage": "",
-                        "functionName": "preferredWidth",
-                        "line": 81
+                        "functionName": "height",
+                        "line": 80
                     },
                     {
                         "codegenSuccessfull": true,
-                        "column": 34,
-                        "durationMicroseconds": 77,
+                        "column": 16,
+                        "durationMicroseconds": 136,
+                        "errorMessage": "",
+                        "functionName": "width",
+                        "line": 83
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 30,
+                        "durationMicroseconds": 65,
                         "errorMessage": "",
                         "functionName": "type",
-                        "line": 86
+                        "line": 88
                     },
                     {
                         "codegenSuccessfull": true,
-                        "column": 28,
-                        "durationMicroseconds": 169,
+                        "column": 24,
+                        "durationMicroseconds": 159,
                         "errorMessage": "",
                         "functionName": "onEntered",
+                        "line": 96
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 23,
+                        "durationMicroseconds": 76,
+                        "errorMessage": "",
+                        "functionName": "onExited",
+                        "line": 100
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 13,
+                        "durationMicroseconds": 102,
+                        "errorMessage": "Cannot load property buttonMouseArea from conversion to QVariant.",
+                        "functionName": "isMouseOverAnyButton",
+                        "line": 107
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 27,
+                        "durationMicroseconds": 64,
+                        "errorMessage": "",
+                        "functionName": "fill",
                         "line": 94
                     },
                     {
                         "codegenSuccessfull": true,
-                        "column": 27,
-                        "durationMicroseconds": 91,
-                        "errorMessage": "",
-                        "functionName": "onExited",
-                        "line": 98
-                    },
-                    {
-                        "codegenSuccessfull": false,
-                        "column": 17,
-                        "durationMicroseconds": 110,
-                        "errorMessage": "Cannot load property buttonMouseArea from conversion to QVariant.",
-                        "functionName": "isMouseOverAnyButton",
-                        "line": 105
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 31,
-                        "durationMicroseconds": 72,
+                        "column": 23,
+                        "durationMicroseconds": 40,
                         "errorMessage": "",
                         "functionName": "fill",
-                        "line": 92
+                        "line": 123
                     },
                     {
                         "codegenSuccessfull": true,
-                        "column": 27,
-                        "durationMicroseconds": 48,
-                        "errorMessage": "",
-                        "functionName": "fill",
-                        "line": 121
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 44,
-                        "durationMicroseconds": 76,
+                        "column": 40,
+                        "durationMicroseconds": 66,
                         "errorMessage": "",
                         "functionName": "preferredWidth",
-                        "line": 128
+                        "line": 130
                     },
                     {
                         "codegenSuccessfull": true,
-                        "column": 43,
-                        "durationMicroseconds": 43,
+                        "column": 39,
+                        "durationMicroseconds": 39,
                         "errorMessage": "",
                         "functionName": "centerIn",
-                        "line": 132
+                        "line": 134
                     },
                     {
                         "codegenSuccessfull": true,
-                        "column": 36,
-                        "durationMicroseconds": 100,
+                        "column": 32,
+                        "durationMicroseconds": 103,
                         "errorMessage": "",
                         "functionName": "color",
-                        "line": 142
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 38,
-                        "durationMicroseconds": 78,
-                        "errorMessage": "",
-                        "functionName": "visible",
-                        "line": 143
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 41,
-                        "durationMicroseconds": 70,
-                        "errorMessage": "",
-                        "functionName": "family",
-                        "line": 139
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 47,
-                        "durationMicroseconds": 75,
-                        "errorMessage": "",
-                        "functionName": "alignment",
                         "line": 144
                     },
                     {
                         "codegenSuccessfull": true,
-                        "column": 36,
-                        "durationMicroseconds": 105,
-                        "errorMessage": "",
-                        "functionName": "color",
-                        "line": 155
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 38,
-                        "durationMicroseconds": 60,
+                        "column": 34,
+                        "durationMicroseconds": 75,
                         "errorMessage": "",
                         "functionName": "visible",
-                        "line": 156
+                        "line": 145
                     },
                     {
                         "codegenSuccessfull": true,
-                        "column": 47,
-                        "durationMicroseconds": 80,
+                        "column": 37,
+                        "durationMicroseconds": 100,
+                        "errorMessage": "",
+                        "functionName": "family",
+                        "line": 141
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 43,
+                        "durationMicroseconds": 66,
                         "errorMessage": "",
                         "functionName": "alignment",
+                        "line": 146
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 32,
+                        "durationMicroseconds": 91,
+                        "errorMessage": "",
+                        "functionName": "color",
                         "line": 157
                     },
                     {
                         "codegenSuccessfull": true,
-                        "column": 28,
-                        "durationMicroseconds": 73,
+                        "column": 34,
+                        "durationMicroseconds": 63,
+                        "errorMessage": "",
+                        "functionName": "visible",
+                        "line": 158
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 43,
+                        "durationMicroseconds": 87,
+                        "errorMessage": "",
+                        "functionName": "alignment",
+                        "line": 159
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 24,
+                        "durationMicroseconds": 58,
                         "errorMessage": "",
                         "functionName": "model",
-                        "line": 163
+                        "line": 165
                     },
                     {
                         "codegenSuccessfull": false,
-                        "column": 51,
-                        "durationMicroseconds": 34,
+                        "column": 47,
+                        "durationMicroseconds": 31,
                         "errorMessage": "Cannot access value for name index",
                         "functionName": "isSelected",
+                        "line": 172
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 28,
+                        "durationMicroseconds": 30,
+                        "errorMessage": "Cannot access value for name mainView",
+                        "functionName": "color",
+                        "line": 173
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 44,
+                        "durationMicroseconds": 17,
+                        "errorMessage": "Cannot access value for name mainView",
+                        "functionName": "preferredWidth",
+                        "line": 169
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 39,
+                        "durationMicroseconds": 132,
+                        "errorMessage": "",
+                        "functionName": "alignment",
                         "line": 170
                     },
                     {
-                        "codegenSuccessfull": false,
-                        "column": 32,
-                        "durationMicroseconds": 36,
-                        "errorMessage": "Cannot access value for name mainView",
-                        "functionName": "color",
-                        "line": 171
-                    },
-                    {
-                        "codegenSuccessfull": false,
-                        "column": 48,
-                        "durationMicroseconds": 21,
-                        "errorMessage": "Cannot access value for name mainView",
-                        "functionName": "preferredWidth",
-                        "line": 167
-                    },
-                    {
                         "codegenSuccessfull": true,
-                        "column": 43,
-                        "durationMicroseconds": 75,
-                        "errorMessage": "",
-                        "functionName": "alignment",
-                        "line": 168
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 46,
-                        "durationMicroseconds": 61,
+                        "column": 42,
+                        "durationMicroseconds": 66,
                         "errorMessage": "",
                         "functionName": "type",
-                        "line": 183
+                        "line": 185
                     },
                     {
                         "codegenSuccessfull": false,
-                        "column": 40,
-                        "durationMicroseconds": 29,
+                        "column": 36,
+                        "durationMicroseconds": 26,
                         "errorMessage": "Cannot access value for name collapseNavigationTimer",
                         "functionName": "onEntered",
-                        "line": 193
+                        "line": 195
                     },
                     {
                         "codegenSuccessfull": false,
-                        "column": 39,
-                        "durationMicroseconds": 24,
+                        "column": 35,
+                        "durationMicroseconds": 21,
                         "errorMessage": "Cannot access value for name rectNavigationMouseArea",
                         "functionName": "onExited",
-                        "line": 198
+                        "line": 200
                     },
                     {
                         "codegenSuccessfull": false,
-                        "column": 40,
-                        "durationMicroseconds": 25,
+                        "column": 36,
+                        "durationMicroseconds": 20,
                         "errorMessage": "Cannot access value for name mainView",
                         "functionName": "onClicked",
-                        "line": 205
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 43,
-                        "durationMicroseconds": 54,
-                        "errorMessage": "",
-                        "functionName": "fill",
-                        "line": 189
+                        "line": 207
                     },
                     {
                         "codegenSuccessfull": true,
@@ -241,255 +233,271 @@
                         "durationMicroseconds": 44,
                         "errorMessage": "",
                         "functionName": "fill",
-                        "line": 214
-                    },
-                    {
-                        "codegenSuccessfull": false,
-                        "column": 39,
-                        "durationMicroseconds": 340,
-                        "errorMessage": "Cannot access value for name iconText",
-                        "functionName": "text",
-                        "line": 223
-                    },
-                    {
-                        "codegenSuccessfull": false,
-                        "column": 40,
-                        "durationMicroseconds": 86,
-                        "errorMessage": "Cannot access value for name primaryBlue",
-                        "functionName": "color",
-                        "line": 228
-                    },
-                    {
-                        "codegenSuccessfull": false,
-                        "column": 45,
-                        "durationMicroseconds": 23,
-                        "errorMessage": "Cannot access value for name fontAW",
-                        "functionName": "family",
-                        "line": 225
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 51,
-                        "durationMicroseconds": 88,
-                        "errorMessage": "",
-                        "functionName": "alignment",
-                        "line": 230
-                    },
-                    {
-                        "codegenSuccessfull": false,
-                        "column": 39,
-                        "durationMicroseconds": 338,
-                        "errorMessage": "Cannot access value for name buttonText",
-                        "functionName": "text",
-                        "line": 234
-                    },
-                    {
-                        "codegenSuccessfull": false,
-                        "column": 42,
-                        "durationMicroseconds": 24,
-                        "errorMessage": "Cannot access value for name mainView",
-                        "functionName": "visible",
-                        "line": 235
-                    },
-                    {
-                        "codegenSuccessfull": false,
-                        "column": 40,
-                        "durationMicroseconds": 71,
-                        "errorMessage": "Cannot access value for name mainView",
-                        "functionName": "color",
-                        "line": 241
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 51,
-                        "durationMicroseconds": 75,
-                        "errorMessage": "",
-                        "functionName": "alignment",
-                        "line": 244
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 39,
-                        "durationMicroseconds": 93,
-                        "errorMessage": "",
-                        "functionName": "fillWidth",
-                        "line": 261
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 39,
-                        "durationMicroseconds": 86,
-                        "errorMessage": "",
-                        "functionName": "alignment",
-                        "line": 264
+                        "line": 191
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 35,
-                        "durationMicroseconds": 54,
+                        "durationMicroseconds": 53,
                         "errorMessage": "",
                         "functionName": "fill",
-                        "line": 268
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 37,
-                        "durationMicroseconds": 135,
-                        "errorMessage": "",
-                        "functionName": "radius",
-                        "line": 283
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 36,
-                        "durationMicroseconds": 109,
-                        "errorMessage": "",
-                        "functionName": "color",
-                        "line": 284
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 47,
-                        "durationMicroseconds": 77,
-                        "errorMessage": "",
-                        "functionName": "alignment",
-                        "line": 282
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 40,
-                        "durationMicroseconds": 98,
-                        "errorMessage": "",
-                        "functionName": "color",
-                        "line": 293
+                        "line": 216
                     },
                     {
                         "codegenSuccessfull": false,
-                        "column": 42,
-                        "durationMicroseconds": 348,
-                        "errorMessage": "Cannot access value for name userModel",
-                        "functionName": "visible",
-                        "line": 294
+                        "column": 35,
+                        "durationMicroseconds": 214,
+                        "errorMessage": "Cannot access value for name iconText",
+                        "functionName": "text",
+                        "line": 225
                     },
                     {
-                        "codegenSuccessfull": true,
-                        "column": 51,
-                        "durationMicroseconds": 58,
-                        "errorMessage": "",
-                        "functionName": "centerIn",
-                        "line": 287
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 45,
-                        "durationMicroseconds": 75,
-                        "errorMessage": "",
-                        "functionName": "family",
-                        "line": 290
+                        "codegenSuccessfull": false,
+                        "column": 36,
+                        "durationMicroseconds": 70,
+                        "errorMessage": "Cannot access value for name primaryBlue",
+                        "functionName": "color",
+                        "line": 230
                     },
                     {
                         "codegenSuccessfull": false,
                         "column": 41,
-                        "durationMicroseconds": 276,
-                        "errorMessage": "Cannot access value for name userModel",
-                        "functionName": "source",
-                        "line": 299
-                    },
-                    {
-                        "codegenSuccessfull": false,
-                        "column": 42,
-                        "durationMicroseconds": 246,
-                        "errorMessage": "Cannot access value for name userModel",
-                        "functionName": "visible",
-                        "line": 300
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 43,
-                        "durationMicroseconds": 81,
-                        "errorMessage": "",
-                        "functionName": "fillMode",
-                        "line": 301
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 38,
-                        "durationMicroseconds": 79,
-                        "errorMessage": "",
-                        "functionName": "visible",
-                        "line": 309
+                        "durationMicroseconds": 19,
+                        "errorMessage": "Cannot access value for name fontAW",
+                        "functionName": "family",
+                        "line": 227
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 47,
-                        "durationMicroseconds": 49,
+                        "durationMicroseconds": 70,
                         "errorMessage": "",
-                        "functionName": "fill",
-                        "line": 314
+                        "functionName": "alignment",
+                        "line": 232
                     },
                     {
                         "codegenSuccessfull": false,
-                        "column": 43,
-                        "durationMicroseconds": 318,
-                        "errorMessage": "Cannot access value for name userModel",
+                        "column": 35,
+                        "durationMicroseconds": 184,
+                        "errorMessage": "Cannot access value for name buttonText",
                         "functionName": "text",
-                        "line": 317
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 44,
-                        "durationMicroseconds": 144,
-                        "errorMessage": "",
-                        "functionName": "color",
-                        "line": 322
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 44,
-                        "durationMicroseconds": 100,
-                        "errorMessage": "",
-                        "functionName": "color",
-                        "line": 334
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 54,
-                        "durationMicroseconds": 82,
-                        "errorMessage": "",
-                        "functionName": "cursorShape",
-                        "line": 339
+                        "line": 236
                     },
                     {
                         "codegenSuccessfull": false,
-                        "column": 52,
-                        "durationMicroseconds": 47,
-                        "errorMessage": "Type QQuickText::font with type QFont does not have a property color for writing",
-                        "functionName": "onEntered",
-                        "line": 340
+                        "column": 38,
+                        "durationMicroseconds": 21,
+                        "errorMessage": "Cannot access value for name mainView",
+                        "functionName": "visible",
+                        "line": 237
                     },
                     {
                         "codegenSuccessfull": false,
-                        "column": 52,
-                        "durationMicroseconds": 362,
-                        "errorMessage": "Cannot access value for name mainViewModel",
-                        "functionName": "onClicked",
-                        "line": 343
+                        "column": 36,
+                        "durationMicroseconds": 78,
+                        "errorMessage": "Cannot access value for name mainView",
+                        "functionName": "color",
+                        "line": 243
                     },
                     {
                         "codegenSuccessfull": true,
-                        "column": 55,
-                        "durationMicroseconds": 63,
+                        "column": 47,
+                        "durationMicroseconds": 66,
                         "errorMessage": "",
-                        "functionName": "fill",
-                        "line": 337
+                        "functionName": "alignment",
+                        "line": 246
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 35,
+                        "durationMicroseconds": 80,
+                        "errorMessage": "",
+                        "functionName": "fillWidth",
+                        "line": 263
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 35,
+                        "durationMicroseconds": 67,
+                        "errorMessage": "",
+                        "functionName": "alignment",
+                        "line": 266
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 31,
+                        "durationMicroseconds": 42,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 270
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 33,
+                        "durationMicroseconds": 127,
+                        "errorMessage": "",
+                        "functionName": "radius",
+                        "line": 285
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 32,
+                        "durationMicroseconds": 96,
+                        "errorMessage": "",
+                        "functionName": "color",
+                        "line": 286
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 43,
+                        "durationMicroseconds": 89,
+                        "errorMessage": "",
+                        "functionName": "alignment",
+                        "line": 284
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 36,
+                        "durationMicroseconds": 96,
+                        "errorMessage": "",
+                        "functionName": "color",
+                        "line": 295
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 38,
+                        "durationMicroseconds": 185,
+                        "errorMessage": "Cannot access value for name userModel",
+                        "functionName": "visible",
+                        "line": 296
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 47,
+                        "durationMicroseconds": 43,
+                        "errorMessage": "",
+                        "functionName": "centerIn",
+                        "line": 289
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 41,
+                        "durationMicroseconds": 75,
+                        "errorMessage": "",
+                        "functionName": "family",
+                        "line": 292
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 34,
+                        "durationMicroseconds": 60,
+                        "errorMessage": "",
+                        "functionName": "visible",
+                        "line": 311
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 43,
+                        "durationMicroseconds": 42,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 316
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 39,
+                        "durationMicroseconds": 174,
+                        "errorMessage": "Cannot access value for name userModel",
+                        "functionName": "text",
+                        "line": 319
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 40,
+                        "durationMicroseconds": 126,
+                        "errorMessage": "",
+                        "functionName": "color",
+                        "line": 324
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 40,
+                        "durationMicroseconds": 90,
+                        "errorMessage": "",
+                        "functionName": "color",
+                        "line": 336
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 50,
+                        "durationMicroseconds": 65,
+                        "errorMessage": "",
+                        "functionName": "cursorShape",
+                        "line": 341
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 48,
+                        "durationMicroseconds": 36,
+                        "errorMessage": "Type QQuickText::font with type QFont does not have a property color for writing",
+                        "functionName": "onEntered",
+                        "line": 342
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 48,
+                        "durationMicroseconds": 197,
+                        "errorMessage": "Cannot access value for name mainViewModel",
+                        "functionName": "onClicked",
+                        "line": 345
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 51,
                         "durationMicroseconds": 45,
                         "errorMessage": "",
                         "functionName": "fill",
+                        "line": 339
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 23,
+                        "durationMicroseconds": 93,
+                        "errorMessage": "",
+                        "functionName": "left",
+                        "line": 371
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 24,
+                        "durationMicroseconds": 87,
+                        "errorMessage": "",
+                        "functionName": "right",
+                        "line": 372
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 22,
+                        "durationMicroseconds": 86,
+                        "errorMessage": "",
+                        "functionName": "top",
                         "line": 373
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 25,
+                        "durationMicroseconds": 84,
+                        "errorMessage": "",
+                        "functionName": "bottom",
+                        "line": 374
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 27,
+                        "durationMicroseconds": 38,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 385
                     }
                 ],
                 "filepath": "C:/IMAS/Research/QtApp/QtApp5/Views/MainView.qml"

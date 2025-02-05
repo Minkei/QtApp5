@@ -7,7 +7,8 @@ C:/IMAS/Research/QtApp/QtApp5/build/CMakeFiles/appQtApp5_qmllint_module.dir
 C:/IMAS/Research/QtApp/QtApp5/build/CMakeFiles/all_qmllint.dir
 C:/IMAS/Research/QtApp/QtApp5/build/CMakeFiles/all_qmllint_json.dir
 C:/IMAS/Research/QtApp/QtApp5/build/CMakeFiles/all_qmllint_module.dir
-C:/IMAS/Research/QtApp/QtApp5/build/CMakeFiles/appQtApp5_tooling.dir
+C:/IMAS/Research/QtApp/QtApp5/build/CMakeFiles/appQtApp5_copy_qml.dir
+C:/IMAS/Research/QtApp/QtApp5/build/CMakeFiles/appQtApp5_copy_res.dir
 C:/IMAS/Research/QtApp/QtApp5/build/CMakeFiles/appQtApp5_generate_qmlls_ini_file.dir
 C:/IMAS/Research/QtApp/QtApp5/build/CMakeFiles/module_appQtApp5_aotstats_target.dir
 C:/IMAS/Research/QtApp/QtApp5/build/CMakeFiles/all_aotstats.dir
@@ -17,5 +18,6 @@ C:/IMAS/Research/QtApp/QtApp5/build/CMakeFiles/rebuild_cache.dir
 C:/IMAS/Research/QtApp/QtApp5/build/CMakeFiles/list_install_components.dir
 C:/IMAS/Research/QtApp/QtApp5/build/CMakeFiles/install.dir
 C:/IMAS/Research/QtApp/QtApp5/build/CMakeFiles/install/local.dir
+C:/IMAS/Research/QtApp/QtApp5/build/CMakeFiles/install/strip.dir
 C:/IMAS/Research/QtApp/QtApp5/build/CMakeFiles/appQtApp5_autogen_timestamp_deps.dir
 C:/IMAS/Research/QtApp/QtApp5/build/CMakeFiles/appQtApp5_autogen.dir

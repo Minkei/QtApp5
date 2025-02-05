@@ -2,6 +2,8 @@
 C:/IMAS/Research/QtApp/QtApp5/build/.qt/rcc/qmake_QtApp5.qrc
 --resource
 C:/IMAS/Research/QtApp/QtApp5/build/.qt/rcc/appQtApp5_raw_qml_0.qrc
+--resource
+C:/IMAS/Research/QtApp/QtApp5/build/.qt/rcc/appQtApp5_raw_qml_0_extra_qmldirs.qrc
 /qt/qml/QtApp5/Views/LoginView.qml
 /qt/qml/QtApp5/Views/Main.qml
 /qt/qml/QtApp5/Views/MainView.qml

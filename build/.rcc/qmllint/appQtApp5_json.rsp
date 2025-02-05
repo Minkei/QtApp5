@@ -2,11 +2,13 @@
 -I
 C:/IMAS/Research/QtApp/QtApp5/build
 -I
-C:/Qt/6.8.1/msvc2022_64/qml
+C:/Qt/6.8.2/mingw_64/qml
 --resource
 C:/IMAS/Research/QtApp/QtApp5/build/.qt/rcc/qmake_QtApp5.qrc
 --resource
 C:/IMAS/Research/QtApp/QtApp5/build/.qt/rcc/appQtApp5_raw_qml_0.qrc
+--resource
+C:/IMAS/Research/QtApp/QtApp5/build/.qt/rcc/appQtApp5_raw_qml_0_extra_qmldirs.qrc
 C:/IMAS/Research/QtApp/QtApp5/Views/LoginView.qml
 C:/IMAS/Research/QtApp/QtApp5/Views/Main.qml
 C:/IMAS/Research/QtApp/QtApp5/Views/MainView.qml

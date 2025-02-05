@@ -7,9 +7,16 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 set(QT_QML_GENERATE_QMLLS_INI ON)
 
-
-
 find_package(Qt6 REQUIRED COMPONENTS Quick Core Network)
+# Set Qt policies
+qt_policy(SET QTP0004 NEW)
+
+# # Set the path to Felgo SDK
+# set(FELGO_DIR "C:/Felgo/Felgo/mingw_64/lib/cmake") # Update this path to your Felgo installation directory
+# list(APPEND CMAKE_PREFIX_PATH ${FELGO_DIR})
+
+# # Include Felgo
+# find_package(Felgo REQUIRED)
 
 
 qt_standard_project_setup(REQUIRES 6.5)
@@ -70,6 +77,8 @@ install(TARGETS appQtApp5
     RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}
 )
 
+# # Configure Felgo Hot Reload
+# felgohotreload_configure_executable(${CURRENT_PROJECT_NAME})
 
 # # Packaging configuration
 # include(CPack)

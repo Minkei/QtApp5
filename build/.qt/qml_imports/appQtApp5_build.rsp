@@ -8,7 +8,8 @@ C:/IMAS/Research/QtApp/QtApp5/build/QtApp5
 -importPath
 C:/IMAS/Research/QtApp/QtApp5/build
 -importPath
-C:/Qt/6.8.1/msvc2022_64/qml
+C:/Qt/6.8.2/mingw_64/qml
 -qrcFiles
 C:/IMAS/Research/QtApp/QtApp5/build/.qt/rcc/qmake_QtApp5.qrc
 C:/IMAS/Research/QtApp/QtApp5/build/.qt/rcc/appQtApp5_raw_qml_0.qrc
+C:/IMAS/Research/QtApp/QtApp5/build/.qt/rcc/appQtApp5_raw_qml_0_extra_qmldirs.qrc

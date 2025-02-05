@@ -6,7 +6,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 32,
-                        "durationMicroseconds": 130,
+                        "durationMicroseconds": 505,
                         "errorMessage": "Cannot access value for name userModel",
                         "functionName": "isLoginView",
                         "line": 14
@@ -22,7 +22,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 17,
-                        "durationMicroseconds": 389,
+                        "durationMicroseconds": 242,
                         "errorMessage": "Cannot access value for name userModel",
                         "functionName": "source",
                         "line": 32
@@ -30,7 +30,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 23,
-                        "durationMicroseconds": 258,
+                        "durationMicroseconds": 1608,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 29
@@ -38,7 +38,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 21,
-                        "durationMicroseconds": 228,
+                        "durationMicroseconds": 249,
                         "errorMessage": "",
                         "functionName": "target",
                         "line": 35
@@ -46,7 +46,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 13,
-                        "durationMicroseconds": 41,
+                        "durationMicroseconds": 51,
                         "errorMessage": "Cannot retrieve a non-object type by ID: window",
                         "functionName": "onLoginSuccess",
                         "line": 36
@@ -54,7 +54,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 17,
-                        "durationMicroseconds": 100,
+                        "durationMicroseconds": 84,
                         "errorMessage": "Cannot access value for name userModel",
                         "functionName": "target",
                         "line": 46
@@ -62,7 +62,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 9,
-                        "durationMicroseconds": 127,
+                        "durationMicroseconds": 76,
                         "errorMessage": "Cannot access value for name userModel",
                         "functionName": "onIdTokenChanged",
                         "line": 47

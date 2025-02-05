@@ -22,8 +22,8 @@ Item {
         running: false
         repeat: false
         onTriggered: {
-            if(!rectNavigationMouseArea.containsMouse && !rectNavigationMouseArea.isMouseOverAnyButton())
-            {
+            if (!rectNavigationMouseArea.containsMouse
+                && !rectNavigationMouseArea.isMouseOverAnyButton()) {
                 mainView.isExpandNavigation = false
             }
         }
@@ -69,310 +69,321 @@ Item {
         }
     }
 
-    RowLayout {
-        id: mainRowLayout
-        anchors.fill: parent
-        spacing: 0
+    // RowLayout {
+    //     id: mainRowLayout
+    //     anchors.fill: parent
+    //     spacing: 0
+    // }
+    Rectangle {
+        id: rectNavigation
+        color: mainView.backgroundColor
+        height: parent.height
+        clip: true
+        // Layout.preferredWidth: mainView.isExpandNavigation ? 200 : 60
+        width: mainView.isExpandNavigation ? 200 : 60
+        z: 1
+        Behavior on width {
+            NumberAnimation {
+                duration: 500
+                easing.type: Easing.InOutQuad
+            }
+        }
 
-        Rectangle {
-            id: rectNavigation
-            color: mainView.backgroundColor
-            Layout.fillHeight: true
-            Layout.preferredWidth: mainView.isExpandNavigation ? 200 : 60
+        MouseArea {
+            id: rectNavigationMouseArea
+            anchors.fill: parent
+            hoverEnabled: true
+            onEntered: {
+                collapseNavigationTimer.stop()
+                mainView.isExpandNavigation = true
+            }
+            onExited: {
+                // if (!isMouseOverAnyButton()) {
+                //     mainView.isExpandNavigation = false
+                // }
+                collapseNavigationTimer.restart()
+            }
 
-            Behavior on Layout.preferredWidth {
-                NumberAnimation {
-                    duration: 200
-                    easing.type: Easing.InOutQuad
+            function isMouseOverAnyButton() {
+                for (var i = 0; i < columnLayoutNavigation.children.length; i++) {
+                    let child = columnLayoutNavigation.children[i]
+                    if (child.buttonMouseArea
+                            && child.buttonMouseArea.containsMouse) {
+                        return true
+                    }
+                }
+                return false
+            }
+        }
+
+        ColumnLayout {
+            id: columnLayoutNavigation
+            spacing: 15
+            anchors {
+                fill: parent
+                topMargin: 20
+                bottomMargin: 20
+            }
+
+            Rectangle {
+                Layout.preferredHeight: 40
+                Layout.preferredWidth: parent.width
+                color: "transparent"
+
+                RowLayout {
+                    anchors.centerIn: parent
+                    spacing: 8
+
+                    // Hamburger menu icon when collapsed
+                    Text {
+                        text: "\uf0c9" // Bars/hamburger icon
+                        font {
+                            family: fontAW.name
+                            pixelSize: 24
+                        }
+                        color: mainView.primaryBlue
+                        visible: !mainView.isExpandNavigation
+                        Layout.alignment: Qt.AlignVCenter
+                    }
+
+                    // QRScanner text when expanded
+                    Text {
+                        text: "QR Scanner"
+                        font {
+                            family: "Montserrat"
+                            pixelSize: 24
+                            bold: true
+                        }
+                        color: mainView.primaryBlue
+                        visible: mainView.isExpandNavigation
+                        Layout.alignment: Qt.AlignVCenter
+                    }
                 }
             }
 
-            MouseArea {
-                id: rectNavigationMouseArea
-                anchors.fill: parent
-                hoverEnabled: true
-                onEntered: {
-                    collapseNavigationTimer.stop()
-                    mainView.isExpandNavigation = true
-                }
-                onExited: {
-                    // if (!isMouseOverAnyButton()) {
-                    //     mainView.isExpandNavigation = false
-                    // }
-                    collapseNavigationTimer.restart()
-                }
+            Repeater {
+                model: navigationButtonsModel
+                delegate: Rectangle {
+                    id: rectButton
+                    Layout.preferredHeight: 45
+                    Layout.preferredWidth: mainView.isExpandNavigation ? 180 : 50
+                    Layout.alignment: Qt.AlignHCenter
+                    radius: 8
+                    property bool isSelected: index === mainView.selectedIndex
+                    color: {
+                        if (isSelected) {
+                            return mainView.selectedBlue
+                        }
+                        return buttonMouseArea.containsMouse ? mainView.hoverBlue : "transparent"
+                    }
 
-                function isMouseOverAnyButton() {
-                    for (var i = 0; i < columnLayoutNavigation.children.length; i++) {
-                        let child = columnLayoutNavigation.children[i]
-                        if (child.buttonMouseArea
-                                && child.buttonMouseArea.containsMouse) {
-                            return true
+                    property alias buttonMouseArea: buttonMouseArea
+
+                    Behavior on Layout.preferredWidth {
+                        NumberAnimation {
+                            duration: 400
+                            easing.type: Easing.InOutQuad
                         }
                     }
-                    return false
-                }
-            }
 
-            ColumnLayout {
-                id: columnLayoutNavigation
-                spacing: 15
-                anchors {
-                    fill: parent
-                    topMargin: 20
-                    bottomMargin: 20
-                }
+                    MouseArea {
+                        id: buttonMouseArea
+                        anchors.fill: parent
+                        hoverEnabled: true
+                        propagateComposedEvents: true
 
-                Rectangle {
-                    Layout.preferredHeight: 40
-                    Layout.preferredWidth: parent.width
-                    color: "transparent"
-
-                    RowLayout {
-                        anchors.centerIn: parent
-                        spacing: 8
-
-                        // Hamburger menu icon when collapsed
-                        Text {
-                            text: "\uf0c9" // Bars/hamburger icon
-                            font {
-                                family: fontAW.name
-                                pixelSize: 24
-                            }
-                            color: mainView.primaryBlue
-                            visible: !mainView.isExpandNavigation
-                            Layout.alignment: Qt.AlignVCenter
+                        onEntered: {
+                            collapseNavigationTimer.stop()
+                            mainView.isExpandNavigation = true
                         }
 
-                        // QRScanner text when expanded
-                        Text {
-                            text: "QR Scanner"
-                            font {
-                                family: "Montserrat"
-                                pixelSize: 24
-                                bold: true
+                        onExited: {
+                            if (!rectNavigationMouseArea.containsMouse) {
+                                // mainView.isExpandNavigation = false
+                                collapseNavigationTimer.restart()
                             }
-                            color: mainView.primaryBlue
-                            visible: mainView.isExpandNavigation
-                            Layout.alignment: Qt.AlignVCenter
+                        }
+
+                        onClicked: {
+                            mainView.selectedIndex = index // Cập nhật button được chọn
+                            console.log("Click button:", index)
+                            childViewLoader.source = model.viewName
                         }
                     }
-                }
-
-                Repeater {
-                    model: navigationButtonsModel
-                    delegate: Rectangle {
-                        id: rectButton
-                        Layout.preferredHeight: 45
-                        Layout.preferredWidth: mainView.isExpandNavigation ? 180 : 50
-                        Layout.alignment: Qt.AlignHCenter
-                        radius: 8
-                        property bool isSelected: index === mainView.selectedIndex
-                        color: {
-                            if (isSelected) {
-                                return mainView.selectedBlue
-                            }
-                            return buttonMouseArea.containsMouse ? mainView.hoverBlue : "transparent"
-                        }
-
-                        property alias buttonMouseArea: buttonMouseArea
-
-                        Behavior on Layout.preferredWidth {
-                            NumberAnimation {
-                                duration: 200
-                                easing.type: Easing.InOutQuad
-                            }
-                        }
-
-                        MouseArea {
-                            id: buttonMouseArea
-                            anchors.fill: parent
-                            hoverEnabled: true
-                            propagateComposedEvents: true
-
-                            onEntered: {
-                                collapseNavigationTimer.stop()
-                                mainView.isExpandNavigation = true
-                            }
-
-                            onExited: {
-                                if (!rectNavigationMouseArea.containsMouse) {
-                                    // mainView.isExpandNavigation = false
-                                    collapseNavigationTimer.restart()
-                                }
-                            }
-
-                            onClicked: {
-                                mainView.selectedIndex = index // Cập nhật button được chọn
-                                console.log("Click button:", index)
-                                childViewLoader.source = model.viewName
-                            }
-                        }
-
-                        RowLayout {
-                            anchors {
-                                fill: parent
-                                leftMargin: 15
-                                rightMargin: 15
-                            }
-                            spacing: 0
-                            Item {
-                                Layout.fillWidth: true
-                            }
-                            Text {
-                                text: iconText
-                                font {
-                                    family: fontAW.name
-                                    pixelSize: 18
-                                }
-                                color: rectButton.isSelected
-                                       || buttonMouseArea.containsMouse ? "white" : primaryBlue
-                                Layout.alignment: Qt.AlignVCenter
-                            }
-
-                            Text {
-                                text: buttonText
-                                visible: mainView.isExpandNavigation
-                                font {
-                                    family: "Montserrat"
-                                    pixelSize: 14
-                                    bold: true
-                                }
-                                color: rectButton.isSelected
-                                       || buttonMouseArea.containsMouse ? "white" : mainView.textColor
-                                Layout.fillWidth: true
-                                Layout.alignment: Qt.AlignVCenter
-                                leftPadding: 10
-                            }
-                            Item {
-                                Layout.fillWidth: true
-                            }
-                        }
-                    }
-                }
-
-                Item {
-                    Layout.fillHeight: true
-                }
-
-                ////
-                Rectangle {
-                    id: rectCurrentUser
-                    Layout.fillWidth: parent.width
-                    Layout.preferredHeight: 60
-                    color: "transparent"
-                    Layout.alignment: Qt.AlignLeft
 
                     RowLayout {
                         anchors {
                             fill: parent
+                            leftMargin: 15
+                            rightMargin: 15
                         }
                         spacing: 0
-
                         Item {
                             Layout.fillWidth: true
-                            // visible: !mainView.isExpandNavigation
+                        }
+                        Text {
+                            text: iconText
+                            font {
+                                family: fontAW.name
+                                pixelSize: 18
+                            }
+                            color: rectButton.isSelected
+                                   || buttonMouseArea.containsMouse ? "white" : primaryBlue
+                            Layout.alignment: Qt.AlignVCenter
                         }
 
-                        Rectangle {
-                            // width: 40
-                            // height: 40
-                            Layout.preferredHeight: 40
-                            Layout.preferredWidth: 40
-                            Layout.alignment: Qt.AlignHCenter
-                            radius: Layout.preferredWidth / 2
-                            color: mainView.lightBlue
-
-                            Text {
-                                anchors.centerIn: parent
-                                text: "\uf007"
-                                font {
-                                    family: fontAW.name
-                                    pixelSize: 20
-                                }
-                                color: mainView.primaryBlue
-                                visible: !userModel.photoUrl
-                            }
-
-                            Image {
-                                id: imageCurrentUser
-                                source: userModel.photoUrl
-                                visible: userModel.photoUrl !== ""
-                                fillMode: Image.PreserveAspectCrop
-                            }
-                        }
-
-                        Rectangle {
-                            Layout.preferredHeight: 40
-                            Layout.leftMargin: 10
-                            Layout.fillWidth: true
+                        Text {
+                            text: buttonText
                             visible: mainView.isExpandNavigation
-                            color: "transparent"
-
-                            ColumnLayout {
-                                spacing: 3
-                                anchors.fill: parent
-                                Text {
-                                    id: currentUserEmail
-                                    text: userModel.email || "Unknown"
-                                    font {
-                                        family: "Montserrat"
-                                        pixelSize: 14
-                                    }
-                                    color: mainView.textColor
-                                }
-
-                                Text {
-                                    id: logoutButton
-                                    text: "Log out"
-                                    font {
-                                        family: "Montserrat"
-                                        pixelSize: 12
-                                        bold: true
-                                        italic: true
-                                    }
-                                    color: mainView.textColor
-
-                                    MouseArea {
-                                        anchors.fill: parent
-                                        hoverEnabled: true
-                                        cursorShape: Qt.PointingHandCursor
-                                        onEntered: {
-                                            logoutButton.font.color = mainView.primaryBlue
-                                        }
-                                        onClicked: {
-                                            console.log("Log out button is clicked!")
-                                            // Command
-                                            mainViewModel.logoutByViewModel()
-                                        }
-                                    }
-                                }
+                            font {
+                                family: "Montserrat"
+                                pixelSize: 14
+                                bold: true
                             }
+                            color: rectButton.isSelected
+                                   || buttonMouseArea.containsMouse ? "white" : mainView.textColor
+                            Layout.fillWidth: true
+                            Layout.alignment: Qt.AlignVCenter
+                            leftPadding: 10
                         }
-
                         Item {
                             Layout.fillWidth: true
-                            // visible: !mainView.isExpandNavigation
                         }
                     }
                 }
             }
-        }
 
-        Rectangle {
-            id: rectMainContent
-            Layout.fillHeight: true
-            Layout.fillWidth: true
-            color: "white"
-            // border.width: 1
-            // border.color: "black"
-            // radius: 8
-
-            Loader {
-                id: childViewLoader
-                anchors.fill: parent
-                source: "QRScannerView.qml"
+            Item {
+                Layout.fillHeight: true
             }
+
+            ////
+            Rectangle {
+                id: rectCurrentUser
+                Layout.fillWidth: parent.width
+                Layout.preferredHeight: 60
+                color: "transparent"
+                Layout.alignment: Qt.AlignLeft
+
+                RowLayout {
+                    anchors {
+                        fill: parent
+                    }
+                    spacing: 0
+
+                    Item {
+                        Layout.fillWidth: true
+                        // visible: !mainView.isExpandNavigation
+                    }
+
+                    Rectangle {
+                        // width: 40
+                        // height: 40
+                        Layout.preferredHeight: 40
+                        Layout.preferredWidth: 40
+                        Layout.alignment: Qt.AlignHCenter
+                        radius: Layout.preferredWidth / 2
+                        color: mainView.lightBlue
+
+                        Text {
+                            anchors.centerIn: parent
+                            text: "\uf007"
+                            font {
+                                family: fontAW.name
+                                pixelSize: 20
+                            }
+                            color: mainView.primaryBlue
+                            visible: !userModel.photoUrl
+                        }
+
+                        // Image {
+                        //     id: imageCurrentUser
+                        //     source: userModel.photoUrl
+                        //     visible: userModel.photoUrl !== ""
+                        //     fillMode: Image.PreserveAspectCrop
+                        // }
+                    }
+
+                    Rectangle {
+                        Layout.preferredHeight: 40
+                        Layout.leftMargin: 10
+                        Layout.fillWidth: true
+                        visible: mainView.isExpandNavigation
+                        color: "transparent"
+
+                        ColumnLayout {
+                            spacing: 3
+                            anchors.fill: parent
+                            Text {
+                                id: currentUserEmail
+                                text: userModel.email || "Unknown"
+                                font {
+                                    family: "Montserrat"
+                                    pixelSize: 14
+                                }
+                                color: mainView.textColor
+                            }
+
+                            Text {
+                                id: logoutButton
+                                text: "Log out"
+                                font {
+                                    family: "Montserrat"
+                                    pixelSize: 12
+                                    // bold: true
+                                    // italic: true
+                                }
+                                color: mainView.textColor
+
+                                MouseArea {
+                                    anchors.fill: parent
+                                    hoverEnabled: true
+                                    cursorShape: Qt.PointingHandCursor
+                                    onEntered: {
+                                        logoutButton.font.color = mainView.primaryBlue
+                                    }
+                                    onClicked: {
+                                        console.log(
+                                            "Log out button is clicked!")
+                                        // Command
+                                        mainViewModel.logoutByViewModel()
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    Item {
+                        Layout.fillWidth: true
+                        // visible: !mainView.isExpandNavigation
+                    }
+                }
+            }
+        }
+    }
+
+    Rectangle {
+        id: rectMainContent
+
+        // Layout.fillHeight: true
+        // Layout.fillWidth: true
+        color: "white"
+        anchors.left: parent.left
+        anchors.right: parent.right
+        anchors.top: parent.top
+        anchors.bottom: parent.bottom
+        anchors.leftMargin: 60
+        // clip: true
+        // Layout.leftMargin: 60
+        // Layout.fillHeight: true
+        // Layout.fillWidth: true
+        // border.width: 1
+        // border.color: "black"
+        // radius: 8
+        Loader {
+            id: childViewLoader
+            anchors.fill: parent
+            source: "QRScannerView.qml"
         }
     }
 }
