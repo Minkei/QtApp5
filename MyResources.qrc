@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Fonts/fa-solid-900.ttf</file>
+        <file>Images/etek-logo.png</file>
+        <file>Images/imas-bg.jpg</file>
+        <file>Images/imas-logo.png</file>
+    </qresource>
+</RCC>

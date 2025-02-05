@@ -1,0 +1,8 @@
+module QtApp.Views
+Main 1.0 Main.qml
+LoginView 1.0 LoginView.qml
+MainView 1.0 MainView.qml
+DataView 1.0 DataView.qml
+ReportView 1.0 ReportView.qml
+SettingView 1.0 SettingView.qml
+SupportView 1.0 SupportView.qml

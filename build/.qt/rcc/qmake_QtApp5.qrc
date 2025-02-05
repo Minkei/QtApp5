@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="/qt/qml/QtApp5">
+    <file alias="qmldir">C:/IMAS/Research/QtApp/QtApp5/build/QtApp5/qmldir</file>
+  </qresource>
+</RCC>
+

@@ -1,0 +1,34 @@
+{
+    "classes": [
+        {
+            "className": "MainViewModel",
+            "lineNumber": 6,
+            "object": true,
+            "qualifiedClassName": "MainViewModel",
+            "signals": [
+                {
+                    "access": "public",
+                    "index": 0,
+                    "name": "logoutSucces",
+                    "returnType": "void"
+                }
+            ],
+            "slots": [
+                {
+                    "access": "public",
+                    "index": 1,
+                    "name": "logoutByViewModel",
+                    "returnType": "void"
+                }
+            ],
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QObject"
+                }
+            ]
+        }
+    ],
+    "inputFile": "MainViewModel.h",
+    "outputRevision": 68
+}

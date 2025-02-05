@@ -1,0 +1,15 @@
+<RCC>
+  <qresource prefix="/qt/qml/QtApp5/">
+    <file alias="Views/LoginView.qml">C:/IMAS/Research/QtApp/QtApp5/Views/LoginView.qml</file>
+    <file alias="Views/Main.qml">C:/IMAS/Research/QtApp/QtApp5/Views/Main.qml</file>
+    <file alias="Views/MainView.qml">C:/IMAS/Research/QtApp/QtApp5/Views/MainView.qml</file>
+    <file alias="Views/QRScannerView.qml">C:/IMAS/Research/QtApp/QtApp5/Views/QRScannerView.qml</file>
+    <file alias="Views/DataView.qml">C:/IMAS/Research/QtApp/QtApp5/Views/DataView.qml</file>
+    <file alias="Views/ReportView.qml">C:/IMAS/Research/QtApp/QtApp5/Views/ReportView.qml</file>
+    <file alias="Views/SettingView.qml">C:/IMAS/Research/QtApp/QtApp5/Views/SettingView.qml</file>
+    <file alias="Views/SupportView.qml">C:/IMAS/Research/QtApp/QtApp5/Views/SupportView.qml</file>
+    <file alias="MyResources.qrc">C:/IMAS/Research/QtApp/QtApp5/MyResources.qrc</file>
+    <file alias="Fonts/fa-solid-900.ttf">C:/IMAS/Research/QtApp/QtApp5/Fonts/fa-solid-900.ttf</file>
+  </qresource>
+</RCC>
+
