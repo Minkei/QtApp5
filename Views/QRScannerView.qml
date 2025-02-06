@@ -16,6 +16,8 @@ Item {
     width: 1300
     height: 768
 
+    property var viewModel: qrScannerViewModel
+
     property color primaryBlue: "#2563eb"
     property color lightBlue: "#60a5fa"
     property color hoverBlue: "#3b82f6"
@@ -23,6 +25,7 @@ Item {
     property color backgroundColor: "#f0f9ff"
 
     property bool isStreaming: false
+    property bool isPopupOpen: false
 
     FontLoader {
         id: fontAW
@@ -40,14 +43,19 @@ Item {
             Layout.alignment: Qt.AlignTop | Qt.AlignHCenter
             radius: 8
             activeFocusOnTab: true
-            Layout.margins: 5
+            Layout.margins: 10
+            Layout.bottomMargin: 5
 
-            color: "white"
+            color: qrscanner.backgroundColor
 
             RowLayout {
                 id: rowLayoutHeader
                 anchors.fill: parent
                 spacing: 30
+
+                Item {
+                    Layout.fillWidth: true
+                }
 
                 Rectangle {
                     id: rectDate
@@ -86,7 +94,8 @@ Item {
                             Layout.preferredHeight: 40
                             // Layout.fillWidth: true
                             Layout.preferredWidth: 100
-                            text: "06/02/2025"
+                            // text: "06/02/2025"
+                            text: viewModel.currentDate
                             font {
                                 family: "Montserrat"
                                 pixelSize: 14
@@ -138,7 +147,8 @@ Item {
                             Layout.preferredHeight: 40
                             // Layout.fillWidth: true
                             Layout.preferredWidth: 100
-                            text: "12:50:00"
+                            // text: "12:50:00"
+                            text: viewModel.currentTime
                             font {
                                 family: "Montserrat"
                                 pixelSize: 14
@@ -169,11 +179,9 @@ Item {
                         z: 1
                         cursorShape: Qt.PointingHandCursor
                         onClicked: {
-                            console.log("popSelectCamera.opened?",
-                                        popupSelectCamera.opened)
-                            if (!popupSelectCamera.visible) {
-                                popupSelectCamera.open()
-                            }
+                            qrscanner.isPopupOpen = !qrscanner.isPopupOpen
+                            console.log("qrscanner.isPopupOpen",
+                                        qrscanner.isPopupOpen)
                         }
                     }
 
@@ -186,7 +194,7 @@ Item {
                             id: selectedCamera
                             Layout.preferredHeight: 40
                             Layout.fillWidth: true
-                            text: "Select camera"
+                            text: viewModel.selectedCamera || "Select camera"
                             font {
                                 family: "Montserrat"
                                 pixelSize: 14
@@ -203,7 +211,7 @@ Item {
                             Layout.preferredHeight: 40
                             Layout.preferredWidth: 40
                             Layout.alignment: Qt.AlignRight
-                            text: "\uf107"
+                            text: qrscanner.isPopupOpen ? "\uf106" : "\uf107"
                             font {
                                 family: fontAW.name
                                 pixelSize: 14
@@ -211,12 +219,28 @@ Item {
                             color: qrscanner.primaryBlue
                             horizontalAlignment: Text.AlignHCenter
                             verticalAlignment: Text.AlignVCenter
+
+                            rotation: qrscanner.isPopupOpen ? 360 : 0
+                            Behavior on rotation {
+                                NumberAnimation {
+                                    duration: 200
+                                    easing.type: Easing.InOutQuad
+                                }
+                            }
+
+                            scale: mouseAreaSelectCameraDropDown.containsMouse ? 1.1 : 1.0
+                            Behavior on scale {
+                                NumberAnimation {
+                                    duration: 100
+                                    easing.type: Easing.InOutQuad
+                                }
+                            }
                         }
                     }
 
                     Popup {
                         id: popupSelectCamera
-
+                        visible: qrscanner.isPopupOpen
                         // y: rectSelectCamera
                         y: parent.height + 8
                         width: parent.width
@@ -227,9 +251,13 @@ Item {
                         // width: rectSelectCamera.width
                         padding: 10
 
+                        onOpened: {
+                            qrscanner.viewModel.refreshCameraList()
+                        }
+
                         background: Rectangle {
                             color: qrscanner.backgroundColor
-                            radius: 5
+                            radius: 10
                             border.color: qrscanner.lightBlue
                             border.width: 1
                         }
@@ -237,20 +265,21 @@ Item {
                             id: listViewPopupSelectCamera
                             implicitHeight: contentHeight
                             // model: ["Camera 1", "Camera 2", "Camera 3"]
-                            model: ListModel {
-                                ListElement {
-                                    name: "Camera 1"
-                                }
-                                ListElement {
-                                    name: "Camera 2"
-                                }
-                                ListElement {
-                                    name: "Camera 3"
-                                }
-                                ListElement {
-                                    name: "Camera 4"
-                                }
-                            }
+                            // model: ListModel {
+                            //     ListElement {
+                            //         name: "Camera 1"
+                            //     }
+                            //     ListElement {
+                            //         name: "Camera 2"
+                            //     }
+                            //     ListElement {
+                            //         name: "Camera 3"
+                            //     }
+                            //     ListElement {
+                            //         name: "Camera 4"
+                            //     }
+                            // }
+                            model: qrscanner.viewModel.availableCameras
 
                             clip: true
 
@@ -260,7 +289,7 @@ Item {
                                 height: 40
 
                                 contentItem: Text {
-                                    text: model.name
+                                    text: modelData
                                     font {
                                         family: "Montserrat"
                                         pixelSize: 14
@@ -297,9 +326,11 @@ Item {
                         spacing: 0
                         anchors.fill: parent
                         MouseArea {
+                            z: 1
                             id: mouseAreaControlCameraButton
                             anchors.fill: parent
-                            z: 1
+                            // Layout.preferredWidth: rowLayoutControlCameraButton.width
+                            // Layout.preferredHeight: rowLayoutControlCameraButton.height
                             cursorShape: Qt.PointingHandCursor
                             hoverEnabled: true
                             onClicked: {
@@ -332,7 +363,7 @@ Item {
                             Layout.alignment: Qt.AlignVCenter
                             font {
                                 family: fontAW.name
-                                pixelSize: 16
+                                pixelSize: 14
                             }
                             horizontalAlignment: Text.AlignHCenter
                             verticalAlignment: Text.AlignVCenter
@@ -345,7 +376,7 @@ Item {
                             Layout.preferredWidth: 100
                             font {
                                 family: "Montserrat"
-                                pixelSize: 16
+                                pixelSize: 14
                             }
                             color: qrscanner.textColor
                             horizontalAlignment: Text.AlignLeft
@@ -372,7 +403,315 @@ Item {
             radius: 10
             Layout.margins: 5
             Layout.topMargin: 0
-            color: "white"
+            color: "transparent"
+
+            RowLayout {
+                id: rowLayoutContent
+                anchors.fill: parent
+                spacing: 0
+
+                Rectangle {
+                    id: rectDataTable
+                    Layout.fillHeight: true
+                    radius: 10
+                    Layout.preferredWidth: parent.width * 0.6
+                    Layout.margins: 5
+                    Layout.topMargin: 0
+                    color: qrscanner.backgroundColor
+
+                    ColumnLayout {
+                        id: columnLayoutDataTable
+                        anchors.fill: parent
+                        spacing: 0
+
+                        Rectangle {
+                            id: rectTableHeader
+                            Layout.preferredHeight: 40
+                            Layout.fillWidth: true
+                            color: "transparent"
+                            Layout.alignment: Qt.AlignTop
+
+                            RowLayout {
+                                id: rowLayoutTableHeader
+                                anchors.fill: parent
+                                spacing: 0
+
+                                Repeater {
+                                    id: repeaterTableHeader
+                                    model: ["No.", "QR Code", "Date", "Time", "PIC"]
+
+                                    Rectangle {
+                                        Layout.preferredWidth: parent.width / 5
+                                        Layout.fillHeight: true
+                                        color: "transparent"
+
+                                        // color: "black"
+                                        // border.color: "black"
+                                        Text {
+                                            anchors.fill: parent
+                                            text: modelData
+                                            horizontalAlignment: Text.AlignHCenter
+                                            verticalAlignment: Text.AlignVCenter
+                                            font {
+                                                family: "Montserrat"
+                                                pixelSize: 14
+                                                bold: true
+                                            }
+                                            color: qrscanner.textColor // Thêm màu chữ trắng để hiển thị trên nền đen
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        Rectangle {
+                            id: rectTableContent
+                            Layout.fillHeight: true
+                            Layout.fillWidth: true
+                            color: "transparent"
+
+                            ListView {
+                                id: listViewTableContent
+                                anchors.fill: parent
+
+                                model: ListModel {
+                                    ListElement {
+                                        No: "1"
+                                        QRCodeContent: "ABC"
+                                        ScannedDate: "06/02/2025"
+                                        ScannedTime: "20:05:00"
+                                        PIC: "Tran Van A"
+                                    }
+                                    ListElement {
+                                        No: "2"
+                                        QRCodeContent: "XYZ"
+                                        ScannedDate: "06/02/2025"
+                                        ScannedTime: "20:05:00"
+                                        PIC: "Tran Van B"
+                                    }
+                                    ListElement {
+                                        No: "3"
+                                        QRCodeContent: "KMW"
+                                        ScannedDate: "06/02/2025"
+                                        ScannedTime: "20:05:00"
+                                        PIC: "Tran Van C"
+                                    }
+                                }
+
+                                delegate: Rectangle {
+                                    width: parent.width
+                                    height: 40
+                                    color: "transparent"
+
+                                    // border.color: "black"
+                                    // border.width: 1
+                                    RowLayout {
+                                        id: rowLayoutTableContent
+                                        anchors.fill: parent
+                                        spacing: 0
+
+                                        Rectangle {
+                                            id: rectTableContentNo
+                                            Layout.preferredWidth: parent.width / 5
+                                            Layout.fillHeight: parent
+                                            color: "transparent"
+                                            Text {
+                                                anchors.fill: parent
+                                                text: No
+                                                anchors.centerIn: parent
+                                                horizontalAlignment: Text.AlignHCenter
+                                                verticalAlignment: Text.AlignVCenter
+                                                Layout.alignment: Qt.AlignHCenter | Qt.AlignVCenter
+                                                font {
+                                                    family: "Montserrat"
+                                                    pixelSize: 14
+                                                }
+                                                color: qrscanner.textColor
+                                            }
+                                        }
+
+                                        Rectangle {
+                                            id: rectTableContentQRCodeContent
+                                            Layout.preferredWidth: parent.width / 5
+                                            Layout.fillHeight: parent
+                                            color: "transparent"
+                                            Text {
+                                                anchors.fill: parent
+                                                text: QRCodeContent
+                                                anchors.centerIn: parent
+                                                horizontalAlignment: Text.AlignHCenter
+                                                verticalAlignment: Text.AlignVCenter
+                                                Layout.alignment: Qt.AlignHCenter | Qt.AlignVCenter
+                                                font {
+                                                    family: "Montserrat"
+                                                    pixelSize: 14
+                                                }
+                                                color: qrscanner.textColor
+                                            }
+                                        }
+
+                                        Rectangle {
+                                            id: rectTableContentScannedDate
+                                            Layout.preferredWidth: parent.width / 5
+                                            Layout.fillHeight: parent
+                                            color: "transparent"
+                                            Text {
+                                                anchors.fill: parent
+                                                text: ScannedDate
+                                                anchors.centerIn: parent
+                                                horizontalAlignment: Text.AlignHCenter
+                                                verticalAlignment: Text.AlignVCenter
+                                                Layout.alignment: Qt.AlignHCenter | Qt.AlignVCenter
+                                                font {
+                                                    family: "Montserrat"
+                                                    pixelSize: 14
+                                                }
+                                                color: qrscanner.textColor
+                                            }
+                                        }
+
+                                        Rectangle {
+                                            id: rectTableContentScannedTime
+                                            Layout.preferredWidth: parent.width / 5
+                                            Layout.fillHeight: parent
+                                            color: "transparent"
+                                            Text {
+                                                anchors.fill: parent
+                                                text: ScannedTime
+                                                anchors.centerIn: parent
+                                                horizontalAlignment: Text.AlignHCenter
+                                                verticalAlignment: Text.AlignVCenter
+                                                Layout.alignment: Qt.AlignHCenter | Qt.AlignVCenter
+                                                font {
+                                                    family: "Montserrat"
+                                                    pixelSize: 14
+                                                }
+                                                color: qrscanner.textColor
+                                            }
+                                        }
+                                        Rectangle {
+                                            id: rectTableContentPIC
+                                            Layout.preferredWidth: parent.width / 5
+                                            Layout.fillHeight: parent
+                                            color: "transparent"
+                                            Text {
+                                                anchors.fill: parent
+                                                text: PIC
+                                                anchors.centerIn: parent
+                                                horizontalAlignment: Text.AlignHCenter
+                                                verticalAlignment: Text.AlignVCenter
+                                                Layout.alignment: Qt.AlignHCenter | Qt.AlignVCenter
+                                                font {
+                                                    family: "Montserrat"
+                                                    pixelSize: 14
+                                                }
+                                                color: qrscanner.textColor
+                                            }
+                                        }
+                                        Item {
+                                            Layout.fillWidth: true
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                Rectangle {
+                    id: rectCameraViewPort
+                    Layout.fillHeight: true
+                    Layout.fillWidth: true
+                    Layout.margins: 5
+                    Layout.topMargin: 0
+                    radius: 10
+                    color: qrscanner.backgroundColor
+
+                    ColumnLayout {
+                        id: columnLayoutRectCameraViewPort
+                        anchors.fill: parent
+                        Item {
+                            Layout.fillHeight: true
+                        }
+
+                        Text {
+                            id: textTitleCameraViewPort
+                            text: "Scanned by camera 1"
+                            font {
+                                family: "Montserrat"
+                                pixelSize: 14
+                                italic: true
+                            }
+                            color: qrscanner.textColor
+                            Layout.fillWidth: true
+                            Layout.preferredHeight: 40
+                            horizontalAlignment: Text.AlignHCenter
+                            verticalAlignment: Text.AlignVCenter
+                        }
+
+                        Rectangle {
+                            id: rectCameraViewPortImage
+                            Layout.preferredHeight: 300
+                            Layout.preferredWidth: 300
+                            radius: 10
+                            Layout.alignment: Qt.AlignHCenter
+                            border.color: qrscanner.lightBlue
+                            border.width: 1
+                            color: "transparent"
+                        }
+
+                        Rectangle {
+                            id: rectLastedResultsQRCode
+                            color: "#bf8b87"
+                            Layout.preferredHeight: 200
+                            Layout.preferredWidth: 300
+                            Layout.alignment: Qt.AlignHCenter
+                            radius: 10
+
+                            Layout.topMargin: 30
+
+                            ColumnLayout {
+                                id: columnLayoutLastedResultsQRCode
+                                anchors.fill: parent
+                                Text {
+                                    id: textLastedQRCodeTitle
+                                    Layout.fillWidth: true
+                                    Layout.preferredHeight: 30
+                                    text: "Lasted QR Code"
+                                    font {
+                                        family: "Montserrat"
+                                        pixelSize: 16
+                                        bold: true
+                                    }
+                                    color: "white"
+                                    horizontalAlignment: Text.AlignHCenter
+                                    verticalAlignment: Text.AlignVCenter
+                                    Layout.alignment: Qt.AlignHCenter | Qt.AlignTop
+                                }
+
+                                Text {
+                                    id: textLastedQRCodeContent
+                                    Layout.fillWidth: true
+                                    Layout.fillHeight: true
+                                    text: "Askdjsdk"
+                                    font {
+                                        family: "Montserrat"
+                                        pixelSize: 16
+                                    }
+                                    color: "white"
+                                    topPadding: 10
+                                    horizontalAlignment: Text.AlignHCenter
+                                    verticalAlignment: Text.AlignTop
+                                    Layout.alignment: Qt.AlignHCenter | Qt.AlignVCenter
+                                }
+                            }
+                        }
+
+                        Item {
+                            Layout.fillHeight: true
+                        }
+                    }
+                }
+            }
         }
     }
 }

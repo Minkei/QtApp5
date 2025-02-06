@@ -76,18 +76,27 @@ Item {
     // }
     Rectangle {
         id: rectNavigation
-        color: mainView.backgroundColor
-        height: parent.height
-        clip: true
-        // Layout.preferredWidth: mainView.isExpandNavigation ? 200 : 60
         width: mainView.isExpandNavigation ? 200 : 60
-        z: 1
         Behavior on width {
             NumberAnimation {
                 duration: 500
-                easing.type: Easing.InOutQuad
             }
         }
+        color: mainView.backgroundColor
+        radius: 10
+        anchors.left: parent.left
+        anchors.top: parent.top
+        anchors.bottom: parent.bottom
+        anchors.leftMargin: 10
+        anchors.topMargin: 10
+        anchors.bottomMargin: 10
+        border.color: mainView.isExpandNavigation ? mainView.primaryBlue : "transparent"
+        border.width: mainView.isExpandNavigation ? 1 : 0
+
+        clip: true
+
+        // Layout.preferredWidth: mainView.isExpandNavigation ? 200 : 60
+        z: 1
 
         MouseArea {
             id: rectNavigationMouseArea
@@ -168,7 +177,7 @@ Item {
                     Layout.preferredHeight: 45
                     Layout.preferredWidth: mainView.isExpandNavigation ? 180 : 50
                     Layout.alignment: Qt.AlignHCenter
-                    radius: 8
+                    radius: 10
                     property bool isSelected: index === mainView.selectedIndex
                     color: {
                         if (isSelected) {
@@ -367,19 +376,19 @@ Item {
 
         // Layout.fillHeight: true
         // Layout.fillWidth: true
-        color: "white"
+        color: "transparent"
         anchors.left: parent.left
         anchors.right: parent.right
         anchors.top: parent.top
         anchors.bottom: parent.bottom
-        anchors.leftMargin: 60
+        anchors.leftMargin: 70
         // clip: true
         // Layout.leftMargin: 60
         // Layout.fillHeight: true
         // Layout.fillWidth: true
         // border.width: 1
         // border.color: "black"
-        // radius: 8
+        // radius: 10
         Loader {
             id: childViewLoader
             anchors.fill: parent

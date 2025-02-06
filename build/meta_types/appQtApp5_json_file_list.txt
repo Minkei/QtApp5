@@ -2,3 +2,4 @@ C:/IMAS/Research/QtApp/QtApp5/build/appQtApp5_autogen/include/../25IR5XJDBU/moc_
 C:/IMAS/Research/QtApp/QtApp5/build/appQtApp5_autogen/include/../7LASNSSLXA/moc_FirebaseAuth.cpp.json
 C:/IMAS/Research/QtApp/QtApp5/build/appQtApp5_autogen/include/../N4CVMX36CW/moc_LoginViewModel.cpp.json
 C:/IMAS/Research/QtApp/QtApp5/build/appQtApp5_autogen/include/../N4CVMX36CW/moc_MainViewModel.cpp.json
+C:/IMAS/Research/QtApp/QtApp5/build/appQtApp5_autogen/include/../N4CVMX36CW/moc_QRScannerViewModel.cpp.json

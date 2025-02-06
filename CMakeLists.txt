@@ -2,12 +2,20 @@ cmake_minimum_required(VERSION 3.16)
 
 project(QtApp5 VERSION 0.1 LANGUAGES CXX)
 
+# Add this near the top of your CMakeLists.txt, before your target definitions
+set(CMAKE_AUTOMOC ON)
+set(CMAKE_AUTORCC ON)
+set(CMAKE_AUTOUIC ON)
+
+# Add QML debugging flags
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -DQT_QML_DEBUG")
+
 # qt_policy(set QTP0004 NEW)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 set(QT_QML_GENERATE_QMLLS_INI ON)
 
-find_package(Qt6 REQUIRED COMPONENTS Quick Core Network)
+find_package(Qt6 REQUIRED COMPONENTS Quick Core Network Multimedia)
 # Set Qt policies
 qt_policy(SET QTP0004 NEW)
 
@@ -49,6 +57,7 @@ qt_add_qml_module(appQtApp5
     RESOURCES MyResources.qrc
     
     RESOURCES Fonts/fa-solid-900.ttf
+    SOURCES ViewModels/QRScannerViewModel.h ViewModels/QRScannerViewModel.cpp
 
 )
 
@@ -68,6 +77,7 @@ target_link_libraries(appQtApp5
         Qt6::Quick
         Qt6::Core
         Qt6::Network
+        Qt6::Multimedia
 )
 
 include(GNUInstallDirs)

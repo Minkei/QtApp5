@@ -5,6 +5,7 @@
 #include <ViewModels/LoginViewModel.h>
 #include <ViewModels/MainViewModel.h>
 #include <Models/UserModel.h>
+#include <ViewModels/QRScannerViewModel.h>
 
 
 int main(int argc, char *argv[])
@@ -20,12 +21,14 @@ int main(int argc, char *argv[])
 
     LoginViewModel loginViewModel;
     MainViewModel mainViewModel;
+    QRScannerViewModel qrScannerViewModel;
     
     UserModel::getInstance().clearUserData();
     UserModel::getInstance().loadFromSetting(); 
 
     engine.rootContext()->setContextProperty("loginViewModel", &loginViewModel);
     engine.rootContext()->setContextProperty("mainViewModel", &mainViewModel);
+    engine.rootContext()->setContextProperty("qrScannerViewModel", &qrScannerViewModel);
     
     engine.rootContext()->setContextProperty("userModel", &UserModel::getInstance());
 

@@ -3,3 +3,4 @@
 #include "7LASNSSLXA/moc_FirebaseAuth.cpp"
 #include "N4CVMX36CW/moc_LoginViewModel.cpp"
 #include "N4CVMX36CW/moc_MainViewModel.cpp"
+#include "N4CVMX36CW/moc_QRScannerViewModel.cpp"
