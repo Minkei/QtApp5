@@ -1,0 +1,12 @@
+module QtApp5
+typeinfo appQtApp5.qmltypes
+prefer :/qt/qml/QtApp5/
+LoginView 1.0 Views/LoginView.qml
+Main 1.0 Views/Main.qml
+MainView 1.0 Views/MainView.qml
+QRScannerView 1.0 Views/QRScannerView.qml
+DataView 1.0 Views/DataView.qml
+ReportView 1.0 Views/ReportView.qml
+SettingView 1.0 Views/SettingView.qml
+SupportView 1.0 Views/SupportView.qml
+

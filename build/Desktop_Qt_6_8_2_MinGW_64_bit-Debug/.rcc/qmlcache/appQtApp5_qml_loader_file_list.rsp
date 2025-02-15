@@ -1,0 +1,14 @@
+--resource
+C:/IMAS/Research/QtApp/QtApp5/build/Desktop_Qt_6_8_2_MinGW_64_bit-Debug/.qt/rcc/qmake_QtApp5.qrc
+--resource
+C:/IMAS/Research/QtApp/QtApp5/build/Desktop_Qt_6_8_2_MinGW_64_bit-Debug/.qt/rcc/appQtApp5_raw_qml_0.qrc
+--resource
+C:/IMAS/Research/QtApp/QtApp5/build/Desktop_Qt_6_8_2_MinGW_64_bit-Debug/.qt/rcc/appQtApp5_raw_qml_0_extra_qmldirs.qrc
+/qt/qml/QtApp5/Views/LoginView.qml
+/qt/qml/QtApp5/Views/Main.qml
+/qt/qml/QtApp5/Views/MainView.qml
+/qt/qml/QtApp5/Views/QRScannerView.qml
+/qt/qml/QtApp5/Views/DataView.qml
+/qt/qml/QtApp5/Views/ReportView.qml
+/qt/qml/QtApp5/Views/SettingView.qml
+/qt/qml/QtApp5/Views/SupportView.qml

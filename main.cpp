@@ -29,7 +29,6 @@ int main(int argc, char *argv[])
     engine.rootContext()->setContextProperty("loginViewModel", &loginViewModel);
     engine.rootContext()->setContextProperty("mainViewModel", &mainViewModel);
     engine.rootContext()->setContextProperty("qrScannerViewModel", &qrScannerViewModel);
-    
     engine.rootContext()->setContextProperty("userModel", &UserModel::getInstance());
 
 

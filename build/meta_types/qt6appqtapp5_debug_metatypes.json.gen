@@ -254,6 +254,68 @@
     {
         "classes": [
             {
+                "className": "CameraService",
+                "lineNumber": 10,
+                "object": true,
+                "qualifiedClassName": "CameraService",
+                "signals": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "error",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 0,
+                        "name": "cameraError",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 1,
+                        "name": "cameraStarted",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 2,
+                        "name": "cameraStopped",
+                        "returnType": "void"
+                    }
+                ],
+                "slots": [
+                    {
+                        "access": "private",
+                        "arguments": [
+                            {
+                                "name": "error",
+                                "type": "QCamera::Error"
+                            },
+                            {
+                                "name": "errorString",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 3,
+                        "name": "handleCameraError",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "CameraService.h",
+        "outputRevision": 68
+    },
+    {
+        "classes": [
+            {
                 "className": "FirebaseAuth",
                 "lineNumber": 12,
                 "object": true,
@@ -491,13 +553,51 @@
         "classes": [
             {
                 "className": "QRScannerViewModel",
-                "lineNumber": 11,
+                "lineNumber": 14,
+                "methods": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "camera",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 10,
+                        "name": "setSelectedCamera",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 11,
+                        "name": "refreshCameraList",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 12,
+                        "name": "toggleStreaming",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "videoSink",
+                                "type": "QVideoSink*"
+                            }
+                        ],
+                        "index": 13,
+                        "name": "setVideoSink",
+                        "returnType": "void"
+                    }
+                ],
                 "object": true,
                 "properties": [
                     {
                         "constant": false,
                         "designable": true,
-                        "final": true,
+                        "final": false,
                         "index": 0,
                         "name": "currentDate",
                         "notify": "currentDateChanged",
@@ -511,7 +611,7 @@
                     {
                         "constant": false,
                         "designable": true,
-                        "final": true,
+                        "final": false,
                         "index": 1,
                         "name": "currentTime",
                         "notify": "currentTimeChanged",
@@ -525,7 +625,7 @@
                     {
                         "constant": false,
                         "designable": true,
-                        "final": true,
+                        "final": false,
                         "index": 2,
                         "name": "availableCameras",
                         "notify": "availableCamerasChanged",
@@ -539,7 +639,7 @@
                     {
                         "constant": false,
                         "designable": true,
-                        "final": true,
+                        "final": false,
                         "index": 3,
                         "name": "selectedCamera",
                         "notify": "selectedCameraChanged",
@@ -550,6 +650,49 @@
                         "type": "QString",
                         "user": false,
                         "write": "setSelectedCamera"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 4,
+                        "name": "isStreaming",
+                        "notify": "isStreamingChanged",
+                        "read": "isStreaming",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "bool",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 5,
+                        "name": "isLoading",
+                        "notify": "isLoadingChanged",
+                        "read": "isLoading",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "bool",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 6,
+                        "name": "videoSink",
+                        "notify": "videoSinkChanged",
+                        "read": "videoSink",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QVideoSink*",
+                        "user": false,
+                        "write": "setVideoSink"
                     }
                 ],
                 "qualifiedClassName": "QRScannerViewModel",
@@ -580,40 +723,52 @@
                     },
                     {
                         "access": "public",
+                        "index": 4,
+                        "name": "isStreamingChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 5,
+                        "name": "isLoadingChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "errorMessage",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 6,
+                        "name": "cameraErrorOccured",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 7,
+                        "name": "videoSinkChanged",
+                        "returnType": "void"
+                    }
+                ],
+                "slots": [
+                    {
+                        "access": "private",
+                        "index": 8,
+                        "name": "updateDateTime",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "private",
                         "arguments": [
                             {
                                 "name": "error",
                                 "type": "QString"
                             }
                         ],
-                        "index": 4,
-                        "name": "cameraError",
-                        "returnType": "void"
-                    }
-                ],
-                "slots": [
-                    {
-                        "access": "public",
-                        "arguments": [
-                            {
-                                "name": "camera",
-                                "type": "QString"
-                            }
-                        ],
-                        "index": 5,
-                        "name": "setSelectedCamera",
-                        "returnType": "void"
-                    },
-                    {
-                        "access": "public",
-                        "index": 6,
-                        "name": "refreshCameraList",
-                        "returnType": "void"
-                    },
-                    {
-                        "access": "private",
-                        "index": 7,
-                        "name": "updateDateTime",
+                        "index": 9,
+                        "name": "handleCameraError",
                         "returnType": "void"
                     }
                 ],

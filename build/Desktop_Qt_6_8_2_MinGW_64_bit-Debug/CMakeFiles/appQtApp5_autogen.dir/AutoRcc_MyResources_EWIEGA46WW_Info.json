@@ -1,0 +1,29 @@
+{
+	"BUILD_DIR" : "C:/IMAS/Research/QtApp/QtApp5/build/Desktop_Qt_6_8_2_MinGW_64_bit-Debug/appQtApp5_autogen",
+	"CMAKE_BINARY_DIR" : "C:/IMAS/Research/QtApp/QtApp5/build/Desktop_Qt_6_8_2_MinGW_64_bit-Debug",
+	"CMAKE_CURRENT_BINARY_DIR" : "C:/IMAS/Research/QtApp/QtApp5/build/Desktop_Qt_6_8_2_MinGW_64_bit-Debug",
+	"CMAKE_CURRENT_SOURCE_DIR" : "C:/IMAS/Research/QtApp/QtApp5",
+	"CMAKE_SOURCE_DIR" : "C:/IMAS/Research/QtApp/QtApp5",
+	"CROSS_CONFIG" : false,
+	"GENERATOR" : "Ninja",
+	"INCLUDE_DIR" : "C:/IMAS/Research/QtApp/QtApp5/build/Desktop_Qt_6_8_2_MinGW_64_bit-Debug/appQtApp5_autogen/include",
+	"INPUTS" : 
+	[
+		"C:/IMAS/Research/QtApp/QtApp5/Images/video-slash-solid.svg",
+		"C:/IMAS/Research/QtApp/QtApp5/Images/imas-logo.png",
+		"C:/IMAS/Research/QtApp/QtApp5/Images/imas-bg.jpg",
+		"C:/IMAS/Research/QtApp/QtApp5/Images/etek-logo.png",
+		"C:/IMAS/Research/QtApp/QtApp5/Fonts/fa-solid-900.ttf"
+	],
+	"LOCK_FILE" : "C:/IMAS/Research/QtApp/QtApp5/build/Desktop_Qt_6_8_2_MinGW_64_bit-Debug/CMakeFiles/appQtApp5_autogen.dir/AutoRcc_MyResources_EWIEGA46WW_Lock.lock",
+	"MULTI_CONFIG" : false,
+	"OPTIONS" : [ "--no-zstd", "-name", "MyResources" ],
+	"OUTPUT_CHECKSUM" : "EWIEGA46WW",
+	"OUTPUT_NAME" : "qrc_MyResources.cpp",
+	"RCC_EXECUTABLE" : "C:/Qt/6.8.2/mingw_64/bin/rcc.exe",
+	"RCC_LIST_OPTIONS" : [ "--list" ],
+	"SETTINGS_FILE" : "C:/IMAS/Research/QtApp/QtApp5/build/Desktop_Qt_6_8_2_MinGW_64_bit-Debug/CMakeFiles/appQtApp5_autogen.dir/AutoRcc_MyResources_EWIEGA46WW_Used.txt",
+	"SOURCE" : "C:/IMAS/Research/QtApp/QtApp5/MyResources.qrc",
+	"USE_BETTER_GRAPH" : true,
+	"VERBOSITY" : 0
+}

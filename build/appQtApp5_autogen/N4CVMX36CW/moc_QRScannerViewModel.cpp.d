@@ -1,7 +1,9 @@
 C:/IMAS/Research/QtApp/QtApp5/build/appQtApp5_autogen/N4CVMX36CW/moc_QRScannerViewModel.cpp: C:/IMAS/Research/QtApp/QtApp5/ViewModels/QRScannerViewModel.h \
   C:/IMAS/Research/QtApp/QtApp5/build/appQtApp5_autogen/moc_predefs.h \
+  C:/IMAS/Research/QtApp/QtApp5/Services/CameraService.h \
   C:/Qt/6.8.2/mingw_64/include/QtCore/QByteArray \
   C:/Qt/6.8.2/mingw_64/include/QtCore/QCryptographicHash \
+  C:/Qt/6.8.2/mingw_64/include/QtCore/QDateTime \
   C:/Qt/6.8.2/mingw_64/include/QtCore/QDeadlineTimer \
   C:/Qt/6.8.2/mingw_64/include/QtCore/QEvent \
   C:/Qt/6.8.2/mingw_64/include/QtCore/QFlags \
@@ -409,6 +411,8 @@ C:/IMAS/Research/QtApp/QtApp5/build/appQtApp5_autogen/N4CVMX36CW/moc_QRScannerVi
   C:/Qt/6.8.2/mingw_64/include/QtGui/qwindowdefs_win.h \
   C:/Qt/6.8.2/mingw_64/include/QtGui/qwindowsmimeconverter.h \
   C:/Qt/6.8.2/mingw_64/include/QtMultimedia/QCamera \
+  C:/Qt/6.8.2/mingw_64/include/QtMultimedia/QMediaCaptureSession \
+  C:/Qt/6.8.2/mingw_64/include/QtMultimedia/QVideoSink \
   C:/Qt/6.8.2/mingw_64/include/QtMultimedia/QtMultimedia \
   C:/Qt/6.8.2/mingw_64/include/QtMultimedia/QtMultimediaDepends \
   C:/Qt/6.8.2/mingw_64/include/QtMultimedia/qabstractvideobuffer.h \

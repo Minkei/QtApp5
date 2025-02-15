@@ -9,6 +9,7 @@
 	"INCLUDE_DIR" : "C:/IMAS/Research/QtApp/QtApp5/build/appQtApp5_autogen/include",
 	"INPUTS" : 
 	[
+		"C:/IMAS/Research/QtApp/QtApp5/Images/video-slash-solid.svg",
 		"C:/IMAS/Research/QtApp/QtApp5/Images/imas-logo.png",
 		"C:/IMAS/Research/QtApp/QtApp5/Images/imas-bg.jpg",
 		"C:/IMAS/Research/QtApp/QtApp5/Images/etek-logo.png",

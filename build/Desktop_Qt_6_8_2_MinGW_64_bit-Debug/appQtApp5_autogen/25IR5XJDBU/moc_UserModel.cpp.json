@@ -1,0 +1,252 @@
+{
+    "classes": [
+        {
+            "className": "UserModel",
+            "lineNumber": 12,
+            "object": true,
+            "properties": [
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 0,
+                    "name": "email",
+                    "notify": "emailChanged",
+                    "read": "email",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QString",
+                    "user": false,
+                    "write": "setEmail"
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 1,
+                    "name": "displayName",
+                    "notify": "displayNameChanged",
+                    "read": "displayName",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QString",
+                    "user": false,
+                    "write": "setDisplayName"
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 2,
+                    "name": "photoUrl",
+                    "notify": "photoUrlChanged",
+                    "read": "photoUrl",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QString",
+                    "user": false,
+                    "write": "setPhotoUrl"
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 3,
+                    "name": "emailVerified",
+                    "notify": "emailVerifiedChanged",
+                    "read": "emailVerified",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "bool",
+                    "user": false,
+                    "write": "setEmailVerified"
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 4,
+                    "name": "idToken",
+                    "notify": "idTokenChanged",
+                    "read": "idToken",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QString",
+                    "user": false,
+                    "write": "setIdToken"
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 5,
+                    "name": "localId",
+                    "notify": "localIdChanged",
+                    "read": "localId",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QString",
+                    "user": false,
+                    "write": "setLocalId"
+                }
+            ],
+            "qualifiedClassName": "UserModel",
+            "signals": [
+                {
+                    "access": "public",
+                    "index": 0,
+                    "name": "emailChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 1,
+                    "name": "displayNameChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 2,
+                    "name": "photoUrlChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 3,
+                    "name": "emailVerifiedChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 4,
+                    "name": "idTokenChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 5,
+                    "name": "localIdChanged",
+                    "returnType": "void"
+                }
+            ],
+            "slots": [
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "email",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 6,
+                    "name": "setEmail",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "displayName",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 7,
+                    "name": "setDisplayName",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "photoUrl",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 8,
+                    "name": "setPhotoUrl",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "emailVerified",
+                            "type": "bool"
+                        }
+                    ],
+                    "index": 9,
+                    "name": "setEmailVerified",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "idToken",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 10,
+                    "name": "setIdToken",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "localId",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 11,
+                    "name": "setLocalId",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "jsonObject",
+                            "type": "QJsonObject"
+                        }
+                    ],
+                    "index": 12,
+                    "name": "updateFromJson",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 13,
+                    "name": "clearUserData",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 14,
+                    "name": "saveToSetting",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 15,
+                    "name": "loadFromSetting",
+                    "returnType": "void"
+                }
+            ],
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QObject"
+                }
+            ]
+        }
+    ],
+    "inputFile": "UserModel.h",
+    "outputRevision": 68
+}

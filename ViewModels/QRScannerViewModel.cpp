@@ -1,89 +1,128 @@
 #include "QRScannerViewModel.h"
-#include <QDateTime>
-#include <QtMultimedia>
-#include <QCamera>
 
-QRScannerViewModel::QRScannerViewModel(QObject *parent) 
-    : QObject(parent),
-    m_timer(new QTimer(this))
+QRScannerViewModel::QRScannerViewModel(QObject *parent) : QObject{parent}, 
+    m_isStreaming(false), 
+    m_cameraService(new CameraService(this)),
+    m_videoSink(nullptr)
 {
-    m_timer->setInterval(1000);
-    connect(m_timer, &QTimer::timeout, this, &QRScannerViewModel::updateDateTime);
-    m_timer->start();
+    refreshCameraList();
 
-    // Initialize current date and time
-    updateDateTime();
+    // Date and time
+    connect(&m_timer, &QTimer::timeout, this, &QRScannerViewModel::updateDateTime);
+    m_timer.start(1000);
 
-    // Initialize camera list
-    initializeCameras();
+    // Camera
+    connect(m_cameraService, &CameraService::cameraError, this, &QRScannerViewModel::handleCameraError);
 }
 
-
-
-QString QRScannerViewModel::currentDate() const
-{
-    return m_currentDate;
+// Properties
+QString QRScannerViewModel::currentDate() const {
+    return QDateTime::currentDateTime().toString("dd.MM.yyyy");
 }
 
-QString QRScannerViewModel::currentTime() const
-{
-    return m_currentTime;
+QString QRScannerViewModel::currentTime() const {
+    return QDateTime::currentDateTime().toString("hh:mm:ss");
 }
 
-QStringList QRScannerViewModel::availableCameras() const{
+QStringList QRScannerViewModel::availableCameras() const {  
     return m_availableCameras;
 }
 
-QString QRScannerViewModel::selectedCamera() const
-{
+QString QRScannerViewModel::selectedCamera() const {
     return m_selectedCamera;
 }
 
-void QRScannerViewModel::setSelectedCamera(const QString &camera)
-{
-    if(m_selectedCamera != camera) {
+bool QRScannerViewModel::isStreaming() const {
+    // return m_cameraService->isStreaming();
+    return m_isStreaming;
+}
+
+bool QRScannerViewModel::isLoading() const {
+    // return m_cameraService->isLoading();
+    return m_isLoading;
+}
+
+QVideoSink *QRScannerViewModel::videoSink() const {
+    return m_videoSink;
+}
+
+// Methods
+void QRScannerViewModel::toggleStreaming() {
+    if(m_availableCameras.isEmpty()) {
+        return;
+    }
+
+    if(!m_isStreaming) {
+        m_isLoading = true;
+        emit isLoadingChanged();
+
+        qDebug() << "Starting camera...";
+        qDebug() << "isStreaming: " << m_isStreaming;
+        qDebug() << "isLoading: " << m_isLoading;
+
+        m_cameraService->setCamera(m_selectedCamera);
+        // m_cameraService->startCamera();
+
+        QTimer::singleShot(0, m_cameraService, &CameraService::startCamera);
+
+        m_isStreaming = true;
+        m_isLoading = false;
+
+        emit isLoadingChanged();
+        emit isStreamingChanged();
+
+        qDebug() << "Selected camera: " << m_selectedCamera;
+        qDebug() << "Camera started!";
+        qDebug() << "isStreaming: " << m_isStreaming;
+        qDebug() << "isLoading: " << m_isLoading;
+
+    }
+    else {
+        m_cameraService->stopCamera();
+        m_isStreaming = false;
+    }
+    emit isStreamingChanged();
+}
+
+void QRScannerViewModel::refreshCameraList() {
+    m_availableCameras.clear();
+    const auto cameras = QMediaDevices::videoInputs();
+    for (const auto &camera : cameras) {
+        m_availableCameras.append(camera.description());
+    }
+    emit availableCamerasChanged();
+
+}
+
+void QRScannerViewModel::setSelectedCamera(const QString &camera) {
+    if (m_selectedCamera != camera) {
         m_selectedCamera = camera;
         emit selectedCameraChanged();
     }
 }
 
-void QRScannerViewModel::updateDateTime()
-{
-    QDateTime now = QDateTime::currentDateTime();
-
-    QString newDate = now.toString("dd/MM/yyyy");
-    if(m_currentDate != newDate) {
-        m_currentDate = newDate;
-        emit currentDateChanged();
-    }
-
-    QString newTime = now.toString("HH:mm:ss");
-    if(m_currentDate != newTime) {
-        m_currentTime = newTime;
-        emit currentTimeChanged();
-    }
+void QRScannerViewModel::handleCameraError(const QString &errorMessage) {
+    emit cameraErrorOccured(errorMessage);
 }
 
-
-void QRScannerViewModel::initializeCameras() {
-    m_availableCameras.clear();
-    const QList<QCameraDevice> cameras = QMediaDevices::videoInputs();
-    for(const QCameraDevice &cameraDevice : cameras) {
-        m_availableCameras.append(cameraDevice.description());
-    }
-
-    if(m_availableCameras.isEmpty())
-    {
-        emit cameraError("No cameras available");
-    }
-    else if(m_selectedCamera.isEmpty()) {
-        setSelectedCamera(m_availableCameras.first());
-    }
-    emit availableCamerasChanged();
+void QRScannerViewModel::updateDateTime() {
+    emit currentDateChanged();
+    emit currentTimeChanged();
 }
 
+void QRScannerViewModel::setVideoSink(QVideoSink *videoSink) { 
 
-void QRScannerViewModel::refreshCameraList()
-{
-    initializeCameras();
-}
+    if(m_videoSink != videoSink) {
+        m_videoSink = videoSink;
+
+        if(m_cameraService) {
+            m_cameraService->setVideoSink(videoSink);
+        }
+        emit videoSinkChanged();
+    }
+    if(!isStreaming()) {
+        if(m_videoSink) {
+            m_videoSink->setVideoFrame(QVideoFrame());
+        }
+    }
+}   

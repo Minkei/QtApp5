@@ -5,6 +5,8 @@ appQtApp5_autogen/timestamp: \
 	C:/IMAS/Research/QtApp/QtApp5/MyResources.qrc \
 	C:/IMAS/Research/QtApp/QtApp5/Repositories/FirebaseAuth.cpp \
 	C:/IMAS/Research/QtApp/QtApp5/Repositories/FirebaseAuth.h \
+	C:/IMAS/Research/QtApp/QtApp5/Services/CameraService.cpp \
+	C:/IMAS/Research/QtApp/QtApp5/Services/CameraService.h \
 	C:/IMAS/Research/QtApp/QtApp5/ViewModels/LoginViewModel.cpp \
 	C:/IMAS/Research/QtApp/QtApp5/ViewModels/LoginViewModel.h \
 	C:/IMAS/Research/QtApp/QtApp5/ViewModels/MainViewModel.cpp \
@@ -36,6 +38,7 @@ appQtApp5_autogen/timestamp: \
 	C:/Program\ Files/Microsoft\ Visual\ Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/Compiler/GNU.cmake \
 	C:/Program\ Files/Microsoft\ Visual\ Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/FindPackageHandleStandardArgs.cmake \
 	C:/Program\ Files/Microsoft\ Visual\ Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/FindPackageMessage.cmake \
+	C:/Program\ Files/Microsoft\ Visual\ Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/FindTIFF.cmake \
 	C:/Program\ Files/Microsoft\ Visual\ Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/FindThreads.cmake \
 	C:/Program\ Files/Microsoft\ Visual\ Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/FindVulkan.cmake \
 	C:/Program\ Files/Microsoft\ Visual\ Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/GNUInstallDirs.cmake \
@@ -49,6 +52,7 @@ appQtApp5_autogen/timestamp: \
 	C:/Program\ Files/Microsoft\ Visual\ Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/Platform/Windows-windres.cmake \
 	C:/Program\ Files/Microsoft\ Visual\ Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/Platform/Windows.cmake \
 	C:/Program\ Files/Microsoft\ Visual\ Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/Platform/WindowsPaths.cmake \
+	C:/Program\ Files/Microsoft\ Visual\ Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.29/Modules/SelectLibraryConfigurations.cmake \
 	C:/Qt/6.8.2/mingw_64/include/QtCore/QByteArray \
 	C:/Qt/6.8.2/mingw_64/include/QtCore/QCryptographicHash \
 	C:/Qt/6.8.2/mingw_64/include/QtCore/QDateTime \
@@ -463,6 +467,8 @@ appQtApp5_autogen/timestamp: \
 	C:/Qt/6.8.2/mingw_64/include/QtGui/qwindowdefs_win.h \
 	C:/Qt/6.8.2/mingw_64/include/QtGui/qwindowsmimeconverter.h \
 	C:/Qt/6.8.2/mingw_64/include/QtMultimedia/QCamera \
+	C:/Qt/6.8.2/mingw_64/include/QtMultimedia/QMediaCaptureSession \
+	C:/Qt/6.8.2/mingw_64/include/QtMultimedia/QVideoSink \
 	C:/Qt/6.8.2/mingw_64/include/QtMultimedia/QtMultimedia \
 	C:/Qt/6.8.2/mingw_64/include/QtMultimedia/QtMultimediaDepends \
 	C:/Qt/6.8.2/mingw_64/include/QtMultimedia/qabstractvideobuffer.h \
@@ -716,6 +722,14 @@ appQtApp5_autogen/timestamp: \
 	C:/Qt/6.8.2/mingw_64/lib/cmake/Qt6Multimedia/Qt6QWindowsMediaPluginConfig.cmake \
 	C:/Qt/6.8.2/mingw_64/lib/cmake/Qt6Multimedia/Qt6QWindowsMediaPluginTargets-relwithdebinfo.cmake \
 	C:/Qt/6.8.2/mingw_64/lib/cmake/Qt6Multimedia/Qt6QWindowsMediaPluginTargets.cmake \
+	C:/Qt/6.8.2/mingw_64/lib/cmake/Qt6MultimediaWidgets/Qt6MultimediaWidgetsAdditionalTargetInfo.cmake \
+	C:/Qt/6.8.2/mingw_64/lib/cmake/Qt6MultimediaWidgets/Qt6MultimediaWidgetsConfig.cmake \
+	C:/Qt/6.8.2/mingw_64/lib/cmake/Qt6MultimediaWidgets/Qt6MultimediaWidgetsConfigVersion.cmake \
+	C:/Qt/6.8.2/mingw_64/lib/cmake/Qt6MultimediaWidgets/Qt6MultimediaWidgetsConfigVersionImpl.cmake \
+	C:/Qt/6.8.2/mingw_64/lib/cmake/Qt6MultimediaWidgets/Qt6MultimediaWidgetsDependencies.cmake \
+	C:/Qt/6.8.2/mingw_64/lib/cmake/Qt6MultimediaWidgets/Qt6MultimediaWidgetsTargets-relwithdebinfo.cmake \
+	C:/Qt/6.8.2/mingw_64/lib/cmake/Qt6MultimediaWidgets/Qt6MultimediaWidgetsTargets.cmake \
+	C:/Qt/6.8.2/mingw_64/lib/cmake/Qt6MultimediaWidgets/Qt6MultimediaWidgetsVersionlessAliasTargets.cmake \
 	C:/Qt/6.8.2/mingw_64/lib/cmake/Qt6Network/Qt6NetworkAdditionalTargetInfo.cmake \
 	C:/Qt/6.8.2/mingw_64/lib/cmake/Qt6Network/Qt6NetworkConfig.cmake \
 	C:/Qt/6.8.2/mingw_64/lib/cmake/Qt6Network/Qt6NetworkConfigVersion.cmake \
@@ -1104,6 +1118,28 @@ appQtApp5_autogen/timestamp: \
 	C:/Qt/6.8.2/mingw_64/lib/cmake/Qt6QuickTools/Qt6QuickToolsTargets-relwithdebinfo.cmake \
 	C:/Qt/6.8.2/mingw_64/lib/cmake/Qt6QuickTools/Qt6QuickToolsTargets.cmake \
 	C:/Qt/6.8.2/mingw_64/lib/cmake/Qt6QuickTools/Qt6QuickToolsVersionlessTargets.cmake \
+	C:/Qt/6.8.2/mingw_64/lib/cmake/Qt6Widgets/Qt6QModernWindowsStylePluginAdditionalTargetInfo.cmake \
+	C:/Qt/6.8.2/mingw_64/lib/cmake/Qt6Widgets/Qt6QModernWindowsStylePluginConfig.cmake \
+	C:/Qt/6.8.2/mingw_64/lib/cmake/Qt6Widgets/Qt6QModernWindowsStylePluginTargets-relwithdebinfo.cmake \
+	C:/Qt/6.8.2/mingw_64/lib/cmake/Qt6Widgets/Qt6QModernWindowsStylePluginTargets.cmake \
+	C:/Qt/6.8.2/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsAdditionalTargetInfo.cmake \
+	C:/Qt/6.8.2/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsConfig.cmake \
+	C:/Qt/6.8.2/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsConfigVersion.cmake \
+	C:/Qt/6.8.2/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsConfigVersionImpl.cmake \
+	C:/Qt/6.8.2/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsDependencies.cmake \
+	C:/Qt/6.8.2/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsMacros.cmake \
+	C:/Qt/6.8.2/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsPlugins.cmake \
+	C:/Qt/6.8.2/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsTargets-relwithdebinfo.cmake \
+	C:/Qt/6.8.2/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsTargets.cmake \
+	C:/Qt/6.8.2/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsVersionlessAliasTargets.cmake \
+	C:/Qt/6.8.2/mingw_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsAdditionalTargetInfo.cmake \
+	C:/Qt/6.8.2/mingw_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsConfig.cmake \
+	C:/Qt/6.8.2/mingw_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsConfigVersion.cmake \
+	C:/Qt/6.8.2/mingw_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsConfigVersionImpl.cmake \
+	C:/Qt/6.8.2/mingw_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsDependencies.cmake \
+	C:/Qt/6.8.2/mingw_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsTargets-relwithdebinfo.cmake \
+	C:/Qt/6.8.2/mingw_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsTargets.cmake \
+	C:/Qt/6.8.2/mingw_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsVersionlessTargets.cmake \
 	C:/Qt/6.8.2/mingw_64/lib/cmake/Qt6ZlibPrivate/Qt6ZlibPrivateAdditionalTargetInfo.cmake \
 	C:/Qt/6.8.2/mingw_64/lib/cmake/Qt6ZlibPrivate/Qt6ZlibPrivateConfig.cmake \
 	C:/Qt/6.8.2/mingw_64/lib/cmake/Qt6ZlibPrivate/Qt6ZlibPrivateConfigVersion.cmake \
@@ -1452,4 +1488,29 @@ appQtApp5_autogen/timestamp: \
 	C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/vadefs.h \
 	C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wchar.h \
 	C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wctype.h \
+	C:/Users/minke/vcpkg/installed/x64-windows/share/absl/abslConfig.cmake \
+	C:/Users/minke/vcpkg/installed/x64-windows/share/absl/abslConfigVersion.cmake \
+	C:/Users/minke/vcpkg/installed/x64-windows/share/absl/abslTargets-debug.cmake \
+	C:/Users/minke/vcpkg/installed/x64-windows/share/absl/abslTargets-release.cmake \
+	C:/Users/minke/vcpkg/installed/x64-windows/share/absl/abslTargets.cmake \
+	C:/Users/minke/vcpkg/installed/x64-windows/share/opencv4/OpenCVConfig-version.cmake \
+	C:/Users/minke/vcpkg/installed/x64-windows/share/opencv4/OpenCVConfig.cmake \
+	C:/Users/minke/vcpkg/installed/x64-windows/share/opencv4/OpenCVModules-debug.cmake \
+	C:/Users/minke/vcpkg/installed/x64-windows/share/opencv4/OpenCVModules-release.cmake \
+	C:/Users/minke/vcpkg/installed/x64-windows/share/opencv4/OpenCVModules.cmake \
+	C:/Users/minke/vcpkg/installed/x64-windows/share/protobuf/protobuf-config-version.cmake \
+	C:/Users/minke/vcpkg/installed/x64-windows/share/protobuf/protobuf-config.cmake \
+	C:/Users/minke/vcpkg/installed/x64-windows/share/protobuf/protobuf-generate.cmake \
+	C:/Users/minke/vcpkg/installed/x64-windows/share/protobuf/protobuf-module.cmake \
+	C:/Users/minke/vcpkg/installed/x64-windows/share/protobuf/protobuf-options.cmake \
+	C:/Users/minke/vcpkg/installed/x64-windows/share/protobuf/protobuf-targets-debug.cmake \
+	C:/Users/minke/vcpkg/installed/x64-windows/share/protobuf/protobuf-targets-release.cmake \
+	C:/Users/minke/vcpkg/installed/x64-windows/share/protobuf/protobuf-targets.cmake \
+	C:/Users/minke/vcpkg/installed/x64-windows/share/quirc/quirc-config-debug.cmake \
+	C:/Users/minke/vcpkg/installed/x64-windows/share/quirc/quirc-config-release.cmake \
+	C:/Users/minke/vcpkg/installed/x64-windows/share/quirc/quirc-config.cmake \
+	C:/Users/minke/vcpkg/installed/x64-windows/share/utf8_range/utf8_range-config.cmake \
+	C:/Users/minke/vcpkg/installed/x64-windows/share/utf8_range/utf8_range-targets-debug.cmake \
+	C:/Users/minke/vcpkg/installed/x64-windows/share/utf8_range/utf8_range-targets-release.cmake \
+	C:/Users/minke/vcpkg/installed/x64-windows/share/utf8_range/utf8_range-targets.cmake \
 	C:/Program\ Files/Microsoft\ Visual\ Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/cmake.exe

@@ -1,0 +1,28 @@
+[
+    {
+        "moduleFiles": [
+            {
+                "entries": [
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 19,
+                        "durationMicroseconds": 316,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 6
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 27,
+                        "durationMicroseconds": 97,
+                        "errorMessage": "",
+                        "functionName": "centerIn",
+                        "line": 16
+                    }
+                ],
+                "filepath": "C:/IMAS/Research/QtApp/QtApp5/Views/DataView.qml"
+            }
+        ],
+        "moduleId": "QtApp5(appQtApp5)"
+    }
+]

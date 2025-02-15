@@ -47,16 +47,27 @@ static constexpr auto qt_meta_stringdata_ZN18QRScannerViewModelE = QtMocHelpers:
     "currentTimeChanged",
     "availableCamerasChanged",
     "selectedCameraChanged",
-    "cameraError",
+    "isStreamingChanged",
+    "isLoadingChanged",
+    "cameraErrorOccured",
+    "errorMessage",
+    "videoSinkChanged",
+    "updateDateTime",
+    "handleCameraError",
     "error",
     "setSelectedCamera",
     "camera",
     "refreshCameraList",
-    "updateDateTime",
+    "toggleStreaming",
+    "setVideoSink",
+    "QVideoSink*",
+    "videoSink",
     "currentDate",
     "currentTime",
     "availableCameras",
-    "selectedCamera"
+    "selectedCamera",
+    "isStreaming",
+    "isLoading"
 );
 #else  // !QT_MOC_HAS_STRINGDATA
 #error "qtmochelpers.h not found or too old."
@@ -68,42 +79,61 @@ Q_CONSTINIT static const uint qt_meta_data_ZN18QRScannerViewModelE[] = {
       12,       // revision
        0,       // classname
        0,    0, // classinfo
-       8,   14, // methods
-       4,   74, // properties
+      14,   14, // methods
+       7,  120, // properties
        0,    0, // enums/sets
        0,    0, // constructors
        0,       // flags
-       5,       // signalCount
+       8,       // signalCount
 
  // signals: name, argc, parameters, tag, flags, initial metatype offsets
-       1,    0,   62,    2, 0x06,    5 /* Public */,
-       3,    0,   63,    2, 0x06,    6 /* Public */,
-       4,    0,   64,    2, 0x06,    7 /* Public */,
-       5,    0,   65,    2, 0x06,    8 /* Public */,
-       6,    1,   66,    2, 0x06,    9 /* Public */,
+       1,    0,   98,    2, 0x06,    8 /* Public */,
+       3,    0,   99,    2, 0x06,    9 /* Public */,
+       4,    0,  100,    2, 0x06,   10 /* Public */,
+       5,    0,  101,    2, 0x06,   11 /* Public */,
+       6,    0,  102,    2, 0x06,   12 /* Public */,
+       7,    0,  103,    2, 0x06,   13 /* Public */,
+       8,    1,  104,    2, 0x06,   14 /* Public */,
+      10,    0,  107,    2, 0x06,   16 /* Public */,
 
  // slots: name, argc, parameters, tag, flags, initial metatype offsets
-       8,    1,   69,    2, 0x0a,   11 /* Public */,
-      10,    0,   72,    2, 0x0a,   13 /* Public */,
-      11,    0,   73,    2, 0x08,   14 /* Private */,
+      11,    0,  108,    2, 0x08,   17 /* Private */,
+      12,    1,  109,    2, 0x08,   18 /* Private */,
+
+ // methods: name, argc, parameters, tag, flags, initial metatype offsets
+      14,    1,  112,    2, 0x02,   20 /* Public */,
+      16,    0,  115,    2, 0x02,   22 /* Public */,
+      17,    0,  116,    2, 0x02,   23 /* Public */,
+      18,    1,  117,    2, 0x02,   24 /* Public */,
 
  // signals: parameters
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
-    QMetaType::Void, QMetaType::QString,    7,
-
- // slots: parameters
+    QMetaType::Void,
+    QMetaType::Void,
     QMetaType::Void, QMetaType::QString,    9,
     QMetaType::Void,
+
+ // slots: parameters
     QMetaType::Void,
+    QMetaType::Void, QMetaType::QString,   13,
+
+ // methods: parameters
+    QMetaType::Void, QMetaType::QString,   15,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void, 0x80000000 | 19,   20,
 
  // properties: name, type, flags, notifyId, revision
-      12, QMetaType::QString, 0x00015801, uint(0), 0,
-      13, QMetaType::QString, 0x00015801, uint(1), 0,
-      14, QMetaType::QStringList, 0x00015801, uint(2), 0,
-      15, QMetaType::QString, 0x00015903, uint(3), 0,
+      21, QMetaType::QString, 0x00015001, uint(0), 0,
+      22, QMetaType::QString, 0x00015001, uint(1), 0,
+      23, QMetaType::QStringList, 0x00015001, uint(2), 0,
+      24, QMetaType::QString, 0x00015103, uint(3), 0,
+      25, QMetaType::Bool, 0x00015001, uint(4), 0,
+      26, QMetaType::Bool, 0x00015001, uint(5), 0,
+      20, 0x80000000 | 19, 0x0001510b, uint(7), 0,
 
        0        // eod
 };
@@ -123,6 +153,12 @@ Q_CONSTINIT const QMetaObject QRScannerViewModel::staticMetaObject = { {
         QtPrivate::TypeAndForceComplete<QStringList, std::true_type>,
         // property 'selectedCamera'
         QtPrivate::TypeAndForceComplete<QString, std::true_type>,
+        // property 'isStreaming'
+        QtPrivate::TypeAndForceComplete<bool, std::true_type>,
+        // property 'isLoading'
+        QtPrivate::TypeAndForceComplete<bool, std::true_type>,
+        // property 'videoSink'
+        QtPrivate::TypeAndForceComplete<QVideoSink*, std::true_type>,
         // Q_OBJECT / Q_GADGET
         QtPrivate::TypeAndForceComplete<QRScannerViewModel, std::true_type>,
         // method 'currentDateChanged'
@@ -133,7 +169,18 @@ Q_CONSTINIT const QMetaObject QRScannerViewModel::staticMetaObject = { {
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'selectedCameraChanged'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        // method 'cameraError'
+        // method 'isStreamingChanged'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'isLoadingChanged'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'cameraErrorOccured'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        QtPrivate::TypeAndForceComplete<const QString &, std::false_type>,
+        // method 'videoSinkChanged'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'updateDateTime'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'handleCameraError'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         QtPrivate::TypeAndForceComplete<const QString &, std::false_type>,
         // method 'setSelectedCamera'
@@ -141,8 +188,11 @@ Q_CONSTINIT const QMetaObject QRScannerViewModel::staticMetaObject = { {
         QtPrivate::TypeAndForceComplete<const QString &, std::false_type>,
         // method 'refreshCameraList'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        // method 'updateDateTime'
-        QtPrivate::TypeAndForceComplete<void, std::false_type>
+        // method 'toggleStreaming'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'setVideoSink'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        QtPrivate::TypeAndForceComplete<QVideoSink *, std::false_type>
     >,
     nullptr
 } };
@@ -156,11 +206,29 @@ void QRScannerViewModel::qt_static_metacall(QObject *_o, QMetaObject::Call _c, i
         case 1: _t->currentTimeChanged(); break;
         case 2: _t->availableCamerasChanged(); break;
         case 3: _t->selectedCameraChanged(); break;
-        case 4: _t->cameraError((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
-        case 5: _t->setSelectedCamera((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
-        case 6: _t->refreshCameraList(); break;
-        case 7: _t->updateDateTime(); break;
+        case 4: _t->isStreamingChanged(); break;
+        case 5: _t->isLoadingChanged(); break;
+        case 6: _t->cameraErrorOccured((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
+        case 7: _t->videoSinkChanged(); break;
+        case 8: _t->updateDateTime(); break;
+        case 9: _t->handleCameraError((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
+        case 10: _t->setSelectedCamera((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
+        case 11: _t->refreshCameraList(); break;
+        case 12: _t->toggleStreaming(); break;
+        case 13: _t->setVideoSink((*reinterpret_cast< std::add_pointer_t<QVideoSink*>>(_a[1]))); break;
         default: ;
+        }
+    }
+    if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
+        switch (_id) {
+        default: *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType(); break;
+        case 13:
+            switch (*reinterpret_cast<int*>(_a[1])) {
+            default: *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType(); break;
+            case 0:
+                *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType::fromType< QVideoSink* >(); break;
+            }
+            break;
         }
     }
     if (_c == QMetaObject::IndexOfMethod) {
@@ -194,11 +262,39 @@ void QRScannerViewModel::qt_static_metacall(QObject *_o, QMetaObject::Call _c, i
             }
         }
         {
-            using _q_method_type = void (QRScannerViewModel::*)(const QString & );
-            if (_q_method_type _q_method = &QRScannerViewModel::cameraError; *reinterpret_cast<_q_method_type *>(_a[1]) == _q_method) {
+            using _q_method_type = void (QRScannerViewModel::*)();
+            if (_q_method_type _q_method = &QRScannerViewModel::isStreamingChanged; *reinterpret_cast<_q_method_type *>(_a[1]) == _q_method) {
                 *result = 4;
                 return;
             }
+        }
+        {
+            using _q_method_type = void (QRScannerViewModel::*)();
+            if (_q_method_type _q_method = &QRScannerViewModel::isLoadingChanged; *reinterpret_cast<_q_method_type *>(_a[1]) == _q_method) {
+                *result = 5;
+                return;
+            }
+        }
+        {
+            using _q_method_type = void (QRScannerViewModel::*)(const QString & );
+            if (_q_method_type _q_method = &QRScannerViewModel::cameraErrorOccured; *reinterpret_cast<_q_method_type *>(_a[1]) == _q_method) {
+                *result = 6;
+                return;
+            }
+        }
+        {
+            using _q_method_type = void (QRScannerViewModel::*)();
+            if (_q_method_type _q_method = &QRScannerViewModel::videoSinkChanged; *reinterpret_cast<_q_method_type *>(_a[1]) == _q_method) {
+                *result = 7;
+                return;
+            }
+        }
+    }
+    if (_c == QMetaObject::RegisterPropertyMetaType) {
+        switch (_id) {
+        default: *reinterpret_cast<int*>(_a[0]) = -1; break;
+        case 6:
+            *reinterpret_cast<int*>(_a[0]) = qRegisterMetaType< QVideoSink* >(); break;
         }
     }
     if (_c == QMetaObject::ReadProperty) {
@@ -208,6 +304,9 @@ void QRScannerViewModel::qt_static_metacall(QObject *_o, QMetaObject::Call _c, i
         case 1: *reinterpret_cast< QString*>(_v) = _t->currentTime(); break;
         case 2: *reinterpret_cast< QStringList*>(_v) = _t->availableCameras(); break;
         case 3: *reinterpret_cast< QString*>(_v) = _t->selectedCamera(); break;
+        case 4: *reinterpret_cast< bool*>(_v) = _t->isStreaming(); break;
+        case 5: *reinterpret_cast< bool*>(_v) = _t->isLoading(); break;
+        case 6: *reinterpret_cast< QVideoSink**>(_v) = _t->videoSink(); break;
         default: break;
         }
     }
@@ -215,6 +314,7 @@ void QRScannerViewModel::qt_static_metacall(QObject *_o, QMetaObject::Call _c, i
         void *_v = _a[0];
         switch (_id) {
         case 3: _t->setSelectedCamera(*reinterpret_cast< QString*>(_v)); break;
+        case 6: _t->setVideoSink(*reinterpret_cast< QVideoSink**>(_v)); break;
         default: break;
         }
     }
@@ -239,20 +339,20 @@ int QRScannerViewModel::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 8)
+        if (_id < 14)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 8;
+        _id -= 14;
     }
     if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 8)
-            *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 8;
+        if (_id < 14)
+            qt_static_metacall(this, _c, _id, _a);
+        _id -= 14;
     }
     if (_c == QMetaObject::ReadProperty || _c == QMetaObject::WriteProperty
             || _c == QMetaObject::ResetProperty || _c == QMetaObject::BindableProperty
             || _c == QMetaObject::RegisterPropertyMetaType) {
         qt_static_metacall(this, _c, _id, _a);
-        _id -= 4;
+        _id -= 7;
     }
     return _id;
 }
@@ -282,9 +382,27 @@ void QRScannerViewModel::selectedCameraChanged()
 }
 
 // SIGNAL 4
-void QRScannerViewModel::cameraError(const QString & _t1)
+void QRScannerViewModel::isStreamingChanged()
+{
+    QMetaObject::activate(this, &staticMetaObject, 4, nullptr);
+}
+
+// SIGNAL 5
+void QRScannerViewModel::isLoadingChanged()
+{
+    QMetaObject::activate(this, &staticMetaObject, 5, nullptr);
+}
+
+// SIGNAL 6
+void QRScannerViewModel::cameraErrorOccured(const QString & _t1)
 {
     void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t1))) };
-    QMetaObject::activate(this, &staticMetaObject, 4, _a);
+    QMetaObject::activate(this, &staticMetaObject, 6, _a);
+}
+
+// SIGNAL 7
+void QRScannerViewModel::videoSinkChanged()
+{
+    QMetaObject::activate(this, &staticMetaObject, 7, nullptr);
 }
 QT_WARNING_POP

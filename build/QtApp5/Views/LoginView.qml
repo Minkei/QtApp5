@@ -11,7 +11,6 @@ Item {
     visible: true
 
     property bool showPassword: false
-    // property var loginViewModel: LoginViewModel {}
 
     FontLoader {
         id: fontAW
