@@ -8,6 +8,7 @@ CameraService::CameraService(QObject *parent) : QObject(parent), m_camera(new QC
 void CameraService::setVideoSink(QVideoSink *videoSink) {
     if(videoSink) {
         m_captureSession.setVideoOutput(videoSink);
+        connect(videoSink, &QVideoSink::videoFrameChanged, this, &CameraService::handleFrameCaptured);
     }
 }
 
@@ -17,10 +18,7 @@ bool CameraService::isStreaming() const {
 
 void CameraService::startCamera() {
     if(m_camera && !isStreaming()) {
-        // qDebug() << "Starting camera...";
         m_camera->start();
-        // qDebug() << "Camera selected: " << m_camera->cameraDevice().description();
-        // qDebug() << "Camera state" << m_camera->isActive();
     }
 }   
 
@@ -38,6 +36,11 @@ void CameraService::setCamera(const QString &cameraName) {
             m_camera->setCameraDevice(camera);
         }
     }
+}
+
+void CameraService::handleFrameCaptured(const QVideoFrame &frame)
+{
+    emit frameCaptured(frame);
 }
 
 void CameraService::handleCameraError(QCamera::Error error, const QString &errorString) {

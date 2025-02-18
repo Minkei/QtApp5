@@ -2,7 +2,7 @@
     "classes": [
         {
             "className": "CameraService",
-            "lineNumber": 10,
+            "lineNumber": 12,
             "object": true,
             "qualifiedClassName": "CameraService",
             "signals": [
@@ -29,6 +29,18 @@
                     "index": 2,
                     "name": "cameraStopped",
                     "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "frame",
+                            "type": "QVideoFrame"
+                        }
+                    ],
+                    "index": 3,
+                    "name": "frameCaptured",
+                    "returnType": "void"
                 }
             ],
             "slots": [
@@ -44,8 +56,20 @@
                             "type": "QString"
                         }
                     ],
-                    "index": 3,
+                    "index": 4,
                     "name": "handleCameraError",
+                    "returnType": "void"
+                },
+                {
+                    "access": "private",
+                    "arguments": [
+                        {
+                            "name": "frame",
+                            "type": "QVideoFrame"
+                        }
+                    ],
+                    "index": 5,
+                    "name": "handleFrameCaptured",
                     "returnType": "void"
                 }
             ],

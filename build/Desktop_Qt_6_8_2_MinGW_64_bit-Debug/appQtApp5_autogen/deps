@@ -7,6 +7,8 @@ appQtApp5_autogen/timestamp: \
 	C:/IMAS/Research/QtApp/QtApp5/Repositories/FirebaseAuth.h \
 	C:/IMAS/Research/QtApp/QtApp5/Services/CameraService.cpp \
 	C:/IMAS/Research/QtApp/QtApp5/Services/CameraService.h \
+	C:/IMAS/Research/QtApp/QtApp5/Services/QRCodeService.cpp \
+	C:/IMAS/Research/QtApp/QtApp5/Services/QRCodeService.h \
 	C:/IMAS/Research/QtApp/QtApp5/ViewModels/LoginViewModel.cpp \
 	C:/IMAS/Research/QtApp/QtApp5/ViewModels/LoginViewModel.h \
 	C:/IMAS/Research/QtApp/QtApp5/ViewModels/MainViewModel.cpp \
@@ -312,6 +314,7 @@ appQtApp5_autogen/timestamp: \
 	C:/Qt/6.8.2/mingw_64/include/QtCore/qxpfunctional.h \
 	C:/Qt/6.8.2/mingw_64/include/QtCore/qxptype_traits.h \
 	C:/Qt/6.8.2/mingw_64/include/QtCore/qyieldcpu.h \
+	C:/Qt/6.8.2/mingw_64/include/QtGui/QImage \
 	C:/Qt/6.8.2/mingw_64/include/QtGui/QPaintDevice \
 	C:/Qt/6.8.2/mingw_64/include/QtGui/QPaintDeviceWindow \
 	C:/Qt/6.8.2/mingw_64/include/QtGui/QSurfaceFormat \
@@ -435,6 +438,7 @@ appQtApp5_autogen/timestamp: \
 	C:/Qt/6.8.2/mingw_64/include/QtGui/qwindowsmimeconverter.h \
 	C:/Qt/6.8.2/mingw_64/include/QtMultimedia/QCamera \
 	C:/Qt/6.8.2/mingw_64/include/QtMultimedia/QMediaCaptureSession \
+	C:/Qt/6.8.2/mingw_64/include/QtMultimedia/QVideoFrame \
 	C:/Qt/6.8.2/mingw_64/include/QtMultimedia/QVideoSink \
 	C:/Qt/6.8.2/mingw_64/include/QtMultimedia/QtMultimedia \
 	C:/Qt/6.8.2/mingw_64/include/QtMultimedia/QtMultimediaDepends \
@@ -1488,16 +1492,38 @@ appQtApp5_autogen/timestamp: \
 	C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/vadefs.h \
 	C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wchar.h \
 	C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wctype.h \
+	C:/Users/minke/vcpkg/installed/x64-mingw-dynamic/include/ZXing/Barcode.h \
+	C:/Users/minke/vcpkg/installed/x64-mingw-dynamic/include/ZXing/BarcodeFormat.h \
+	C:/Users/minke/vcpkg/installed/x64-mingw-dynamic/include/ZXing/BitHacks.h \
+	C:/Users/minke/vcpkg/installed/x64-mingw-dynamic/include/ZXing/ByteArray.h \
+	C:/Users/minke/vcpkg/installed/x64-mingw-dynamic/include/ZXing/CharacterSet.h \
+	C:/Users/minke/vcpkg/installed/x64-mingw-dynamic/include/ZXing/Content.h \
+	C:/Users/minke/vcpkg/installed/x64-mingw-dynamic/include/ZXing/DecodeHints.h \
+	C:/Users/minke/vcpkg/installed/x64-mingw-dynamic/include/ZXing/Error.h \
+	C:/Users/minke/vcpkg/installed/x64-mingw-dynamic/include/ZXing/Flags.h \
+	C:/Users/minke/vcpkg/installed/x64-mingw-dynamic/include/ZXing/ImageView.h \
+	C:/Users/minke/vcpkg/installed/x64-mingw-dynamic/include/ZXing/Point.h \
+	C:/Users/minke/vcpkg/installed/x64-mingw-dynamic/include/ZXing/Quadrilateral.h \
+	C:/Users/minke/vcpkg/installed/x64-mingw-dynamic/include/ZXing/ReadBarcode.h \
+	C:/Users/minke/vcpkg/installed/x64-mingw-dynamic/include/ZXing/ReaderOptions.h \
+	C:/Users/minke/vcpkg/installed/x64-mingw-dynamic/include/ZXing/Result.h \
+	C:/Users/minke/vcpkg/installed/x64-mingw-dynamic/include/ZXing/StructuredAppend.h \
+	C:/Users/minke/vcpkg/installed/x64-mingw-dynamic/include/ZXing/ZXAlgorithms.h \
+	C:/Users/minke/vcpkg/installed/x64-mingw-dynamic/share/ZXing/ZXingConfig.cmake \
+	C:/Users/minke/vcpkg/installed/x64-mingw-dynamic/share/ZXing/ZXingConfigVersion.cmake \
+	C:/Users/minke/vcpkg/installed/x64-mingw-dynamic/share/ZXing/ZXingTargets-debug.cmake \
+	C:/Users/minke/vcpkg/installed/x64-mingw-dynamic/share/ZXing/ZXingTargets-release.cmake \
+	C:/Users/minke/vcpkg/installed/x64-mingw-dynamic/share/ZXing/ZXingTargets.cmake \
+	C:/Users/minke/vcpkg/installed/x64-mingw-dynamic/share/opencv4/OpenCVConfig-version.cmake \
+	C:/Users/minke/vcpkg/installed/x64-mingw-dynamic/share/opencv4/OpenCVConfig.cmake \
+	C:/Users/minke/vcpkg/installed/x64-mingw-dynamic/share/opencv4/OpenCVModules-debug.cmake \
+	C:/Users/minke/vcpkg/installed/x64-mingw-dynamic/share/opencv4/OpenCVModules-release.cmake \
+	C:/Users/minke/vcpkg/installed/x64-mingw-dynamic/share/opencv4/OpenCVModules.cmake \
 	C:/Users/minke/vcpkg/installed/x64-windows/share/absl/abslConfig.cmake \
 	C:/Users/minke/vcpkg/installed/x64-windows/share/absl/abslConfigVersion.cmake \
 	C:/Users/minke/vcpkg/installed/x64-windows/share/absl/abslTargets-debug.cmake \
 	C:/Users/minke/vcpkg/installed/x64-windows/share/absl/abslTargets-release.cmake \
 	C:/Users/minke/vcpkg/installed/x64-windows/share/absl/abslTargets.cmake \
-	C:/Users/minke/vcpkg/installed/x64-windows/share/opencv4/OpenCVConfig-version.cmake \
-	C:/Users/minke/vcpkg/installed/x64-windows/share/opencv4/OpenCVConfig.cmake \
-	C:/Users/minke/vcpkg/installed/x64-windows/share/opencv4/OpenCVModules-debug.cmake \
-	C:/Users/minke/vcpkg/installed/x64-windows/share/opencv4/OpenCVModules-release.cmake \
-	C:/Users/minke/vcpkg/installed/x64-windows/share/opencv4/OpenCVModules.cmake \
 	C:/Users/minke/vcpkg/installed/x64-windows/share/protobuf/protobuf-config-version.cmake \
 	C:/Users/minke/vcpkg/installed/x64-windows/share/protobuf/protobuf-config.cmake \
 	C:/Users/minke/vcpkg/installed/x64-windows/share/protobuf/protobuf-generate.cmake \

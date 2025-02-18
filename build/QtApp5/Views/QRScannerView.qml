@@ -307,6 +307,20 @@ Item {
                             refreshAnimation.start()
                             qrScannerViewModel.refreshCameraList()
                         }
+
+                        onEntered: {
+                            rectRefreshButton.color = qrscanner.primaryBlue
+                            textRefreshButton.color = "white"
+                            textRefreshButton.font.bold = true
+                            refreshIcon.color = "white"
+                        }
+
+                        onExited: {
+                            rectRefreshButton.color = "white"
+                            textRefreshButton.color = qrscanner.textColor
+                            textRefreshButton.font.bold = false
+                            refreshIcon.color = qrscanner.primaryBlue
+                        }
                     }
 
                     RowLayout {
@@ -695,8 +709,8 @@ Item {
 
                         Rectangle {
                             id: rectCameraViewPortImage
-                            Layout.preferredHeight: 300
-                            Layout.preferredWidth: 300
+                            Layout.preferredHeight: parent.width * 0.6
+                            Layout.preferredWidth: parent.width * 0.6
                             radius: 10
                             Layout.alignment: Qt.AlignHCenter
                             border.color: qrscanner.lightBlue
@@ -746,8 +760,8 @@ Item {
                         Rectangle {
                             id: rectLastedResultsQRCode
                             color: "#bf8b87"
-                            Layout.preferredHeight: 200
-                            Layout.preferredWidth: 300
+                            Layout.preferredHeight: parent.width * 0.3
+                            Layout.preferredWidth: parent.width * 0.6
                             Layout.alignment: Qt.AlignHCenter
                             radius: 10
 
@@ -776,7 +790,8 @@ Item {
                                     id: textLastedQRCodeContent
                                     Layout.fillWidth: true
                                     Layout.fillHeight: true
-                                    text: "Askdjsdk"
+                                    text: qrScannerViewModel.qrCodeDataLatest
+                                          || "Unknow"
                                     font {
                                         family: "Montserrat"
                                         pixelSize: 16
@@ -787,6 +802,11 @@ Item {
                                     verticalAlignment: Text.AlignTop
                                     Layout.alignment: Qt.AlignHCenter | Qt.AlignVCenter
                                 }
+                                // Image {
+                                //     source: "../Images/qrcodeTest.png"
+                                //     Layout.fillWidth: true
+                                //     Layout.fillHeight: true
+                                // }
                             }
                         }
 

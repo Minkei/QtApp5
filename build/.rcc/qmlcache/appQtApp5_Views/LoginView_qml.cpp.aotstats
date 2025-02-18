@@ -6,7 +6,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 16,
-                        "durationMicroseconds": 469,
+                        "durationMicroseconds": 532,
                         "errorMessage": "",
                         "functionName": "color",
                         "line": 29
@@ -14,7 +14,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 23,
-                        "durationMicroseconds": 121,
+                        "durationMicroseconds": 152,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 28
@@ -22,7 +22,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 21,
-                        "durationMicroseconds": 276,
+                        "durationMicroseconds": 302,
                         "errorMessage": "",
                         "functionName": "height",
                         "line": 34
@@ -30,7 +30,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 39,
-                        "durationMicroseconds": 194,
+                        "durationMicroseconds": 350,
                         "errorMessage": "",
                         "functionName": "horizontalCenter",
                         "line": 35
@@ -38,7 +38,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 37,
-                        "durationMicroseconds": 215,
+                        "durationMicroseconds": 814,
                         "errorMessage": "",
                         "functionName": "verticalCenter",
                         "line": 36
@@ -46,7 +46,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 27,
-                        "durationMicroseconds": 182,
+                        "durationMicroseconds": 654,
                         "errorMessage": "",
                         "functionName": "color",
                         "line": 39
@@ -54,7 +54,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 31,
-                        "durationMicroseconds": 94,
+                        "durationMicroseconds": 292,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 44
@@ -62,7 +62,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 28,
-                        "durationMicroseconds": 218,
+                        "durationMicroseconds": 355,
                         "errorMessage": "",
                         "functionName": "color",
                         "line": 61
@@ -70,7 +70,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 39,
-                        "durationMicroseconds": 283,
+                        "durationMicroseconds": 272,
                         "errorMessage": "",
                         "functionName": "alignment",
                         "line": 62
@@ -78,7 +78,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 28,
-                        "durationMicroseconds": 197,
+                        "durationMicroseconds": 382,
                         "errorMessage": "",
                         "functionName": "color",
                         "line": 72
@@ -86,7 +86,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 39,
-                        "durationMicroseconds": 136,
+                        "durationMicroseconds": 120,
                         "errorMessage": "",
                         "functionName": "alignment",
                         "line": 73
@@ -94,7 +94,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 44,
-                        "durationMicroseconds": 244,
+                        "durationMicroseconds": 192,
                         "errorMessage": "",
                         "functionName": "preferredWidth",
                         "line": 79
@@ -102,7 +102,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 39,
-                        "durationMicroseconds": 125,
+                        "durationMicroseconds": 118,
                         "errorMessage": "",
                         "functionName": "alignment",
                         "line": 80
@@ -110,7 +110,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 35,
-                        "durationMicroseconds": 204,
+                        "durationMicroseconds": 149,
                         "errorMessage": "",
                         "functionName": "color",
                         "line": 84
@@ -118,7 +118,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 39,
-                        "durationMicroseconds": 120,
+                        "durationMicroseconds": 74,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 88
@@ -126,7 +126,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 36,
-                        "durationMicroseconds": 180,
+                        "durationMicroseconds": 159,
                         "errorMessage": "",
                         "functionName": "color",
                         "line": 98
@@ -134,7 +134,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 41,
-                        "durationMicroseconds": 116,
+                        "durationMicroseconds": 100,
                         "errorMessage": "",
                         "functionName": "family",
                         "line": 95
@@ -142,7 +142,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 36,
-                        "durationMicroseconds": 164,
+                        "durationMicroseconds": 124,
                         "errorMessage": "",
                         "functionName": "color",
                         "line": 112
@@ -150,7 +150,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 35,
-                        "durationMicroseconds": 626,
+                        "durationMicroseconds": 587,
                         "errorMessage": "Cannot access value for name loginViewModel",
                         "functionName": "text",
                         "line": 117
@@ -158,7 +158,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 44,
-                        "durationMicroseconds": 541,
+                        "durationMicroseconds": 471,
                         "errorMessage": "Cannot access value for name loginViewModel",
                         "functionName": "onTextChanged",
                         "line": 118
@@ -166,7 +166,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 51,
-                        "durationMicroseconds": 138,
+                        "durationMicroseconds": 140,
                         "errorMessage": "",
                         "functionName": "onActiveFocusChanged",
                         "line": 120
@@ -174,7 +174,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 48,
-                        "durationMicroseconds": 129,
+                        "durationMicroseconds": 118,
                         "errorMessage": "",
                         "functionName": "tab",
                         "line": 107
@@ -182,7 +182,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 54,
-                        "durationMicroseconds": 108,
+                        "durationMicroseconds": 93,
                         "errorMessage": "",
                         "functionName": "onDestruction",
                         "line": 126
@@ -190,7 +190,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 44,
-                        "durationMicroseconds": 223,
+                        "durationMicroseconds": 208,
                         "errorMessage": "",
                         "functionName": "preferredWidth",
                         "line": 134
@@ -198,7 +198,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 39,
-                        "durationMicroseconds": 128,
+                        "durationMicroseconds": 143,
                         "errorMessage": "",
                         "functionName": "alignment",
                         "line": 135
@@ -206,7 +206,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 35,
-                        "durationMicroseconds": 171,
+                        "durationMicroseconds": 234,
                         "errorMessage": "",
                         "functionName": "color",
                         "line": 139
@@ -222,7 +222,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 36,
-                        "durationMicroseconds": 168,
+                        "durationMicroseconds": 285,
                         "errorMessage": "",
                         "functionName": "color",
                         "line": 153
@@ -230,7 +230,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 41,
-                        "durationMicroseconds": 187,
+                        "durationMicroseconds": 149,
                         "errorMessage": "",
                         "functionName": "family",
                         "line": 150
@@ -238,7 +238,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 39,
-                        "durationMicroseconds": 368,
+                        "durationMicroseconds": 390,
                         "errorMessage": "",
                         "functionName": "echoMode",
                         "line": 162
@@ -246,7 +246,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 36,
-                        "durationMicroseconds": 331,
+                        "durationMicroseconds": 262,
                         "errorMessage": "",
                         "functionName": "color",
                         "line": 167
@@ -254,7 +254,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 35,
-                        "durationMicroseconds": 609,
+                        "durationMicroseconds": 568,
                         "errorMessage": "Cannot access value for name loginViewModel",
                         "functionName": "text",
                         "line": 172
@@ -262,7 +262,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 44,
-                        "durationMicroseconds": 528,
+                        "durationMicroseconds": 476,
                         "errorMessage": "Cannot access value for name loginViewModel",
                         "functionName": "onTextChanged",
                         "line": 173
@@ -270,7 +270,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 51,
-                        "durationMicroseconds": 122,
+                        "durationMicroseconds": 145,
                         "errorMessage": "",
                         "functionName": "onActiveFocusChanged",
                         "line": 180
@@ -278,7 +278,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 48,
-                        "durationMicroseconds": 133,
+                        "durationMicroseconds": 121,
                         "errorMessage": "",
                         "functionName": "tab",
                         "line": 160
@@ -286,7 +286,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 51,
-                        "durationMicroseconds": 726,
+                        "durationMicroseconds": 627,
                         "errorMessage": "Cannot access value for name loginViewModel",
                         "functionName": "onReturnPressed",
                         "line": 174
@@ -294,7 +294,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 54,
-                        "durationMicroseconds": 122,
+                        "durationMicroseconds": 136,
                         "errorMessage": "",
                         "functionName": "onDestruction",
                         "line": 187
@@ -302,7 +302,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 35,
-                        "durationMicroseconds": 253,
+                        "durationMicroseconds": 235,
                         "errorMessage": "",
                         "functionName": "text",
                         "line": 191
@@ -310,7 +310,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 36,
-                        "durationMicroseconds": 176,
+                        "durationMicroseconds": 156,
                         "errorMessage": "",
                         "functionName": "color",
                         "line": 196
@@ -318,7 +318,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 41,
-                        "durationMicroseconds": 138,
+                        "durationMicroseconds": 110,
                         "errorMessage": "",
                         "functionName": "family",
                         "line": 193
@@ -326,7 +326,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 46,
-                        "durationMicroseconds": 132,
+                        "durationMicroseconds": 140,
                         "errorMessage": "",
                         "functionName": "cursorShape",
                         "line": 200
@@ -334,7 +334,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 44,
-                        "durationMicroseconds": 279,
+                        "durationMicroseconds": 256,
                         "errorMessage": "",
                         "functionName": "onClicked",
                         "line": 201
@@ -342,7 +342,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 44,
-                        "durationMicroseconds": 41,
+                        "durationMicroseconds": 52,
                         "errorMessage": "Type (component in C:/IMAS/Research/QtApp/QtApp5/Views/LoginView.qml)::parent with type QQuickItem does not have a property color for writing",
                         "functionName": "onEntered",
                         "line": 203
@@ -350,7 +350,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 43,
-                        "durationMicroseconds": 24,
+                        "durationMicroseconds": 39,
                         "errorMessage": "Type (component in C:/IMAS/Research/QtApp/QtApp5/Views/LoginView.qml)::parent with type QQuickItem does not have a property color for writing",
                         "functionName": "onExited",
                         "line": 204
@@ -358,7 +358,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 47,
-                        "durationMicroseconds": 51,
+                        "durationMicroseconds": 76,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 199
@@ -366,7 +366,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 39,
-                        "durationMicroseconds": 39,
+                        "durationMicroseconds": 68,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 217
@@ -374,7 +374,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 38,
-                        "durationMicroseconds": 40,
+                        "durationMicroseconds": 73,
                         "errorMessage": "",
                         "functionName": "running",
                         "line": 222
@@ -382,7 +382,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 47,
-                        "durationMicroseconds": 37,
+                        "durationMicroseconds": 66,
                         "errorMessage": "",
                         "functionName": "centerIn",
                         "line": 220
@@ -390,7 +390,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 35,
-                        "durationMicroseconds": 246,
+                        "durationMicroseconds": 395,
                         "errorMessage": "Cannot access value for name loginViewModel",
                         "functionName": "text",
                         "line": 229
@@ -398,7 +398,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 50,
-                        "durationMicroseconds": 77,
+                        "durationMicroseconds": 202,
                         "errorMessage": "",
                         "functionName": "horizontalAlignment",
                         "line": 235
@@ -406,7 +406,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 48,
-                        "durationMicroseconds": 56,
+                        "durationMicroseconds": 91,
                         "errorMessage": "",
                         "functionName": "verticalAlignment",
                         "line": 236
@@ -414,7 +414,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 43,
-                        "durationMicroseconds": 52,
+                        "durationMicroseconds": 78,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 228
@@ -422,7 +422,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 28,
-                        "durationMicroseconds": 98,
+                        "durationMicroseconds": 174,
                         "errorMessage": "",
                         "functionName": "color",
                         "line": 248
@@ -430,7 +430,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 44,
-                        "durationMicroseconds": 122,
+                        "durationMicroseconds": 189,
                         "errorMessage": "",
                         "functionName": "preferredWidth",
                         "line": 245
@@ -438,7 +438,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 39,
-                        "durationMicroseconds": 67,
+                        "durationMicroseconds": 110,
                         "errorMessage": "",
                         "functionName": "alignment",
                         "line": 246
@@ -446,7 +446,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 38,
-                        "durationMicroseconds": 64,
+                        "durationMicroseconds": 112,
                         "errorMessage": "",
                         "functionName": "cursorShape",
                         "line": 253
@@ -454,7 +454,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 36,
-                        "durationMicroseconds": 29,
+                        "durationMicroseconds": 51,
                         "errorMessage": "Type (component in C:/IMAS/Research/QtApp/QtApp5/Views/LoginView.qml)::parent with type QQuickItem does not have a property color for writing",
                         "functionName": "onEntered",
                         "line": 254
@@ -462,7 +462,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 35,
-                        "durationMicroseconds": 26,
+                        "durationMicroseconds": 35,
                         "errorMessage": "Type (component in C:/IMAS/Research/QtApp/QtApp5/Views/LoginView.qml)::parent with type QQuickItem does not have a property color for writing",
                         "functionName": "onExited",
                         "line": 255
@@ -470,7 +470,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 36,
-                        "durationMicroseconds": 252,
+                        "durationMicroseconds": 386,
                         "errorMessage": "Cannot access value for name loginViewModel",
                         "functionName": "onClicked",
                         "line": 256
@@ -478,7 +478,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 39,
-                        "durationMicroseconds": 78,
+                        "durationMicroseconds": 149,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 251
@@ -486,7 +486,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 43,
-                        "durationMicroseconds": 41,
+                        "durationMicroseconds": 71,
                         "errorMessage": "",
                         "functionName": "centerIn",
                         "line": 264
@@ -494,7 +494,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 43,
-                        "durationMicroseconds": 39,
+                        "durationMicroseconds": 70,
                         "errorMessage": "",
                         "functionName": "centerIn",
                         "line": 282
@@ -502,7 +502,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 36,
-                        "durationMicroseconds": 97,
+                        "durationMicroseconds": 168,
                         "errorMessage": "",
                         "functionName": "color",
                         "line": 291
@@ -510,7 +510,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 36,
-                        "durationMicroseconds": 95,
+                        "durationMicroseconds": 215,
                         "errorMessage": "",
                         "functionName": "color",
                         "line": 301
@@ -518,7 +518,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 46,
-                        "durationMicroseconds": 65,
+                        "durationMicroseconds": 129,
                         "errorMessage": "",
                         "functionName": "cursorShape",
                         "line": 305
@@ -526,7 +526,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 44,
-                        "durationMicroseconds": 25,
+                        "durationMicroseconds": 51,
                         "errorMessage": "Type (component in C:/IMAS/Research/QtApp/QtApp5/Views/LoginView.qml)::parent with type QQuickItem does not have a property color for writing",
                         "functionName": "onEntered",
                         "line": 307
@@ -534,7 +534,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 43,
-                        "durationMicroseconds": 21,
+                        "durationMicroseconds": 36,
                         "errorMessage": "Type (component in C:/IMAS/Research/QtApp/QtApp5/Views/LoginView.qml)::parent with type QQuickItem does not have a property color for writing",
                         "functionName": "onExited",
                         "line": 308
@@ -542,7 +542,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 47,
-                        "durationMicroseconds": 40,
+                        "durationMicroseconds": 70,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 304
@@ -550,7 +550,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 17,
-                        "durationMicroseconds": 42,
+                        "durationMicroseconds": 105,
                         "errorMessage": "Cannot access value for name loginViewModel",
                         "functionName": "target",
                         "line": 322
@@ -558,7 +558,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 9,
-                        "durationMicroseconds": 61,
+                        "durationMicroseconds": 92,
                         "errorMessage": "Cannot access value for name loginViewModel",
                         "functionName": "onLoginSuccess",
                         "line": 323
@@ -566,7 +566,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 9,
-                        "durationMicroseconds": 34,
+                        "durationMicroseconds": 59,
                         "errorMessage": "Cannot access value for name loginViewModel",
                         "functionName": "onErrorMessageChanged",
                         "line": 328
@@ -574,7 +574,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 28,
-                        "durationMicroseconds": 1117,
+                        "durationMicroseconds": 142,
                         "errorMessage": "Cannot generate efficient code for call to untyped JavaScript function",
                         "functionName": "onCompleted",
                         "line": 336

@@ -409,6 +409,7 @@ C:/IMAS/Research/QtApp/QtApp5/build/appQtApp5_autogen/4VYEQU4VHD/moc_CameraServi
   C:/Qt/6.8.2/mingw_64/include/QtGui/qwindowsmimeconverter.h \
   C:/Qt/6.8.2/mingw_64/include/QtMultimedia/QCamera \
   C:/Qt/6.8.2/mingw_64/include/QtMultimedia/QMediaCaptureSession \
+  C:/Qt/6.8.2/mingw_64/include/QtMultimedia/QVideoFrame \
   C:/Qt/6.8.2/mingw_64/include/QtMultimedia/QVideoSink \
   C:/Qt/6.8.2/mingw_64/include/QtMultimedia/QtMultimedia \
   C:/Qt/6.8.2/mingw_64/include/QtMultimedia/QtMultimediaDepends \

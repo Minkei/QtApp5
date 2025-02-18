@@ -307,6 +307,20 @@ Item {
                             refreshAnimation.start()
                             qrScannerViewModel.refreshCameraList()
                         }
+
+                        onEntered: {
+                            rectRefreshButton.color = qrscanner.primaryBlue
+                            textRefreshButton.color = "white"
+                            textRefreshButton.font.bold = true
+                            refreshIcon.color = "white"
+                        }
+
+                        onExited: {
+                            rectRefreshButton.color = "white"
+                            textRefreshButton.color = qrscanner.textColor
+                            textRefreshButton.font.bold = false
+                            refreshIcon.color = qrscanner.primaryBlue
+                        }
                     }
 
                     RowLayout {
@@ -776,7 +790,8 @@ Item {
                                     id: textLastedQRCodeContent
                                     Layout.fillWidth: true
                                     Layout.fillHeight: true
-                                    text: "Askdjsdk"
+                                    text: qrScannerViewModel.qrCodeDataLatest
+                                          || "Unknow"
                                     font {
                                         family: "Montserrat"
                                         pixelSize: 16
@@ -787,6 +802,11 @@ Item {
                                     verticalAlignment: Text.AlignTop
                                     Layout.alignment: Qt.AlignHCenter | Qt.AlignVCenter
                                 }
+                                // Image {
+                                //     source: "../Images/qrcodeTest.png"
+                                //     Layout.fillWidth: true
+                                //     Layout.fillHeight: true
+                                // }
                             }
                         }
 

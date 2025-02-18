@@ -6,10 +6,11 @@ set(CMAKE_TOOLCHAIN_FILE "C:/Users/minke/vcpkg/scripts/buildsystems/vcpkg.cmake"
     CACHE STRING "Vcpkg toolchain file")
 
 # Set OpenCV directories explicitly
-set(OpenCV_DIR "C:/Users/minke/vcpkg/installed/x64-windows/share/opencv4")
+set(OpenCV_DIR "C:/Users/minke/vcpkg/installed/x64-mingw-dynamic/share/opencv4")
+
 list(APPEND CMAKE_PREFIX_PATH
-    "C:/Users/minke/vcpkg/installed/x64-windows"
-    "C:/Users/minke/vcpkg/installed/x64-windows/share/opencv4"
+    "C:/Users/minke/vcpkg/installed/x64-mingw-dynamic"
+    "C:/Users/minke/vcpkg/installed/x64-mingw-dynamic/share/opencv4"
 )
 
 
@@ -21,8 +22,10 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -DQT_QML_DEBUG")
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(QT_QML_GENERATE_QMLLS_INI ON)
 
-find_package(Qt6 REQUIRED COMPONENTS Quick Core Network Multimedia MultimediaWidgets)
+find_package(Qt6 REQUIRED COMPONENTS Quick Core Network Multimedia MultimediaWidgets Concurrent)
 find_package(OpenCV REQUIRED)
+find_package(ZXing CONFIG REQUIRED)
+
 
 # Set Qt policies
 qt_policy(SET QTP0004 NEW)
@@ -76,7 +79,10 @@ target_link_libraries(appQtApp5
         Qt6::Network
         Qt6::Multimedia
         Qt6::MultimediaWidgets
-        ${OpenCV_LIBS}  # Thêm OpenCV libraries
+        Qt6::Concurrent
+        ${OpenCV_LIBS} 
+        ZXing::ZXing
+        ZXing::Core
 )
 
 # Thêm OpenCV include directories

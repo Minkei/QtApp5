@@ -1,0 +1,32 @@
+{
+    "classes": [
+        {
+            "className": "QRCodeService",
+            "lineNumber": 14,
+            "object": true,
+            "qualifiedClassName": "QRCodeService",
+            "signals": [
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "qrCodeData",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 0,
+                    "name": "qrCodeDecoded",
+                    "returnType": "void"
+                }
+            ],
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QObject"
+                }
+            ]
+        }
+    ],
+    "inputFile": "QRCodeService.h",
+    "outputRevision": 68
+}

@@ -2,6 +2,7 @@
 #include "25IR5XJDBU/moc_UserModel.cpp"
 #include "7LASNSSLXA/moc_FirebaseAuth.cpp"
 #include "4VYEQU4VHD/moc_CameraService.cpp"
+#include "4VYEQU4VHD/moc_QRCodeService.cpp"
 #include "N4CVMX36CW/moc_LoginViewModel.cpp"
 #include "N4CVMX36CW/moc_MainViewModel.cpp"
 #include "N4CVMX36CW/moc_QRScannerViewModel.cpp"

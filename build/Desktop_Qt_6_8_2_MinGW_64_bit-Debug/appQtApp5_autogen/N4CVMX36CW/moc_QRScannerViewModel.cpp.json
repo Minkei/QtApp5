@@ -2,7 +2,7 @@
     "classes": [
         {
             "className": "QRScannerViewModel",
-            "lineNumber": 14,
+            "lineNumber": 17,
             "methods": [
                 {
                     "access": "public",
@@ -12,19 +12,19 @@
                             "type": "QString"
                         }
                     ],
-                    "index": 10,
+                    "index": 13,
                     "name": "setSelectedCamera",
                     "returnType": "void"
                 },
                 {
                     "access": "public",
-                    "index": 11,
+                    "index": 14,
                     "name": "refreshCameraList",
                     "returnType": "void"
                 },
                 {
                     "access": "public",
-                    "index": 12,
+                    "index": 15,
                     "name": "toggleStreaming",
                     "returnType": "void"
                 },
@@ -36,7 +36,7 @@
                             "type": "QVideoSink*"
                         }
                     ],
-                    "index": 13,
+                    "index": 16,
                     "name": "setVideoSink",
                     "returnType": "void"
                 }
@@ -142,6 +142,34 @@
                     "type": "QVideoSink*",
                     "user": false,
                     "write": "setVideoSink"
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 7,
+                    "name": "qrCodeData",
+                    "notify": "qrCodeDataChanged",
+                    "read": "qrCodeData",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QString",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 8,
+                    "name": "qrCodeDataLatest",
+                    "notify": "qrCodeDataLatestChanged",
+                    "read": "qrCodeDataLatest",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QString",
+                    "user": false
                 }
             ],
             "qualifiedClassName": "QRScannerViewModel",
@@ -199,12 +227,36 @@
                     "index": 7,
                     "name": "videoSinkChanged",
                     "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 8,
+                    "name": "qrCodeDataChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 9,
+                    "name": "qrCodeDataLatestChanged",
+                    "returnType": "void"
                 }
             ],
             "slots": [
                 {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "frame",
+                            "type": "QVideoFrame"
+                        }
+                    ],
+                    "index": 10,
+                    "name": "processFrame",
+                    "returnType": "void"
+                },
+                {
                     "access": "private",
-                    "index": 8,
+                    "index": 11,
                     "name": "updateDateTime",
                     "returnType": "void"
                 },
@@ -216,7 +268,7 @@
                             "type": "QString"
                         }
                     ],
-                    "index": 9,
+                    "index": 12,
                     "name": "handleCameraError",
                     "returnType": "void"
                 }

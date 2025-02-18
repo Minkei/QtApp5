@@ -6,6 +6,8 @@
 #include <QVideoSink>
 #include <QMediaCaptureSession>
 #include <QtMultimedia>
+#include <QVideoFrame>
+
 
 class CameraService : public QObject
 {
@@ -23,9 +25,11 @@ signals:
     void cameraError(const QString &error);
     void cameraStarted();
     void cameraStopped();
+    void frameCaptured(const QVideoFrame &frame);
 
 private slots:
     void handleCameraError(QCamera::Error error, const QString &errorString);
+    void handleFrameCaptured(const QVideoFrame &frame);
 
 private:
     QCamera *m_camera;

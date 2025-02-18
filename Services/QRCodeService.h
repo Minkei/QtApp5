@@ -2,11 +2,26 @@
 #define QRCODESERVICE_H
 
 #include <QObject>
+#include <QString>
+#include <QImage>
+#include <ZXing/ReadBarcode.h>
+#include <ZXing/DecodeHints.h>
+#include <ZXing/Result.h>
+#include <ZXing/ImageView.h>
 
-class QRCodeService
+
+
+class QRCodeService : public QObject
 {
+    Q_OBJECT
+
 public:
-    QRCodeService();
+    explicit QRCodeService(QObject *parent = nullptr);
+    QString decodeImage(const QImage &image);
+
+signals:
+    void qrCodeDecoded(const QString &qrCodeData);
+
 };
 
 #endif // QRCODESERVICE_H

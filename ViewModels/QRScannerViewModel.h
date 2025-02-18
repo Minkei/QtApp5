@@ -8,7 +8,10 @@
 #include <QDateTime>
 #include <QtMultimedia>
 #include <QVideoSink>
+
 #include <Services/CameraService.h>
+#include <Services/QRCodeService.h>
+
 
 
 class QRScannerViewModel : public QObject
@@ -26,6 +29,10 @@ class QRScannerViewModel : public QObject
     Q_PROPERTY(bool isLoading READ isLoading NOTIFY isLoadingChanged)
     Q_PROPERTY(QVideoSink* videoSink READ videoSink WRITE setVideoSink NOTIFY videoSinkChanged)
 
+    // QRCode
+    Q_PROPERTY(QString qrCodeData READ qrCodeData NOTIFY qrCodeDataChanged)
+    Q_PROPERTY(QString qrCodeDataLatest READ qrCodeDataLatest NOTIFY qrCodeDataLatestChanged)
+
 
 public:
     explicit QRScannerViewModel(QObject *parent = nullptr);
@@ -40,6 +47,10 @@ public:
     bool isStreaming() const;
     bool isLoading() const;
     QVideoSink *videoSink() const;
+
+    // QRCode properties
+    QString qrCodeData() const;
+    QString qrCodeDataLatest() const;
     
     // Methods
     Q_INVOKABLE void setSelectedCamera(const QString &camera);
@@ -49,6 +60,7 @@ public:
 
 
 public slots:
+    void processFrame(const QVideoFrame &frame);
 
 signals:
     // Date and time
@@ -63,12 +75,19 @@ signals:
     void cameraErrorOccured(const QString &errorMessage);
     void videoSinkChanged();
 
+    // QRCode
+    void qrCodeDataChanged();
+    void qrCodeDataLatestChanged();
+
 private slots:
     void updateDateTime();
     void handleCameraError(const QString &error);
 
 private:
+    // Date and time
     QTimer m_timer;
+
+    // Camera
     QStringList m_availableCameras;
     QString m_selectedCamera;
     bool m_isStreaming;
@@ -76,6 +95,10 @@ private:
     CameraService *m_cameraService;
     QVideoSink *m_videoSink;
 
-};
+    // QRCode
+    QRCodeService *m_qrCodeService;
+    QString m_qrCodeData;
+    QString m_qrCodeDataLatest;
 
+};
 #endif // QRSCANNERVIEWMODEL_H

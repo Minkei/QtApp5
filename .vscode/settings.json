@@ -1,5 +1,11 @@
 {
     "files.associations": {
-        "qdatetime": "cpp"
+        "qdatetime": "cpp",
+        "array": "cpp",
+        "string_view": "cpp",
+        "span": "cpp",
+        "expected": "cpp",
+        "optional": "cpp",
+        "variant": "cpp"
     }
 }

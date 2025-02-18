@@ -1,8 +1,10 @@
 #include "QRScannerViewModel.h"
+#include <QtConcurrent>
 
 QRScannerViewModel::QRScannerViewModel(QObject *parent) : QObject{parent}, 
     m_isStreaming(false), 
     m_cameraService(new CameraService(this)),
+    m_qrCodeService(new QRCodeService(this)),
     m_videoSink(nullptr)
 {
     refreshCameraList();
@@ -13,6 +15,13 @@ QRScannerViewModel::QRScannerViewModel(QObject *parent) : QObject{parent},
 
     // Camera
     connect(m_cameraService, &CameraService::cameraError, this, &QRScannerViewModel::handleCameraError);
+    connect(m_cameraService, &CameraService::frameCaptured, this, &QRScannerViewModel::processFrame); 
+
+    // QRCode
+    connect(m_qrCodeService, &QRCodeService::qrCodeDecoded, this, [this](const QString &qrCodeData) { 
+        m_qrCodeData = qrCodeData; 
+        emit qrCodeDataChanged();
+    });  
 }
 
 // Properties
@@ -44,6 +53,16 @@ bool QRScannerViewModel::isLoading() const {
 
 QVideoSink *QRScannerViewModel::videoSink() const {
     return m_videoSink;
+}
+
+QString QRScannerViewModel::qrCodeData() const
+{
+    return m_qrCodeData;
+}
+
+QString QRScannerViewModel::qrCodeDataLatest() const
+{
+    return m_qrCodeDataLatest;
 }
 
 // Methods
@@ -126,3 +145,34 @@ void QRScannerViewModel::setVideoSink(QVideoSink *videoSink) {
         }
     }
 }   
+
+void QRScannerViewModel::processFrame(const QVideoFrame &frame) {
+    if(!frame.isValid()) {
+        qDebug() << "Invalid frame received";
+        return;
+    }
+
+    QImage image = frame.toImage();
+    if(image.isNull()) {
+        qDebug() << "Failed to convert frame to image";
+        return;
+    }
+
+    m_isLoading = true;
+    emit isLoadingChanged();
+    
+    QThreadPool::globalInstance()->start([this, image](){
+        QString result = m_qrCodeService->decodeImage(image);
+
+        m_qrCodeData = result;
+        emit qrCodeDataChanged();
+
+        if(!result.isEmpty() && result != m_qrCodeDataLatest && result != "No QR Code detected") {
+            m_qrCodeDataLatest = result;
+            emit qrCodeDataLatestChanged();
+            qDebug() << "QRCode Latest: " << m_qrCodeDataLatest;
+        }
+        m_isLoading = false;
+        emit isLoadingChanged();
+    });
+}

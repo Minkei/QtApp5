@@ -190,7 +190,7 @@ Item {
 
                     Behavior on Layout.preferredWidth {
                         NumberAnimation {
-                            duration: 400
+                            duration: 500
                             easing.type: Easing.InOutQuad
                         }
                     }

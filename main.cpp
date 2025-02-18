@@ -6,6 +6,7 @@
 #include <ViewModels/MainViewModel.h>
 #include <Models/UserModel.h>
 #include <ViewModels/QRScannerViewModel.h>
+#include <Services/QRCodeService.h>
 
 
 int main(int argc, char *argv[])
@@ -13,11 +14,8 @@ int main(int argc, char *argv[])
     QGuiApplication app(argc, argv);
     QQmlApplicationEngine engine;
 
-    // 
     QCoreApplication::setOrganizationName("IMAS");
     QCoreApplication::setApplicationName("QRScanner");
-
-
 
     LoginViewModel loginViewModel;
     MainViewModel mainViewModel;
