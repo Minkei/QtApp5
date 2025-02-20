@@ -2,8 +2,7 @@ pragma ComponentBehavior
 
 import QtQuick
 import QtQuick.Layouts
-// import QtQuick.Controls
-// import QtQuick.Controls.Basic
+import "../Themes/ThemeManager.js" as Theme
 
 Item {
     id: mainView
@@ -28,14 +27,6 @@ Item {
             }
         }
     }
-
-    // Định nghĩa các màu sắc chính
-    property color primaryBlue: "#2563eb"
-    property color lightBlue: "#60a5fa"
-    property color hoverBlue: "#3b82f6"
-    property color textColor: "#1e3a8a"
-    property color backgroundColor: "#f0f9ff"
-    property color selectedBlue: "#1d4ed8" // Màu khi button được chọn
 
     property bool isExpandNavigation: false
     property int selectedIndex: 0 // Thêm property để theo dõi button được chọn
@@ -82,7 +73,7 @@ Item {
                 duration: 500
             }
         }
-        color: mainView.backgroundColor
+        color: Theme.current.panelBackgroundColor_Normal
         radius: 10
         anchors.left: parent.left
         anchors.top: parent.top
@@ -90,7 +81,7 @@ Item {
         anchors.leftMargin: 10
         anchors.topMargin: 10
         anchors.bottomMargin: 10
-        border.color: mainView.isExpandNavigation ? mainView.primaryBlue : "transparent"
+        border.color: mainView.isExpandNavigation ? Theme.current.panelBackgroundColor_Hovered : Theme.current.panelBackgroundColor_Normal
         border.width: mainView.isExpandNavigation ? 1 : 0
 
         clip: true
@@ -150,7 +141,7 @@ Item {
                             family: fontAW.name
                             pixelSize: 24
                         }
-                        color: mainView.primaryBlue
+                        color: Theme.current.iconColor_Normal
                         visible: !mainView.isExpandNavigation
                         Layout.alignment: Qt.AlignVCenter
                     }
@@ -163,7 +154,7 @@ Item {
                             pixelSize: 24
                             bold: true
                         }
-                        color: mainView.primaryBlue
+                        color: Theme.current.textColor_Normal
                         visible: mainView.isExpandNavigation
                         Layout.alignment: Qt.AlignVCenter
                     }
@@ -171,19 +162,21 @@ Item {
             }
 
             Repeater {
+                id: navigationRepeater
                 model: navigationButtonsModel
                 delegate: Rectangle {
                     id: rectButton
+                    required property int index
                     Layout.preferredHeight: 45
                     Layout.preferredWidth: mainView.isExpandNavigation ? 180 : 50
                     Layout.alignment: Qt.AlignHCenter
                     radius: 10
                     property bool isSelected: index === mainView.selectedIndex
                     color: {
-                        if (isSelected) {
-                            return mainView.selectedBlue
+                        if (rectButton.isSelected) {
+                            return Theme.current.buttonColor_Actived
                         }
-                        return buttonMouseArea.containsMouse ? mainView.hoverBlue : "transparent"
+                        return buttonMouseArea.containsMouse ? Theme.current.buttonColor_Hovered : "transparent"
                     }
 
                     property alias buttonMouseArea: buttonMouseArea
@@ -214,9 +207,10 @@ Item {
                         }
 
                         onClicked: {
-                            mainView.selectedIndex = index // Cập nhật button được chọn
-                            console.log("Click button:", index)
-                            childViewLoader.source = model.viewName
+                            mainView.selectedIndex = rectButton.index // Cập nhật button được chọn
+                            console.log("Click button:", rectButton.index)
+                            childViewLoader.source = navigationRepeater.model.get(
+                                rectButton.index).viewName
                         }
                     }
 
@@ -231,18 +225,17 @@ Item {
                             Layout.fillWidth: true
                         }
                         Text {
-                            text: iconText
+                            text: navigationRepeater.model.get(rectButton.index).iconText
                             font {
                                 family: fontAW.name
                                 pixelSize: 18
                             }
-                            color: rectButton.isSelected
-                                   || buttonMouseArea.containsMouse ? "white" : primaryBlue
+                            color: rectButton.isSelected || buttonMouseArea.containsMouse ? Theme.current.iconColor_Actived : Theme.current.iconColor_Normal
                             Layout.alignment: Qt.AlignVCenter
                         }
 
                         Text {
-                            text: buttonText
+                            text: navigationRepeater.model.get(rectButton.index).buttonText
                             visible: mainView.isExpandNavigation
                             font {
                                 family: "Montserrat"
@@ -250,7 +243,7 @@ Item {
                                 bold: true
                             }
                             color: rectButton.isSelected
-                                   || buttonMouseArea.containsMouse ? "white" : mainView.textColor
+                                   || buttonMouseArea.containsMouse ? Theme.current.textColor_Actived : Theme.current.textColor_Normal
                             Layout.fillWidth: true
                             Layout.alignment: Qt.AlignVCenter
                             leftPadding: 10
@@ -282,17 +275,14 @@ Item {
 
                     Item {
                         Layout.fillWidth: true
-                        // visible: !mainView.isExpandNavigation
                     }
 
                     Rectangle {
-                        // width: 40
-                        // height: 40
                         Layout.preferredHeight: 40
                         Layout.preferredWidth: 40
                         Layout.alignment: Qt.AlignHCenter
                         radius: Layout.preferredWidth / 2
-                        color: mainView.lightBlue
+                        color: Theme.current.panelBackgroundColor_Actived
 
                         Text {
                             anchors.centerIn: parent
@@ -301,16 +291,9 @@ Item {
                                 family: fontAW.name
                                 pixelSize: 20
                             }
-                            color: mainView.primaryBlue
+                            color: Theme.current.iconColor_Normal
                             visible: !userModel.photoUrl
                         }
-
-                        // Image {
-                        //     id: imageCurrentUser
-                        //     source: userModel.photoUrl
-                        //     visible: userModel.photoUrl !== ""
-                        //     fillMode: Image.PreserveAspectCrop
-                        // }
                     }
 
                     Rectangle {
@@ -330,7 +313,7 @@ Item {
                                     family: "Montserrat"
                                     pixelSize: 14
                                 }
-                                color: mainView.textColor
+                                color: Theme.current.textColor_Normal
                             }
 
                             Text {
@@ -342,14 +325,15 @@ Item {
                                     // bold: true
                                     // italic: true
                                 }
-                                color: mainView.textColor
+                                color: Theme.current.textColor_Normal
 
                                 MouseArea {
                                     anchors.fill: parent
                                     hoverEnabled: true
                                     cursorShape: Qt.PointingHandCursor
+
                                     onEntered: {
-                                        logoutButton.font.color = mainView.primaryBlue
+                                        logoutButton.font.color = Theme.current.textColor_Horvered
                                     }
                                     onClicked: {
                                         console.log(

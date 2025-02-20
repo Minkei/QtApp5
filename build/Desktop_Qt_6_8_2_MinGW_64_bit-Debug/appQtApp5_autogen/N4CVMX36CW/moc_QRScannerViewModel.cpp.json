@@ -2,7 +2,7 @@
     "classes": [
         {
             "className": "QRScannerViewModel",
-            "lineNumber": 17,
+            "lineNumber": 20,
             "methods": [
                 {
                     "access": "public",
@@ -12,20 +12,26 @@
                             "type": "QString"
                         }
                     ],
-                    "index": 13,
+                    "index": 16,
                     "name": "setSelectedCamera",
                     "returnType": "void"
                 },
                 {
                     "access": "public",
-                    "index": 14,
+                    "index": 17,
                     "name": "refreshCameraList",
                     "returnType": "void"
                 },
                 {
                     "access": "public",
-                    "index": 15,
+                    "index": 18,
                     "name": "toggleStreaming",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 19,
+                    "name": "toggleAudio",
                     "returnType": "void"
                 },
                 {
@@ -36,8 +42,20 @@
                             "type": "QVideoSink*"
                         }
                     ],
-                    "index": 16,
+                    "index": 20,
                     "name": "setVideoSink",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 21,
+                    "name": "qrCodeModel",
+                    "returnType": "QRCodeModel*"
+                },
+                {
+                    "access": "public",
+                    "index": 22,
+                    "name": "clearQRCodes",
                     "returnType": "void"
                 }
             ],
@@ -170,6 +188,20 @@
                     "stored": true,
                     "type": "QString",
                     "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 9,
+                    "name": "isAudio",
+                    "notify": "isAudioChanged",
+                    "read": "isAudio",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "bool",
+                    "user": false
                 }
             ],
             "qualifiedClassName": "QRScannerViewModel",
@@ -239,6 +271,30 @@
                     "index": 9,
                     "name": "qrCodeDataLatestChanged",
                     "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 10,
+                    "name": "isAudioChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "data",
+                            "type": "QRCodeData"
+                        }
+                    ],
+                    "index": 11,
+                    "name": "qrCodeAdded",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 12,
+                    "name": "qrCodesCleared",
+                    "returnType": "void"
                 }
             ],
             "slots": [
@@ -250,13 +306,13 @@
                             "type": "QVideoFrame"
                         }
                     ],
-                    "index": 10,
+                    "index": 13,
                     "name": "processFrame",
                     "returnType": "void"
                 },
                 {
                     "access": "private",
-                    "index": 11,
+                    "index": 14,
                     "name": "updateDateTime",
                     "returnType": "void"
                 },
@@ -268,7 +324,7 @@
                             "type": "QString"
                         }
                     ],
-                    "index": 12,
+                    "index": 15,
                     "name": "handleCameraError",
                     "returnType": "void"
                 }

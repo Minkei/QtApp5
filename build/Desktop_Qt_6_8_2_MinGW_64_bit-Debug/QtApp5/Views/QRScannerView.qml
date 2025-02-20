@@ -1,7 +1,11 @@
+pragma ComponentBehavior
+
 import QtQuick
 import QtQuick.Layouts
 import QtQuick.Controls
 import QtMultimedia 6.2
+import "../Themes/ThemeManager.js" as Theme
+
 
 Item {
     id: qrscanner
@@ -9,11 +13,7 @@ Item {
     width: 1300
     height: 768
 
-    property color primaryBlue: "#2563eb"
-    property color lightBlue: "#60a5fa"
-    property color hoverBlue: "#3b82f6"
-    property color textColor: "#1e3a8a"
-    property color backgroundColor: "#f0f9ff"
+
 
     property bool isPopupOpen: false
 
@@ -36,7 +36,7 @@ Item {
             Layout.margins: 10
             Layout.bottomMargin: 5
 
-            color: qrscanner.backgroundColor
+            color: Theme.current.panelBackgroundColor_Normal
 
             RowLayout {
                 id: rowLayoutHeader
@@ -52,8 +52,8 @@ Item {
                     Layout.preferredHeight: 40
                     Layout.preferredWidth: 150
                     Layout.leftMargin: 10
-                    color: "white"
-                    border.color: qrscanner.lightBlue
+                    color: Theme.current.buttonColor_Normal
+                    border.color: Theme.current.buttonBorder_Normal
                     radius: 8
 
                     RowLayout {
@@ -75,7 +75,7 @@ Item {
                                 family: fontAW.name
                                 pixelSize: 14
                             }
-                            color: qrscanner.primaryBlue
+                            color: Theme.current.iconColor_Normal
                         }
                         Text {
                             id: textDate
@@ -87,7 +87,7 @@ Item {
                                 pixelSize: 14
                                 bold: false
                             }
-                            color: qrscanner.textColor
+                            color: Theme.current.textColor_Normal
                             horizontalAlignment: Text.AlignHCenter
                             verticalAlignment: Text.AlignVCenter
                             leftPadding: 5
@@ -102,8 +102,8 @@ Item {
                     id: rectTime
                     Layout.preferredHeight: 40
                     Layout.preferredWidth: 150
-                    border.color: qrscanner.lightBlue
-                    color: "white"
+                    border.color: Theme.current.buttonBorder_Normal
+                    color: Theme.current.buttonColor_Normal
                     radius: 8
 
                     RowLayout {
@@ -124,7 +124,7 @@ Item {
                                 family: fontAW.name
                                 pixelSize: 14
                             }
-                            color: qrscanner.primaryBlue
+                            color: Theme.current.iconColor_Normal
                         }
                         Text {
                             id: textTime
@@ -136,7 +136,7 @@ Item {
                                 pixelSize: 14
                                 bold: false
                             }
-                            color: qrscanner.textColor
+                            color: Theme.current.textColor_Normal
                             horizontalAlignment: Text.AlignHCenter
                             verticalAlignment: Text.AlignVCenter
                             leftPadding: 5
@@ -152,8 +152,8 @@ Item {
                     Layout.preferredHeight: 40
                     Layout.preferredWidth: 300
                     radius: 8
-                    color: "white"
-                    border.color: qrscanner.lightBlue
+                    color: Theme.current.buttonColor_Normal
+                    border.color: Theme.current.buttonBorder_Normal
 
                     MouseArea {
                         id: mouseAreaSelectCameraDropDown
@@ -163,8 +163,6 @@ Item {
 
                         onClicked: {
                             qrscanner.isPopupOpen = !qrscanner.isPopupOpen
-                            // console.log("qrscanner.isPopupOpen",
-                            //             qrscanner.isPopupOpen)
                         }
                     }
 
@@ -184,7 +182,7 @@ Item {
                                 pixelSize: 14
                                 bold: false
                             }
-                            color: qrscanner.textColor
+                            color: Theme.current.textColor_Normal
                             horizontalAlignment: Text.AlignLeft
                             verticalAlignment: Text.AlignVCenter
                             leftPadding: 20
@@ -200,7 +198,7 @@ Item {
                                 family: fontAW.name
                                 pixelSize: 14
                             }
-                            color: qrscanner.primaryBlue
+                            color: Theme.current.iconColor_Normal
                             horizontalAlignment: Text.AlignHCenter
                             verticalAlignment: Text.AlignVCenter
 
@@ -233,13 +231,10 @@ Item {
                         closePolicy: Popup.CloseOnPressOutside | Popup.CloseOnEscape
                         padding: 10
 
-                        // onOpened: {
-                        //     qrScannerViewModel.refreshCameraList()
-                        // }
                         background: Rectangle {
-                            color: qrscanner.backgroundColor
+                            color: Theme.current.panelBackgroundColor_Actived
                             radius: 10
-                            border.color: qrscanner.lightBlue
+                            border.color: Theme.current.panelBorderColor_Actived
                             border.width: 1
                         }
                         contentItem: ListView {
@@ -253,38 +248,32 @@ Item {
                                 id: delegateItem
                                 width: popupSelectCamera.width
                                 height: 40
+
                                 MouseArea {
                                     anchors.fill: parent
                                     cursorShape: Qt.PointingHandCursor
                                     onClicked: {
                                         qrScannerViewModel.setSelectedCamera(
-                                                    modelData)
-                                        selectedCamera.text = modelData
+                                            listViewPopupSelectCamera.model)
+                                        selectedCamera.text = listViewPopupSelectCamera.model
                                         popupSelectCamera.close()
                                     }
                                 }
 
                                 contentItem: Text {
-                                    text: modelData
+                                    text: listViewPopupSelectCamera.model
                                     font {
                                         family: "Montserrat"
                                         pixelSize: 14
                                     }
-                                    color: qrscanner.textColor
+                                    color: Theme.current.textColor_Actived
                                     verticalAlignment: Text.AlignVCenter
                                     leftPadding: 10
                                 }
 
                                 background: Rectangle {
-                                    color: delegateItem.highlighted ? qrscanner.backgroundColor : "transparent"
+                                    color: delegateItem.highlighted ? Theme.current.panelBackgroundColor_Hovered : "transparent"
                                 }
-
-                                // onClicked: {
-                                //     qrScannerViewModel.setSelectedCamera(
-                                //                 modelData)
-                                //     selectedCamera.text = modelData
-                                //     popupSelectCamera.close()
-                                // }
                             }
                             ScrollIndicator.vertical: ScrollIndicator {}
                         }
@@ -295,8 +284,8 @@ Item {
                     id: rectRefreshButton
                     Layout.preferredHeight: 40
                     Layout.preferredWidth: 150
-                    border.color: qrscanner.lightBlue
-                    color: "white"
+                    border.color: Theme.current.buttonBorder_Normal
+                    color: Theme.current.buttonColor_Normal
                     radius: 8
 
                     MouseArea {
@@ -309,17 +298,17 @@ Item {
                         }
 
                         onEntered: {
-                            rectRefreshButton.color = qrscanner.primaryBlue
-                            textRefreshButton.color = "white"
+                            rectRefreshButton.color = Theme.current.buttonColor_Hovered
+                            textRefreshButton.color = Theme.current.textColor_Hovered
                             textRefreshButton.font.bold = true
-                            refreshIcon.color = "white"
+                            refreshIcon.color = Theme.current.iconColor_Hovered
                         }
 
                         onExited: {
-                            rectRefreshButton.color = "white"
-                            textRefreshButton.color = qrscanner.textColor
+                            rectRefreshButton.color = Theme.current.buttonColor_Normal
+                            textRefreshButton.color = Theme.current.textColor_Normal
                             textRefreshButton.font.bold = false
-                            refreshIcon.color = qrscanner.primaryBlue
+                            refreshIcon.color = Theme.current.iconColor_Normal
                         }
                     }
 
@@ -342,7 +331,7 @@ Item {
                                 family: fontAW.name
                                 pixelSize: 14
                             }
-                            color: qrscanner.primaryBlue
+                            color: Theme.current.iconColor_Normal
 
                             RotationAnimation {
                                 id: refreshAnimation
@@ -363,7 +352,7 @@ Item {
                                 pixelSize: 14
                                 bold: false
                             }
-                            color: qrscanner.textColor
+                            color: Theme.current.textColor_Normal
                             horizontalAlignment: Text.AlignHCenter
                             verticalAlignment: Text.AlignVCenter
                             leftPadding: 5
@@ -375,37 +364,110 @@ Item {
                 }
 
                 Rectangle {
+                    id: rectControlAudio
+                    Layout.preferredHeight: 40
+                    Layout.preferredWidth: 150
+                    border.color: Theme.current.buttonBorder_Normal
+                    border.width: 1
+                    color: Theme.current.buttonColor_Normal
+                    radius: 8
+
+                    MouseArea {
+                        id: mouseAreaControlAudio
+                        anchors.fill: parent
+                        z: 1
+                        cursorShape: Qt.PointingHandCursor
+                        hoverEnabled: true
+                        onClicked: {
+                            qrScannerViewModel.toggleAudio()
+                        }
+                        onEntered: {
+                            rectControlAudio.color = Theme.current.buttonColor_Hovered
+                            iconControlAudio.color = Theme.current.iconColor_Hovered
+                            textControlAudio.color = Theme.current.textColor_Hovered
+                            textControlAudio.font.bold = true
+                        }
+                        onExited: {
+                            rectControlAudio.color = Theme.current.buttonColor_Normal
+                            iconControlAudio.color = Theme.current.iconColor_Normal
+                            textControlAudio.color = Theme.current.textColor_Normal
+                            textControlAudio.font.bold = false
+                        }
+                    }
+                    RowLayout {
+                        id: rowLayoutControlAudio
+                        spacing: 0
+                        anchors.fill: parent
+                        Item {
+                            Layout.fillWidth: true
+                        }
+                        Text {
+                            id: iconControlAudio
+                            text: !qrScannerViewModel.isAudio ? "\uf6a9" : "\uf028"
+                            Layout.preferredHeight: 40
+                            Layout.preferredWidth: 40
+                            Layout.alignment: Qt.AlignVCenter
+                            font {
+                                family: fontAW.name
+                                pixelSize: 14
+                            }
+                            horizontalAlignment: Text.AlignHCenter
+                            verticalAlignment: Text.AlignVCenter
+                            color: Theme.current.iconColor_Normal
+                        }
+                        Text {
+                            id: textControlAudio
+                            text: qrScannerViewModel.isAudio ? "Umuted" : "Muted"
+                            Layout.fillHeight: true
+                            Layout.preferredWidth: 100
+                            font {
+                                family: "Montserrat"
+                                pixelSize: 14
+                            }
+                            color: Theme.current.textColor_Normal
+                            horizontalAlignment: Text.AlignLeft
+                            verticalAlignment: Text.AlignVCenter
+                            leftPadding: 10
+                        }
+
+                        Item {
+                            Layout.fillWidth: true
+                        }
+                    }
+                }
+
+                Rectangle {
                     id: rectControlCameraButton
                     Layout.preferredHeight: 40
                     Layout.preferredWidth: 150
-                    border.color: qrscanner.lightBlue
+                    border.color: Theme.current.buttonBorder_Normal
                     border.width: 1
+                    color: Theme.current.buttonColor_Normal
                     radius: 8
 
                     MouseArea {
                         z: 1
+                        enabled: qrScannerViewModel.selectedCamera !== ""
                         id: mouseAreaControlCameraButton
                         anchors.fill: parent
                         cursorShape: Qt.PointingHandCursor
                         hoverEnabled: true
                         onClicked: {
                             qrScannerViewModel.toggleStreaming()
-                            // console.log("isStreaming: ",
-                            //             qrScannerViewModel.isStreaming)
                         }
 
                         onEntered: {
-                            rectControlCameraButton.color = qrscanner.primaryBlue
-                            textControlCameraButtonn.color = "white"
+                            rectControlCameraButton.color = Theme.current.buttonColor_Hovered
+                            textControlCameraButtonn.color = Theme.current.textColor_Hovered
                             textControlCameraButtonn.font.bold = true
-                            iconControlCameraButtonn.color = "white"
+                            iconControlCameraButtonn.color = Theme.current.iconColor_Hovered
                         }
 
                         onExited: {
-                            rectControlCameraButton.color = "white"
-                            textControlCameraButtonn.color = qrscanner.textColor
+                            rectControlCameraButton.color = Theme.current.buttonColor_Normal
+                            textControlCameraButtonn.color = Theme.current.textColor_Normal
                             textControlCameraButtonn.font.bold = false
-                            iconControlCameraButtonn.color = qrscanner.primaryBlue
+                            iconControlCameraButtonn.color = Theme.current.iconColor_Normal
                         }
                     }
 
@@ -430,7 +492,7 @@ Item {
                             }
                             horizontalAlignment: Text.AlignHCenter
                             verticalAlignment: Text.AlignVCenter
-                            color: qrscanner.primaryBlue
+                            color: Theme.current.iconColor_Normal
                         }
                         Text {
                             id: textControlCameraButtonn
@@ -441,7 +503,7 @@ Item {
                                 family: "Montserrat"
                                 pixelSize: 14
                             }
-                            color: qrscanner.textColor
+                            color: Theme.current.textColor_Normal
                             horizontalAlignment: Text.AlignLeft
                             verticalAlignment: Text.AlignVCenter
                             leftPadding: 10
@@ -480,7 +542,7 @@ Item {
                     Layout.preferredWidth: parent.width * 0.6
                     Layout.margins: 5
                     Layout.topMargin: 0
-                    color: qrscanner.backgroundColor
+                    color: Theme.current.panelBackgroundColor_Normal
 
                     ColumnLayout {
                         id: columnLayoutDataTable
@@ -510,7 +572,7 @@ Item {
 
                                         Text {
                                             anchors.fill: parent
-                                            text: modelData
+                                            text: listViewPopupSelectCamera.model
                                             horizontalAlignment: Text.AlignHCenter
                                             verticalAlignment: Text.AlignVCenter
                                             font {
@@ -518,7 +580,7 @@ Item {
                                                 pixelSize: 14
                                                 bold: true
                                             }
-                                            color: qrscanner.textColor
+                                            color: Theme.current.textColor_Normal
                                         }
                                     }
                                 }
@@ -534,30 +596,7 @@ Item {
                             ListView {
                                 id: listViewTableContent
                                 anchors.fill: parent
-
-                                model: ListModel {
-                                    ListElement {
-                                        No: "1"
-                                        QRCodeContent: "ABC"
-                                        ScannedDate: "06/02/2025"
-                                        ScannedTime: "20:05:00"
-                                        PIC: "Tran Van A"
-                                    }
-                                    ListElement {
-                                        No: "2"
-                                        QRCodeContent: "XYZ"
-                                        ScannedDate: "06/02/2025"
-                                        ScannedTime: "20:05:00"
-                                        PIC: "Tran Van B"
-                                    }
-                                    ListElement {
-                                        No: "3"
-                                        QRCodeContent: "KMW"
-                                        ScannedDate: "06/02/2025"
-                                        ScannedTime: "20:05:00"
-                                        PIC: "Tran Van C"
-                                    }
-                                }
+                                model: qrScannerViewModel.qrCodeData
 
                                 delegate: Rectangle {
                                     width: parent.width
@@ -576,7 +615,7 @@ Item {
                                             color: "transparent"
                                             Text {
                                                 anchors.fill: parent
-                                                text: No
+                                                text: index + 1
                                                 anchors.centerIn: parent
                                                 horizontalAlignment: Text.AlignHCenter
                                                 verticalAlignment: Text.AlignVCenter
@@ -585,7 +624,7 @@ Item {
                                                     family: "Montserrat"
                                                     pixelSize: 14
                                                 }
-                                                color: qrscanner.textColor
+                                                color: Theme.current.textColor_Normal
                                             }
                                         }
 
@@ -596,7 +635,7 @@ Item {
                                             color: "transparent"
                                             Text {
                                                 anchors.fill: parent
-                                                text: QRCodeContent
+                                                text: listViewTableContent.model.content
                                                 anchors.centerIn: parent
                                                 horizontalAlignment: Text.AlignHCenter
                                                 verticalAlignment: Text.AlignVCenter
@@ -605,7 +644,7 @@ Item {
                                                     family: "Montserrat"
                                                     pixelSize: 14
                                                 }
-                                                color: qrscanner.textColor
+                                                color: Theme.current.textColor_Normal
                                             }
                                         }
 
@@ -616,7 +655,7 @@ Item {
                                             color: "transparent"
                                             Text {
                                                 anchors.fill: parent
-                                                text: ScannedDate
+                                                text: listViewTableContent.model.scannedDay
                                                 anchors.centerIn: parent
                                                 horizontalAlignment: Text.AlignHCenter
                                                 verticalAlignment: Text.AlignVCenter
@@ -625,7 +664,7 @@ Item {
                                                     family: "Montserrat"
                                                     pixelSize: 14
                                                 }
-                                                color: qrscanner.textColor
+                                                color: Theme.current.textColor_Normal
                                             }
                                         }
 
@@ -636,7 +675,7 @@ Item {
                                             color: "transparent"
                                             Text {
                                                 anchors.fill: parent
-                                                text: ScannedTime
+                                                text: modelData.scannedTime
                                                 anchors.centerIn: parent
                                                 horizontalAlignment: Text.AlignHCenter
                                                 verticalAlignment: Text.AlignVCenter
@@ -645,7 +684,7 @@ Item {
                                                     family: "Montserrat"
                                                     pixelSize: 14
                                                 }
-                                                color: qrscanner.textColor
+                                                color: Theme.current.textColor_Normal
                                             }
                                         }
                                         Rectangle {
@@ -655,7 +694,7 @@ Item {
                                             color: "transparent"
                                             Text {
                                                 anchors.fill: parent
-                                                text: PIC
+                                                text: listViewTableContent.model.pic
                                                 anchors.centerIn: parent
                                                 horizontalAlignment: Text.AlignHCenter
                                                 verticalAlignment: Text.AlignVCenter
@@ -664,7 +703,7 @@ Item {
                                                     family: "Montserrat"
                                                     pixelSize: 14
                                                 }
-                                                color: qrscanner.textColor
+                                                color: Theme.current.textColor_Normal
                                             }
                                         }
                                         Item {
@@ -683,7 +722,7 @@ Item {
                     Layout.margins: 5
                     Layout.topMargin: 0
                     radius: 10
-                    color: qrscanner.backgroundColor
+                    color: Theme.current.panelBackgroundColor_Normal
 
                     ColumnLayout {
                         id: columnLayoutRectCameraViewPort
@@ -695,12 +734,13 @@ Item {
                         Text {
                             id: textTitleCameraViewPort
                             text: qrScannerViewModel.selectedCamera
+                                  || "No Camera selected!"
                             font {
                                 family: "Montserrat"
                                 pixelSize: 14
                                 italic: true
                             }
-                            color: qrscanner.textColor
+                            color: Theme.current.textColor_Normal
                             Layout.fillWidth: true
                             Layout.preferredHeight: 40
                             horizontalAlignment: Text.AlignHCenter
@@ -713,7 +753,7 @@ Item {
                             Layout.preferredWidth: parent.width * 0.6
                             radius: 10
                             Layout.alignment: Qt.AlignHCenter
-                            border.color: qrscanner.lightBlue
+                            border.color: Theme.current.buttonBorder_Actived
                             border.width: 1
                             color: "transparent"
                             clip: true
@@ -724,8 +764,6 @@ Item {
                                 anchors.centerIn: parent
                                 running: qrScannerViewModel.isLoading
                                 visible: qrScannerViewModel.isLoading
-                                // onVisibleChanged: console.log("isLoading",
-                                // visible)
                             }
 
                             // Video Stream
@@ -735,31 +773,32 @@ Item {
                                 clip: true
                                 layer.smooth: true
                                 fillMode: VideoOutput.PreserveAspectCrop
-                                visible: qrScannerViewMode.isStreaming
+                                visible: qrScannerViewModel.isStreaming
 
                                 Component.onCompleted: {
                                     qrScannerViewModel.setVideoSink(
-                                                videoOutput.videoSink)
+                                        videoOutput.videoSink)
                                 }
                             }
 
-                            // Fallback text (optional)
-                            Text {
-                                text: "Camera unavailable"
-                                font {
-                                    family: "Montserrat"
-                                    pixelSize: 20
-                                }
-                                color: qrscanner.textColor
-                                visible: !qrScannerViewModel.isLoading
-                                         && !qrScannerViewMode.isStreaming
+                            Rectangle {
                                 anchors.centerIn: parent
+                                visible: !qrScannerViewModel.isLoading
+                                         && !qrScannerViewModel.isStreaming
+                                color: Theme.current.panelBackgroundColor_Actived
+                                Image {
+                                    anchors.centerIn: parent
+                                    source: "../Images/video-slash-solid.svg"
+                                    fillMode: Image.PreserveAspectCrop
+                                    height: 160
+                                    width: 200
+                                }
                             }
                         }
 
                         Rectangle {
                             id: rectLastedResultsQRCode
-                            color: "#bf8b87"
+                            color: Theme.current.panelBackgroundColor_Actived
                             Layout.preferredHeight: parent.width * 0.3
                             Layout.preferredWidth: parent.width * 0.6
                             Layout.alignment: Qt.AlignHCenter
@@ -780,7 +819,7 @@ Item {
                                         pixelSize: 16
                                         bold: true
                                     }
-                                    color: "white"
+                                    color: Theme.current.textColor_Normal
                                     horizontalAlignment: Text.AlignHCenter
                                     verticalAlignment: Text.AlignVCenter
                                     Layout.alignment: Qt.AlignHCenter | Qt.AlignTop
@@ -796,17 +835,13 @@ Item {
                                         family: "Montserrat"
                                         pixelSize: 16
                                     }
-                                    color: "white"
+                                    leftPadding: 20
+                                    color: Theme.current.textColor_Normal
                                     topPadding: 10
-                                    horizontalAlignment: Text.AlignHCenter
+                                    horizontalAlignment: Text.AlignLeft
                                     verticalAlignment: Text.AlignTop
                                     Layout.alignment: Qt.AlignHCenter | Qt.AlignVCenter
                                 }
-                                // Image {
-                                //     source: "../Images/qrcodeTest.png"
-                                //     Layout.fillWidth: true
-                                //     Layout.fillHeight: true
-                                // }
                             }
                         }
 

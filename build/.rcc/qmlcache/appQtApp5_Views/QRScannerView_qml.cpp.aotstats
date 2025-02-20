@@ -6,31 +6,31 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 19,
-                        "durationMicroseconds": 311,
+                        "durationMicroseconds": 251,
                         "errorMessage": "",
                         "functionName": "fill",
-                        "line": 8
+                        "line": 12
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 23,
-                        "durationMicroseconds": 116,
+                        "durationMicroseconds": 55,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 27
                     },
                     {
-                        "codegenSuccessfull": true,
+                        "codegenSuccessfull": false,
                         "column": 20,
-                        "durationMicroseconds": 233,
-                        "errorMessage": "",
+                        "durationMicroseconds": 600,
+                        "errorMessage": "Cannot generate efficient code for script lookup",
                         "functionName": "color",
                         "line": 39
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 31,
-                        "durationMicroseconds": 304,
+                        "durationMicroseconds": 176,
                         "errorMessage": "",
                         "functionName": "alignment",
                         "line": 33
@@ -38,23 +38,31 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 31,
-                        "durationMicroseconds": 173,
+                        "durationMicroseconds": 125,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 43
                     },
                     {
-                        "codegenSuccessfull": true,
+                        "codegenSuccessfull": false,
+                        "column": 28,
+                        "durationMicroseconds": 298,
+                        "errorMessage": "Cannot generate efficient code for script lookup",
+                        "functionName": "color",
+                        "line": 55
+                    },
+                    {
+                        "codegenSuccessfull": false,
                         "column": 35,
-                        "durationMicroseconds": 274,
-                        "errorMessage": "",
+                        "durationMicroseconds": 125,
+                        "errorMessage": "Cannot generate efficient code for script lookup",
                         "functionName": "color",
                         "line": 56
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 39,
-                        "durationMicroseconds": 70,
+                        "durationMicroseconds": 55,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 61
@@ -62,7 +70,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 50,
-                        "durationMicroseconds": 114,
+                        "durationMicroseconds": 63,
                         "errorMessage": "",
                         "functionName": "horizontalAlignment",
                         "line": 71
@@ -70,23 +78,23 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 48,
-                        "durationMicroseconds": 101,
+                        "durationMicroseconds": 53,
                         "errorMessage": "",
                         "functionName": "verticalAlignment",
                         "line": 72
                     },
                     {
-                        "codegenSuccessfull": true,
+                        "codegenSuccessfull": false,
                         "column": 36,
-                        "durationMicroseconds": 158,
-                        "errorMessage": "",
+                        "durationMicroseconds": 116,
+                        "errorMessage": "Cannot generate efficient code for script lookup",
                         "functionName": "color",
                         "line": 78
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 47,
-                        "durationMicroseconds": 219,
+                        "durationMicroseconds": 141,
                         "errorMessage": "",
                         "functionName": "alignment",
                         "line": 70
@@ -94,7 +102,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 41,
-                        "durationMicroseconds": 117,
+                        "durationMicroseconds": 72,
                         "errorMessage": "",
                         "functionName": "family",
                         "line": 75
@@ -102,23 +110,23 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 35,
-                        "durationMicroseconds": 481,
+                        "durationMicroseconds": 330,
                         "errorMessage": "Cannot access value for name qrScannerViewModel",
                         "functionName": "text",
                         "line": 84
                     },
                     {
-                        "codegenSuccessfull": true,
+                        "codegenSuccessfull": false,
                         "column": 36,
-                        "durationMicroseconds": 184,
-                        "errorMessage": "",
+                        "durationMicroseconds": 141,
+                        "errorMessage": "Cannot generate efficient code for script lookup",
                         "functionName": "color",
                         "line": 90
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 50,
-                        "durationMicroseconds": 99,
+                        "durationMicroseconds": 62,
                         "errorMessage": "",
                         "functionName": "horizontalAlignment",
                         "line": 91
@@ -126,554 +134,26 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 48,
-                        "durationMicroseconds": 81,
+                        "durationMicroseconds": 55,
                         "errorMessage": "",
                         "functionName": "verticalAlignment",
                         "line": 92
                     },
                     {
-                        "codegenSuccessfull": true,
-                        "column": 35,
-                        "durationMicroseconds": 153,
-                        "errorMessage": "",
-                        "functionName": "color",
-                        "line": 105
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 39,
-                        "durationMicroseconds": 101,
-                        "errorMessage": "",
-                        "functionName": "fill",
-                        "line": 111
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 50,
-                        "durationMicroseconds": 156,
-                        "errorMessage": "",
-                        "functionName": "horizontalAlignment",
-                        "line": 120
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 48,
-                        "durationMicroseconds": 203,
-                        "errorMessage": "",
-                        "functionName": "verticalAlignment",
-                        "line": 121
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 36,
-                        "durationMicroseconds": 201,
-                        "errorMessage": "",
-                        "functionName": "color",
-                        "line": 127
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 47,
-                        "durationMicroseconds": 281,
-                        "errorMessage": "",
-                        "functionName": "alignment",
-                        "line": 119
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 41,
-                        "durationMicroseconds": 135,
-                        "errorMessage": "",
-                        "functionName": "family",
-                        "line": 124
-                    },
-                    {
-                        "codegenSuccessfull": false,
-                        "column": 35,
-                        "durationMicroseconds": 652,
-                        "errorMessage": "Cannot access value for name qrScannerViewModel",
-                        "functionName": "text",
-                        "line": 133
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 36,
-                        "durationMicroseconds": 227,
-                        "errorMessage": "",
-                        "functionName": "color",
-                        "line": 139
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 50,
-                        "durationMicroseconds": 146,
-                        "errorMessage": "",
-                        "functionName": "horizontalAlignment",
-                        "line": 140
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 48,
-                        "durationMicroseconds": 203,
-                        "errorMessage": "",
-                        "functionName": "verticalAlignment",
-                        "line": 141
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 35,
-                        "durationMicroseconds": 270,
-                        "errorMessage": "",
-                        "functionName": "color",
-                        "line": 156
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 38,
-                        "durationMicroseconds": 149,
-                        "errorMessage": "",
-                        "functionName": "cursorShape",
-                        "line": 162
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 36,
-                        "durationMicroseconds": 373,
-                        "errorMessage": "",
-                        "functionName": "onClicked",
-                        "line": 164
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 39,
-                        "durationMicroseconds": 96,
-                        "errorMessage": "",
-                        "functionName": "fill",
-                        "line": 160
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 39,
-                        "durationMicroseconds": 103,
-                        "errorMessage": "",
-                        "functionName": "fill",
-                        "line": 173
-                    },
-                    {
-                        "codegenSuccessfull": false,
-                        "column": 35,
-                        "durationMicroseconds": 507,
-                        "errorMessage": "Cannot access value for name qrScannerViewModel",
-                        "functionName": "text",
-                        "line": 180
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 36,
-                        "durationMicroseconds": 202,
-                        "errorMessage": "",
-                        "functionName": "color",
-                        "line": 187
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 50,
-                        "durationMicroseconds": 124,
-                        "errorMessage": "",
-                        "functionName": "horizontalAlignment",
-                        "line": 188
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 48,
-                        "durationMicroseconds": 126,
-                        "errorMessage": "",
-                        "functionName": "verticalAlignment",
-                        "line": 189
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 35,
-                        "durationMicroseconds": 303,
-                        "errorMessage": "",
-                        "functionName": "text",
-                        "line": 198
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 36,
-                        "durationMicroseconds": 196,
-                        "errorMessage": "",
-                        "functionName": "color",
-                        "line": 203
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 50,
-                        "durationMicroseconds": 118,
-                        "errorMessage": "",
-                        "functionName": "horizontalAlignment",
-                        "line": 204
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 48,
-                        "durationMicroseconds": 126,
-                        "errorMessage": "",
-                        "functionName": "verticalAlignment",
-                        "line": 205
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 39,
-                        "durationMicroseconds": 232,
-                        "errorMessage": "",
-                        "functionName": "rotation",
-                        "line": 207
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 36,
-                        "durationMicroseconds": 215,
-                        "errorMessage": "",
-                        "functionName": "scale",
-                        "line": 215
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 47,
-                        "durationMicroseconds": 149,
-                        "errorMessage": "",
-                        "functionName": "alignment",
-                        "line": 197
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 41,
-                        "durationMicroseconds": 128,
-                        "errorMessage": "",
-                        "functionName": "family",
-                        "line": 200
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 50,
-                        "durationMicroseconds": 221,
-                        "errorMessage": "",
-                        "functionName": "type",
-                        "line": 211
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 50,
-                        "durationMicroseconds": 92,
-                        "errorMessage": "",
-                        "functionName": "type",
-                        "line": 219
-                    },
-                    {
-                        "codegenSuccessfull": false,
-                        "column": 34,
-                        "durationMicroseconds": 0,
-                        "errorMessage": "Cannot resolve property type  for binding on visible.",
-                        "functionName": "visible",
-                        "line": 227
-                    },
-                    {
                         "codegenSuccessfull": false,
                         "column": 28,
-                        "durationMicroseconds": 0,
-                        "errorMessage": "Cannot resolve property type  for binding on y.",
-                        "functionName": "y",
-                        "line": 228
-                    },
-                    {
-                        "codegenSuccessfull": false,
-                        "column": 32,
-                        "durationMicroseconds": 0,
-                        "errorMessage": "Cannot resolve property type  for binding on width.",
-                        "functionName": "width",
-                        "line": 229
-                    },
-                    {
-                        "codegenSuccessfull": false,
-                        "column": 38,
-                        "durationMicroseconds": 0,
-                        "errorMessage": "Cannot resolve property type  for binding on closePolicy.",
-                        "functionName": "closePolicy",
-                        "line": 233
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 36,
-                        "durationMicroseconds": 211,
-                        "errorMessage": "",
+                        "durationMicroseconds": 122,
+                        "errorMessage": "Cannot generate efficient code for script lookup",
                         "functionName": "color",
-                        "line": 240
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 43,
-                        "durationMicroseconds": 138,
-                        "errorMessage": "",
-                        "functionName": "color",
-                        "line": 242
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 45,
-                        "durationMicroseconds": 92,
-                        "errorMessage": "",
-                        "functionName": "implicitHeight",
-                        "line": 247
+                        "line": 106
                     },
                     {
                         "codegenSuccessfull": false,
-                        "column": 36,
-                        "durationMicroseconds": 741,
-                        "errorMessage": "Cannot access value for name qrScannerViewModel",
-                        "functionName": "model",
-                        "line": 248
-                    },
-                    {
-                        "codegenSuccessfull": false,
-                        "column": 40,
-                        "durationMicroseconds": 0,
-                        "errorMessage": "Cannot resolve property type  for binding on width.",
-                        "functionName": "width",
-                        "line": 254
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 50,
+                        "column": 35,
                         "durationMicroseconds": 124,
-                        "errorMessage": "",
-                        "functionName": "cursorShape",
-                        "line": 258
-                    },
-                    {
-                        "codegenSuccessfull": false,
-                        "column": 48,
-                        "durationMicroseconds": 235,
-                        "errorMessage": "Cannot access value for name qrScannerViewModel",
-                        "functionName": "onClicked",
-                        "line": 259
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 51,
-                        "durationMicroseconds": 69,
-                        "errorMessage": "",
-                        "functionName": "fill",
-                        "line": 257
-                    },
-                    {
-                        "codegenSuccessfull": false,
-                        "column": 43,
-                        "durationMicroseconds": 249,
-                        "errorMessage": "Cannot access value for name modelData",
-                        "functionName": "text",
-                        "line": 268
-                    },
-                    {
-                        "codegenSuccessfull": false,
-                        "column": 44,
-                        "durationMicroseconds": 44,
-                        "errorMessage": "Cannot access value for name qrscanner",
+                        "errorMessage": "Cannot generate efficient code for script lookup",
                         "functionName": "color",
-                        "line": 273
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 56,
-                        "durationMicroseconds": 124,
-                        "errorMessage": "",
-                        "functionName": "verticalAlignment",
-                        "line": 274
-                    },
-                    {
-                        "codegenSuccessfull": false,
-                        "column": 44,
-                        "durationMicroseconds": 47,
-                        "errorMessage": "Cannot retrieve a non-object type by ID: delegateItem",
-                        "functionName": "color",
-                        "line": 279
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 35,
-                        "durationMicroseconds": 157,
-                        "errorMessage": "",
-                        "functionName": "color",
-                        "line": 298
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 38,
-                        "durationMicroseconds": 90,
-                        "errorMessage": "",
-                        "functionName": "cursorShape",
-                        "line": 304
-                    },
-                    {
-                        "codegenSuccessfull": false,
-                        "column": 36,
-                        "durationMicroseconds": 244,
-                        "errorMessage": "Cannot access value for name qrScannerViewModel",
-                        "functionName": "onClicked",
-                        "line": 306
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 36,
-                        "durationMicroseconds": 623,
-                        "errorMessage": "",
-                        "functionName": "onEntered",
-                        "line": 311
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 35,
-                        "durationMicroseconds": 494,
-                        "errorMessage": "",
-                        "functionName": "onExited",
-                        "line": 318
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 39,
-                        "durationMicroseconds": 51,
-                        "errorMessage": "",
-                        "functionName": "fill",
-                        "line": 303
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 39,
-                        "durationMicroseconds": 41,
-                        "errorMessage": "",
-                        "functionName": "fill",
-                        "line": 328
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 50,
-                        "durationMicroseconds": 65,
-                        "errorMessage": "",
-                        "functionName": "horizontalAlignment",
-                        "line": 338
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 48,
-                        "durationMicroseconds": 62,
-                        "errorMessage": "",
-                        "functionName": "verticalAlignment",
-                        "line": 339
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 36,
-                        "durationMicroseconds": 93,
-                        "errorMessage": "",
-                        "functionName": "color",
-                        "line": 345
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 47,
-                        "durationMicroseconds": 138,
-                        "errorMessage": "",
-                        "functionName": "alignment",
-                        "line": 337
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 41,
-                        "durationMicroseconds": 66,
-                        "errorMessage": "",
-                        "functionName": "family",
-                        "line": 342
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 41,
-                        "durationMicroseconds": 65,
-                        "errorMessage": "",
-                        "functionName": "target",
-                        "line": 349
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 36,
-                        "durationMicroseconds": 114,
-                        "errorMessage": "",
-                        "functionName": "color",
-                        "line": 366
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 50,
-                        "durationMicroseconds": 69,
-                        "errorMessage": "",
-                        "functionName": "horizontalAlignment",
-                        "line": 367
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 48,
-                        "durationMicroseconds": 53,
-                        "errorMessage": "",
-                        "functionName": "verticalAlignment",
-                        "line": 368
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 35,
-                        "durationMicroseconds": 101,
-                        "errorMessage": "",
-                        "functionName": "color",
-                        "line": 381
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 38,
-                        "durationMicroseconds": 75,
-                        "errorMessage": "",
-                        "functionName": "cursorShape",
-                        "line": 389
-                    },
-                    {
-                        "codegenSuccessfull": false,
-                        "column": 36,
-                        "durationMicroseconds": 226,
-                        "errorMessage": "Cannot access value for name qrScannerViewModel",
-                        "functionName": "onClicked",
-                        "line": 391
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 36,
-                        "durationMicroseconds": 737,
-                        "errorMessage": "",
-                        "functionName": "onEntered",
-                        "line": 397
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 35,
-                        "durationMicroseconds": 534,
-                        "errorMessage": "",
-                        "functionName": "onExited",
-                        "line": 404
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 39,
-                        "durationMicroseconds": 95,
-                        "errorMessage": "",
-                        "functionName": "fill",
-                        "line": 388
+                        "line": 105
                     },
                     {
                         "codegenSuccessfull": true,
@@ -681,79 +161,583 @@
                         "durationMicroseconds": 52,
                         "errorMessage": "",
                         "functionName": "fill",
-                        "line": 415
-                    },
-                    {
-                        "codegenSuccessfull": false,
-                        "column": 35,
-                        "durationMicroseconds": 405,
-                        "errorMessage": "Cannot access value for name qrScannerViewModel",
-                        "functionName": "text",
-                        "line": 423
+                        "line": 111
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 50,
-                        "durationMicroseconds": 102,
+                        "durationMicroseconds": 70,
                         "errorMessage": "",
                         "functionName": "horizontalAlignment",
-                        "line": 431
+                        "line": 120
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 48,
-                        "durationMicroseconds": 70,
+                        "durationMicroseconds": 51,
                         "errorMessage": "",
                         "functionName": "verticalAlignment",
-                        "line": 432
+                        "line": 121
                     },
                     {
-                        "codegenSuccessfull": true,
+                        "codegenSuccessfull": false,
                         "column": 36,
-                        "durationMicroseconds": 109,
-                        "errorMessage": "",
+                        "durationMicroseconds": 122,
+                        "errorMessage": "Cannot generate efficient code for script lookup",
                         "functionName": "color",
-                        "line": 433
+                        "line": 127
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 47,
-                        "durationMicroseconds": 68,
+                        "durationMicroseconds": 226,
                         "errorMessage": "",
                         "functionName": "alignment",
-                        "line": 426
+                        "line": 119
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 41,
-                        "durationMicroseconds": 85,
+                        "durationMicroseconds": 77,
                         "errorMessage": "",
                         "functionName": "family",
-                        "line": 428
+                        "line": 124
                     },
                     {
                         "codegenSuccessfull": false,
                         "column": 35,
-                        "durationMicroseconds": 292,
+                        "durationMicroseconds": 321,
                         "errorMessage": "Cannot access value for name qrScannerViewModel",
                         "functionName": "text",
-                        "line": 437
+                        "line": 133
                     },
                     {
-                        "codegenSuccessfull": true,
+                        "codegenSuccessfull": false,
                         "column": 36,
-                        "durationMicroseconds": 137,
-                        "errorMessage": "",
+                        "durationMicroseconds": 126,
+                        "errorMessage": "Cannot generate efficient code for script lookup",
                         "functionName": "color",
-                        "line": 444
+                        "line": 139
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 50,
-                        "durationMicroseconds": 68,
+                        "durationMicroseconds": 61,
                         "errorMessage": "",
                         "functionName": "horizontalAlignment",
-                        "line": 445
+                        "line": 140
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 48,
+                        "durationMicroseconds": 61,
+                        "errorMessage": "",
+                        "functionName": "verticalAlignment",
+                        "line": 141
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 28,
+                        "durationMicroseconds": 122,
+                        "errorMessage": "Cannot generate efficient code for script lookup",
+                        "functionName": "color",
+                        "line": 155
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 35,
+                        "durationMicroseconds": 107,
+                        "errorMessage": "Cannot generate efficient code for script lookup",
+                        "functionName": "color",
+                        "line": 156
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 38,
+                        "durationMicroseconds": 65,
+                        "errorMessage": "",
+                        "functionName": "cursorShape",
+                        "line": 162
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 36,
+                        "durationMicroseconds": 176,
+                        "errorMessage": "",
+                        "functionName": "onClicked",
+                        "line": 164
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 39,
+                        "durationMicroseconds": 44,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 160
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 39,
+                        "durationMicroseconds": 39,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 171
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 35,
+                        "durationMicroseconds": 281,
+                        "errorMessage": "Cannot access value for name qrScannerViewModel",
+                        "functionName": "text",
+                        "line": 178
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 36,
+                        "durationMicroseconds": 122,
+                        "errorMessage": "Cannot generate efficient code for script lookup",
+                        "functionName": "color",
+                        "line": 185
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 50,
+                        "durationMicroseconds": 58,
+                        "errorMessage": "",
+                        "functionName": "horizontalAlignment",
+                        "line": 186
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 48,
+                        "durationMicroseconds": 126,
+                        "errorMessage": "",
+                        "functionName": "verticalAlignment",
+                        "line": 187
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 35,
+                        "durationMicroseconds": 158,
+                        "errorMessage": "",
+                        "functionName": "text",
+                        "line": 196
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 36,
+                        "durationMicroseconds": 295,
+                        "errorMessage": "Cannot generate efficient code for script lookup",
+                        "functionName": "color",
+                        "line": 201
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 50,
+                        "durationMicroseconds": 66,
+                        "errorMessage": "",
+                        "functionName": "horizontalAlignment",
+                        "line": 202
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 48,
+                        "durationMicroseconds": 112,
+                        "errorMessage": "",
+                        "functionName": "verticalAlignment",
+                        "line": 203
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 39,
+                        "durationMicroseconds": 143,
+                        "errorMessage": "",
+                        "functionName": "rotation",
+                        "line": 205
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 36,
+                        "durationMicroseconds": 133,
+                        "errorMessage": "",
+                        "functionName": "scale",
+                        "line": 213
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 47,
+                        "durationMicroseconds": 64,
+                        "errorMessage": "",
+                        "functionName": "alignment",
+                        "line": 195
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 41,
+                        "durationMicroseconds": 63,
+                        "errorMessage": "",
+                        "functionName": "family",
+                        "line": 198
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 50,
+                        "durationMicroseconds": 55,
+                        "errorMessage": "",
+                        "functionName": "type",
+                        "line": 209
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 50,
+                        "durationMicroseconds": 50,
+                        "errorMessage": "",
+                        "functionName": "type",
+                        "line": 217
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 34,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Cannot resolve property type  for binding on visible.",
+                        "functionName": "visible",
+                        "line": 225
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 28,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Cannot resolve property type  for binding on y.",
+                        "functionName": "y",
+                        "line": 226
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 32,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Cannot resolve property type  for binding on width.",
+                        "functionName": "width",
+                        "line": 227
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 38,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Cannot resolve property type  for binding on closePolicy.",
+                        "functionName": "closePolicy",
+                        "line": 231
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 36,
+                        "durationMicroseconds": 136,
+                        "errorMessage": "Cannot generate efficient code for script lookup",
+                        "functionName": "color",
+                        "line": 235
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 43,
+                        "durationMicroseconds": 110,
+                        "errorMessage": "Cannot generate efficient code for script lookup",
+                        "functionName": "color",
+                        "line": 237
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 45,
+                        "durationMicroseconds": 43,
+                        "errorMessage": "",
+                        "functionName": "implicitHeight",
+                        "line": 242
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 36,
+                        "durationMicroseconds": 592,
+                        "errorMessage": "Cannot access value for name qrScannerViewModel",
+                        "functionName": "model",
+                        "line": 243
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 40,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Cannot resolve property type  for binding on width.",
+                        "functionName": "width",
+                        "line": 249
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 50,
+                        "durationMicroseconds": 101,
+                        "errorMessage": "",
+                        "functionName": "cursorShape",
+                        "line": 254
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 48,
+                        "durationMicroseconds": 198,
+                        "errorMessage": "Cannot access value for name qrScannerViewModel",
+                        "functionName": "onClicked",
+                        "line": 255
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 51,
+                        "durationMicroseconds": 52,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 253
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 43,
+                        "durationMicroseconds": 90,
+                        "errorMessage": "",
+                        "functionName": "text",
+                        "line": 264
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 44,
+                        "durationMicroseconds": 118,
+                        "errorMessage": "Cannot generate efficient code for script lookup",
+                        "functionName": "color",
+                        "line": 269
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 56,
+                        "durationMicroseconds": 81,
+                        "errorMessage": "",
+                        "functionName": "verticalAlignment",
+                        "line": 270
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 44,
+                        "durationMicroseconds": 22,
+                        "errorMessage": "Cannot retrieve a non-object type by ID: delegateItem",
+                        "functionName": "color",
+                        "line": 275
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 28,
+                        "durationMicroseconds": 115,
+                        "errorMessage": "Cannot generate efficient code for script lookup",
+                        "functionName": "color",
+                        "line": 288
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 35,
+                        "durationMicroseconds": 106,
+                        "errorMessage": "Cannot generate efficient code for script lookup",
+                        "functionName": "color",
+                        "line": 287
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 38,
+                        "durationMicroseconds": 67,
+                        "errorMessage": "",
+                        "functionName": "cursorShape",
+                        "line": 293
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 36,
+                        "durationMicroseconds": 240,
+                        "errorMessage": "Cannot access value for name qrScannerViewModel",
+                        "functionName": "onClicked",
+                        "line": 295
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 36,
+                        "durationMicroseconds": 586,
+                        "errorMessage": "Cannot generate efficient code for script lookup",
+                        "functionName": "onEntered",
+                        "line": 300
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 35,
+                        "durationMicroseconds": 530,
+                        "errorMessage": "Cannot generate efficient code for script lookup",
+                        "functionName": "onExited",
+                        "line": 307
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 39,
+                        "durationMicroseconds": 46,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 292
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 39,
+                        "durationMicroseconds": 39,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 317
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 50,
+                        "durationMicroseconds": 65,
+                        "errorMessage": "",
+                        "functionName": "horizontalAlignment",
+                        "line": 327
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 48,
+                        "durationMicroseconds": 51,
+                        "errorMessage": "",
+                        "functionName": "verticalAlignment",
+                        "line": 328
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 36,
+                        "durationMicroseconds": 157,
+                        "errorMessage": "Cannot generate efficient code for script lookup",
+                        "functionName": "color",
+                        "line": 334
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 47,
+                        "durationMicroseconds": 143,
+                        "errorMessage": "",
+                        "functionName": "alignment",
+                        "line": 326
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 41,
+                        "durationMicroseconds": 73,
+                        "errorMessage": "",
+                        "functionName": "family",
+                        "line": 331
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 41,
+                        "durationMicroseconds": 57,
+                        "errorMessage": "",
+                        "functionName": "target",
+                        "line": 338
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 36,
+                        "durationMicroseconds": 113,
+                        "errorMessage": "Cannot generate efficient code for script lookup",
+                        "functionName": "color",
+                        "line": 355
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 50,
+                        "durationMicroseconds": 54,
+                        "errorMessage": "",
+                        "functionName": "horizontalAlignment",
+                        "line": 356
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 48,
+                        "durationMicroseconds": 49,
+                        "errorMessage": "",
+                        "functionName": "verticalAlignment",
+                        "line": 357
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 28,
+                        "durationMicroseconds": 112,
+                        "errorMessage": "Cannot generate efficient code for script lookup",
+                        "functionName": "color",
+                        "line": 372
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 35,
+                        "durationMicroseconds": 106,
+                        "errorMessage": "Cannot generate efficient code for script lookup",
+                        "functionName": "color",
+                        "line": 370
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 38,
+                        "durationMicroseconds": 58,
+                        "errorMessage": "",
+                        "functionName": "cursorShape",
+                        "line": 379
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 36,
+                        "durationMicroseconds": 197,
+                        "errorMessage": "Cannot access value for name qrScannerViewModel",
+                        "functionName": "onClicked",
+                        "line": 381
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 36,
+                        "durationMicroseconds": 581,
+                        "errorMessage": "Cannot generate efficient code for script lookup",
+                        "functionName": "onEntered",
+                        "line": 384
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 35,
+                        "durationMicroseconds": 532,
+                        "errorMessage": "Cannot generate efficient code for script lookup",
+                        "functionName": "onExited",
+                        "line": 390
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 39,
+                        "durationMicroseconds": 46,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 377
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 39,
+                        "durationMicroseconds": 39,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 400
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 35,
+                        "durationMicroseconds": 241,
+                        "errorMessage": "Cannot access value for name qrScannerViewModel",
+                        "functionName": "text",
+                        "line": 406
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 50,
+                        "durationMicroseconds": 78,
+                        "errorMessage": "",
+                        "functionName": "horizontalAlignment",
+                        "line": 414
                     },
                     {
                         "codegenSuccessfull": true,
@@ -761,436 +745,508 @@
                         "durationMicroseconds": 74,
                         "errorMessage": "",
                         "functionName": "verticalAlignment",
-                        "line": 446
+                        "line": 415
                     },
                     {
-                        "codegenSuccessfull": true,
-                        "column": 31,
-                        "durationMicroseconds": 295,
-                        "errorMessage": "",
-                        "functionName": "alignment",
-                        "line": 465
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 31,
-                        "durationMicroseconds": 121,
-                        "errorMessage": "",
-                        "functionName": "fill",
-                        "line": 473
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 28,
-                        "durationMicroseconds": 206,
-                        "errorMessage": "",
+                        "codegenSuccessfull": false,
+                        "column": 36,
+                        "durationMicroseconds": 122,
+                        "errorMessage": "Cannot generate efficient code for script lookup",
                         "functionName": "color",
-                        "line": 483
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 44,
-                        "durationMicroseconds": 250,
-                        "errorMessage": "",
-                        "functionName": "preferredWidth",
-                        "line": 480
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 39,
-                        "durationMicroseconds": 94,
-                        "errorMessage": "",
-                        "functionName": "fill",
-                        "line": 487
+                        "line": 416
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 47,
-                        "durationMicroseconds": 132,
+                        "durationMicroseconds": 73,
                         "errorMessage": "",
                         "functionName": "alignment",
+                        "line": 409
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 41,
+                        "durationMicroseconds": 70,
+                        "errorMessage": "",
+                        "functionName": "family",
+                        "line": 411
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 35,
+                        "durationMicroseconds": 249,
+                        "errorMessage": "Cannot access value for name qrScannerViewModel",
+                        "functionName": "text",
+                        "line": 420
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 36,
+                        "durationMicroseconds": 136,
+                        "errorMessage": "Cannot generate efficient code for script lookup",
+                        "functionName": "color",
+                        "line": 427
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 50,
+                        "durationMicroseconds": 64,
+                        "errorMessage": "",
+                        "functionName": "horizontalAlignment",
+                        "line": 428
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 48,
+                        "durationMicroseconds": 55,
+                        "errorMessage": "",
+                        "functionName": "verticalAlignment",
+                        "line": 429
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 28,
+                        "durationMicroseconds": 134,
+                        "errorMessage": "Cannot generate efficient code for script lookup",
+                        "functionName": "color",
+                        "line": 445
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 35,
+                        "durationMicroseconds": 114,
+                        "errorMessage": "Cannot generate efficient code for script lookup",
+                        "functionName": "color",
+                        "line": 443
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 34,
+                        "durationMicroseconds": 196,
+                        "errorMessage": "Cannot access value for name qrScannerViewModel",
+                        "functionName": "enabled",
+                        "line": 450
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 38,
+                        "durationMicroseconds": 74,
+                        "errorMessage": "",
+                        "functionName": "cursorShape",
+                        "line": 453
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 36,
+                        "durationMicroseconds": 200,
+                        "errorMessage": "Cannot access value for name qrScannerViewModel",
+                        "functionName": "onClicked",
+                        "line": 455
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 36,
+                        "durationMicroseconds": 767,
+                        "errorMessage": "Cannot generate efficient code for script lookup",
+                        "functionName": "onEntered",
+                        "line": 459
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 35,
+                        "durationMicroseconds": 559,
+                        "errorMessage": "Cannot generate efficient code for script lookup",
+                        "functionName": "onExited",
+                        "line": 466
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 39,
+                        "durationMicroseconds": 49,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 452
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 39,
+                        "durationMicroseconds": 48,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 477
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 35,
+                        "durationMicroseconds": 237,
+                        "errorMessage": "Cannot access value for name qrScannerViewModel",
+                        "functionName": "text",
+                        "line": 485
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 50,
+                        "durationMicroseconds": 73,
+                        "errorMessage": "",
+                        "functionName": "horizontalAlignment",
+                        "line": 493
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 48,
+                        "durationMicroseconds": 53,
+                        "errorMessage": "",
+                        "functionName": "verticalAlignment",
+                        "line": 494
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 36,
+                        "durationMicroseconds": 118,
+                        "errorMessage": "Cannot generate efficient code for script lookup",
+                        "functionName": "color",
                         "line": 495
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 47,
-                        "durationMicroseconds": 87,
+                        "durationMicroseconds": 62,
                         "errorMessage": "",
-                        "functionName": "fill",
+                        "functionName": "alignment",
+                        "line": 488
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 41,
+                        "durationMicroseconds": 63,
+                        "errorMessage": "",
+                        "functionName": "family",
+                        "line": 490
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 35,
+                        "durationMicroseconds": 236,
+                        "errorMessage": "Cannot access value for name qrScannerViewModel",
+                        "functionName": "text",
                         "line": 499
                     },
                     {
                         "codegenSuccessfull": false,
-                        "column": 44,
-                        "durationMicroseconds": 547,
-                        "errorMessage": "Cannot generate efficient code for storing an array in a non-sequence type",
-                        "functionName": "model",
-                        "line": 504
+                        "column": 36,
+                        "durationMicroseconds": 131,
+                        "errorMessage": "Cannot generate efficient code for script lookup",
+                        "functionName": "color",
+                        "line": 506
                     },
                     {
                         "codegenSuccessfull": true,
-                        "column": 64,
-                        "durationMicroseconds": 314,
+                        "column": 50,
+                        "durationMicroseconds": 60,
                         "errorMessage": "",
-                        "functionName": "preferredWidth",
+                        "functionName": "horizontalAlignment",
                         "line": 507
                     },
                     {
-                        "codegenSuccessfull": false,
-                        "column": 51,
-                        "durationMicroseconds": 397,
-                        "errorMessage": "Cannot access value for name modelData",
-                        "functionName": "text",
-                        "line": 513
-                    },
-                    {
                         "codegenSuccessfull": true,
-                        "column": 66,
-                        "durationMicroseconds": 178,
-                        "errorMessage": "",
-                        "functionName": "horizontalAlignment",
-                        "line": 514
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 64,
-                        "durationMicroseconds": 124,
+                        "column": 48,
+                        "durationMicroseconds": 52,
                         "errorMessage": "",
                         "functionName": "verticalAlignment",
-                        "line": 515
-                    },
-                    {
-                        "codegenSuccessfull": false,
-                        "column": 52,
-                        "durationMicroseconds": 69,
-                        "errorMessage": "Cannot access value for name qrscanner",
-                        "functionName": "color",
-                        "line": 521
+                        "line": 508
                     },
                     {
                         "codegenSuccessfull": true,
-                        "column": 59,
-                        "durationMicroseconds": 108,
+                        "column": 31,
+                        "durationMicroseconds": 144,
+                        "errorMessage": "",
+                        "functionName": "alignment",
+                        "line": 527
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 31,
+                        "durationMicroseconds": 51,
                         "errorMessage": "",
                         "functionName": "fill",
-                        "line": 512
+                        "line": 535
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 28,
+                        "durationMicroseconds": 115,
+                        "errorMessage": "Cannot generate efficient code for script lookup",
+                        "functionName": "color",
+                        "line": 545
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 44,
+                        "durationMicroseconds": 112,
+                        "errorMessage": "",
+                        "functionName": "preferredWidth",
+                        "line": 542
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 39,
+                        "durationMicroseconds": 40,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 549
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 47,
-                        "durationMicroseconds": 85,
+                        "durationMicroseconds": 65,
                         "errorMessage": "",
-                        "functionName": "fill",
-                        "line": 536
+                        "functionName": "alignment",
+                        "line": 557
                     },
                     {
                         "codegenSuccessfull": true,
+                        "column": 47,
+                        "durationMicroseconds": 38,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 561
+                    },
+                    {
+                        "codegenSuccessfull": false,
                         "column": 44,
-                        "durationMicroseconds": 136,
-                        "errorMessage": "",
-                        "functionName": "width",
-                        "line": 563
+                        "durationMicroseconds": 325,
+                        "errorMessage": "Cannot generate efficient code for storing an array in a non-sequence type",
+                        "functionName": "model",
+                        "line": 566
                     },
                     {
                         "codegenSuccessfull": true,
-                        "column": 55,
-                        "durationMicroseconds": 88,
+                        "column": 64,
+                        "durationMicroseconds": 118,
                         "errorMessage": "",
-                        "functionName": "fill",
+                        "functionName": "preferredWidth",
                         "line": 569
                     },
                     {
                         "codegenSuccessfull": true,
-                        "column": 68,
-                        "durationMicroseconds": 211,
+                        "column": 51,
+                        "durationMicroseconds": 81,
                         "errorMessage": "",
-                        "functionName": "preferredWidth",
-                        "line": 574
+                        "functionName": "text",
+                        "line": 575
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 66,
+                        "durationMicroseconds": 88,
+                        "errorMessage": "",
+                        "functionName": "horizontalAlignment",
+                        "line": 576
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 64,
-                        "durationMicroseconds": 120,
-                        "errorMessage": "",
-                        "functionName": "fillHeight",
-                        "line": 575
-                    },
-                    {
-                        "codegenSuccessfull": false,
-                        "column": 55,
-                        "durationMicroseconds": 280,
-                        "errorMessage": "Cannot access value for name No",
-                        "functionName": "text",
-                        "line": 579
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 70,
-                        "durationMicroseconds": 137,
-                        "errorMessage": "",
-                        "functionName": "horizontalAlignment",
-                        "line": 581
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 68,
-                        "durationMicroseconds": 102,
+                        "durationMicroseconds": 51,
                         "errorMessage": "",
                         "functionName": "verticalAlignment",
-                        "line": 582
+                        "line": 577
                     },
                     {
                         "codegenSuccessfull": false,
-                        "column": 56,
-                        "durationMicroseconds": 55,
-                        "errorMessage": "Cannot access value for name qrscanner",
+                        "column": 52,
+                        "durationMicroseconds": 115,
+                        "errorMessage": "Cannot generate efficient code for script lookup",
                         "functionName": "color",
-                        "line": 588
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 63,
-                        "durationMicroseconds": 106,
-                        "errorMessage": "",
-                        "functionName": "fill",
-                        "line": 578
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 67,
-                        "durationMicroseconds": 79,
-                        "errorMessage": "",
-                        "functionName": "centerIn",
-                        "line": 580
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 67,
-                        "durationMicroseconds": 422,
-                        "errorMessage": "",
-                        "functionName": "alignment",
                         "line": 583
                     },
                     {
                         "codegenSuccessfull": true,
-                        "column": 68,
-                        "durationMicroseconds": 449,
+                        "column": 59,
+                        "durationMicroseconds": 39,
                         "errorMessage": "",
-                        "functionName": "preferredWidth",
-                        "line": 594
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 64,
-                        "durationMicroseconds": 94,
-                        "errorMessage": "",
-                        "functionName": "fillHeight",
-                        "line": 595
+                        "functionName": "fill",
+                        "line": 574
                     },
                     {
                         "codegenSuccessfull": false,
-                        "column": 55,
-                        "durationMicroseconds": 409,
-                        "errorMessage": "Cannot access value for name QRCodeContent",
-                        "functionName": "text",
+                        "column": 40,
+                        "durationMicroseconds": 450,
+                        "errorMessage": "Cannot access value for name qrScannerViewModel",
+                        "functionName": "model",
                         "line": 599
                     },
                     {
                         "codegenSuccessfull": true,
-                        "column": 70,
-                        "durationMicroseconds": 140,
-                        "errorMessage": "",
-                        "functionName": "horizontalAlignment",
-                        "line": 601
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 68,
-                        "durationMicroseconds": 119,
-                        "errorMessage": "",
-                        "functionName": "verticalAlignment",
-                        "line": 602
-                    },
-                    {
-                        "codegenSuccessfull": false,
-                        "column": 56,
-                        "durationMicroseconds": 57,
-                        "errorMessage": "Cannot access value for name qrscanner",
-                        "functionName": "color",
-                        "line": 608
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 63,
-                        "durationMicroseconds": 82,
+                        "column": 47,
+                        "durationMicroseconds": 50,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 598
                     },
                     {
                         "codegenSuccessfull": true,
-                        "column": 67,
-                        "durationMicroseconds": 83,
+                        "column": 44,
+                        "durationMicroseconds": 66,
                         "errorMessage": "",
-                        "functionName": "centerIn",
-                        "line": 600
+                        "functionName": "width",
+                        "line": 602
                     },
                     {
                         "codegenSuccessfull": true,
-                        "column": 67,
-                        "durationMicroseconds": 266,
+                        "column": 55,
+                        "durationMicroseconds": 39,
                         "errorMessage": "",
-                        "functionName": "alignment",
-                        "line": 603
+                        "functionName": "fill",
+                        "line": 608
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 68,
-                        "durationMicroseconds": 209,
+                        "durationMicroseconds": 121,
                         "errorMessage": "",
                         "functionName": "preferredWidth",
-                        "line": 614
+                        "line": 613
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 64,
-                        "durationMicroseconds": 89,
+                        "durationMicroseconds": 54,
                         "errorMessage": "",
                         "functionName": "fillHeight",
-                        "line": 615
+                        "line": 614
                     },
                     {
                         "codegenSuccessfull": false,
                         "column": 55,
-                        "durationMicroseconds": 343,
-                        "errorMessage": "Cannot access value for name ScannedDate",
+                        "durationMicroseconds": 26,
+                        "errorMessage": "Cannot load property index from QQuickItemView::model with type QVariant.",
                         "functionName": "text",
-                        "line": 619
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 70,
-                        "durationMicroseconds": 115,
-                        "errorMessage": "",
-                        "functionName": "horizontalAlignment",
-                        "line": 621
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 68,
-                        "durationMicroseconds": 108,
-                        "errorMessage": "",
-                        "functionName": "verticalAlignment",
-                        "line": 622
-                    },
-                    {
-                        "codegenSuccessfull": false,
-                        "column": 56,
-                        "durationMicroseconds": 51,
-                        "errorMessage": "Cannot access value for name qrscanner",
-                        "functionName": "color",
-                        "line": 628
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 63,
-                        "durationMicroseconds": 82,
-                        "errorMessage": "",
-                        "functionName": "fill",
                         "line": 618
                     },
                     {
                         "codegenSuccessfull": true,
-                        "column": 67,
-                        "durationMicroseconds": 72,
+                        "column": 70,
+                        "durationMicroseconds": 61,
                         "errorMessage": "",
-                        "functionName": "centerIn",
+                        "functionName": "horizontalAlignment",
                         "line": 620
                     },
                     {
                         "codegenSuccessfull": true,
-                        "column": 67,
-                        "durationMicroseconds": 259,
-                        "errorMessage": "",
-                        "functionName": "alignment",
-                        "line": 623
-                    },
-                    {
-                        "codegenSuccessfull": true,
                         "column": 68,
-                        "durationMicroseconds": 254,
-                        "errorMessage": "",
-                        "functionName": "preferredWidth",
-                        "line": 634
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 64,
-                        "durationMicroseconds": 105,
-                        "errorMessage": "",
-                        "functionName": "fillHeight",
-                        "line": 635
-                    },
-                    {
-                        "codegenSuccessfull": false,
-                        "column": 55,
-                        "durationMicroseconds": 389,
-                        "errorMessage": "Cannot access value for name ScannedTime",
-                        "functionName": "text",
-                        "line": 639
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 70,
-                        "durationMicroseconds": 151,
-                        "errorMessage": "",
-                        "functionName": "horizontalAlignment",
-                        "line": 641
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 68,
-                        "durationMicroseconds": 134,
+                        "durationMicroseconds": 50,
                         "errorMessage": "",
                         "functionName": "verticalAlignment",
-                        "line": 642
+                        "line": 621
                     },
                     {
                         "codegenSuccessfull": false,
                         "column": 56,
-                        "durationMicroseconds": 82,
-                        "errorMessage": "Cannot access value for name qrscanner",
+                        "durationMicroseconds": 113,
+                        "errorMessage": "Cannot generate efficient code for script lookup",
                         "functionName": "color",
-                        "line": 648
+                        "line": 627
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 63,
-                        "durationMicroseconds": 146,
+                        "durationMicroseconds": 40,
                         "errorMessage": "",
                         "functionName": "fill",
-                        "line": 638
+                        "line": 617
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 67,
-                        "durationMicroseconds": 84,
+                        "durationMicroseconds": 36,
                         "errorMessage": "",
                         "functionName": "centerIn",
-                        "line": 640
+                        "line": 619
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 67,
-                        "durationMicroseconds": 315,
+                        "durationMicroseconds": 135,
                         "errorMessage": "",
                         "functionName": "alignment",
-                        "line": 643
+                        "line": 622
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 68,
-                        "durationMicroseconds": 155,
+                        "durationMicroseconds": 140,
+                        "errorMessage": "",
+                        "functionName": "preferredWidth",
+                        "line": 633
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 64,
+                        "durationMicroseconds": 48,
+                        "errorMessage": "",
+                        "functionName": "fillHeight",
+                        "line": 634
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 55,
+                        "durationMicroseconds": 29,
+                        "errorMessage": "Cannot load property content from QQuickItemView::model with type QVariant.",
+                        "functionName": "text",
+                        "line": 638
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 70,
+                        "durationMicroseconds": 59,
+                        "errorMessage": "",
+                        "functionName": "horizontalAlignment",
+                        "line": 640
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 68,
+                        "durationMicroseconds": 56,
+                        "errorMessage": "",
+                        "functionName": "verticalAlignment",
+                        "line": 641
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 56,
+                        "durationMicroseconds": 128,
+                        "errorMessage": "Cannot generate efficient code for script lookup",
+                        "functionName": "color",
+                        "line": 647
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 63,
+                        "durationMicroseconds": 39,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 637
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 67,
+                        "durationMicroseconds": 43,
+                        "errorMessage": "",
+                        "functionName": "centerIn",
+                        "line": 639
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 67,
+                        "durationMicroseconds": 145,
+                        "errorMessage": "",
+                        "functionName": "alignment",
+                        "line": 642
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 68,
+                        "durationMicroseconds": 118,
                         "errorMessage": "",
                         "functionName": "preferredWidth",
                         "line": 653
@@ -1198,7 +1254,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 64,
-                        "durationMicroseconds": 58,
+                        "durationMicroseconds": 53,
                         "errorMessage": "",
                         "functionName": "fillHeight",
                         "line": 654
@@ -1206,8 +1262,8 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 55,
-                        "durationMicroseconds": 193,
-                        "errorMessage": "Cannot access value for name PIC",
+                        "durationMicroseconds": 20,
+                        "errorMessage": "Cannot load property scannedDay from QQuickItemView::model with type QVariant.",
                         "functionName": "text",
                         "line": 658
                     },
@@ -1222,7 +1278,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 68,
-                        "durationMicroseconds": 104,
+                        "durationMicroseconds": 53,
                         "errorMessage": "",
                         "functionName": "verticalAlignment",
                         "line": 661
@@ -1230,15 +1286,15 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 56,
-                        "durationMicroseconds": 37,
-                        "errorMessage": "Cannot access value for name qrscanner",
+                        "durationMicroseconds": 115,
+                        "errorMessage": "Cannot generate efficient code for script lookup",
                         "functionName": "color",
                         "line": 667
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 63,
-                        "durationMicroseconds": 50,
+                        "durationMicroseconds": 41,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 657
@@ -1246,7 +1302,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 67,
-                        "durationMicroseconds": 39,
+                        "durationMicroseconds": 37,
                         "errorMessage": "",
                         "functionName": "centerIn",
                         "line": 659
@@ -1254,42 +1310,186 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 67,
-                        "durationMicroseconds": 150,
+                        "durationMicroseconds": 148,
                         "errorMessage": "",
                         "functionName": "alignment",
                         "line": 662
                     },
                     {
                         "codegenSuccessfull": true,
-                        "column": 28,
-                        "durationMicroseconds": 114,
+                        "column": 68,
+                        "durationMicroseconds": 116,
                         "errorMessage": "",
-                        "functionName": "color",
-                        "line": 686
+                        "functionName": "preferredWidth",
+                        "line": 673
                     },
                     {
                         "codegenSuccessfull": true,
-                        "column": 39,
+                        "column": 64,
                         "durationMicroseconds": 46,
                         "errorMessage": "",
-                        "functionName": "fill",
-                        "line": 690
+                        "functionName": "fillHeight",
+                        "line": 674
                     },
                     {
                         "codegenSuccessfull": false,
-                        "column": 35,
-                        "durationMicroseconds": 319,
-                        "errorMessage": "Cannot access value for name qrScannerViewModel",
+                        "column": 55,
+                        "durationMicroseconds": 21,
+                        "errorMessage": "Cannot load property scannedTime from QQuickItemView::model with type QVariant.",
+                        "functionName": "text",
+                        "line": 678
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 70,
+                        "durationMicroseconds": 66,
+                        "errorMessage": "",
+                        "functionName": "horizontalAlignment",
+                        "line": 680
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 68,
+                        "durationMicroseconds": 53,
+                        "errorMessage": "",
+                        "functionName": "verticalAlignment",
+                        "line": 681
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 56,
+                        "durationMicroseconds": 114,
+                        "errorMessage": "Cannot generate efficient code for script lookup",
+                        "functionName": "color",
+                        "line": 687
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 63,
+                        "durationMicroseconds": 52,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 677
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 67,
+                        "durationMicroseconds": 37,
+                        "errorMessage": "",
+                        "functionName": "centerIn",
+                        "line": 679
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 67,
+                        "durationMicroseconds": 139,
+                        "errorMessage": "",
+                        "functionName": "alignment",
+                        "line": 682
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 68,
+                        "durationMicroseconds": 212,
+                        "errorMessage": "",
+                        "functionName": "preferredWidth",
+                        "line": 692
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 64,
+                        "durationMicroseconds": 48,
+                        "errorMessage": "",
+                        "functionName": "fillHeight",
+                        "line": 693
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 55,
+                        "durationMicroseconds": 24,
+                        "errorMessage": "Cannot load property pic from QQuickItemView::model with type QVariant.",
                         "functionName": "text",
                         "line": 697
                     },
                     {
                         "codegenSuccessfull": true,
-                        "column": 36,
-                        "durationMicroseconds": 126,
+                        "column": 70,
+                        "durationMicroseconds": 60,
                         "errorMessage": "",
+                        "functionName": "horizontalAlignment",
+                        "line": 699
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 68,
+                        "durationMicroseconds": 52,
+                        "errorMessage": "",
+                        "functionName": "verticalAlignment",
+                        "line": 700
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 56,
+                        "durationMicroseconds": 120,
+                        "errorMessage": "Cannot generate efficient code for script lookup",
                         "functionName": "color",
-                        "line": 703
+                        "line": 706
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 63,
+                        "durationMicroseconds": 38,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 696
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 67,
+                        "durationMicroseconds": 45,
+                        "errorMessage": "",
+                        "functionName": "centerIn",
+                        "line": 698
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 67,
+                        "durationMicroseconds": 156,
+                        "errorMessage": "",
+                        "functionName": "alignment",
+                        "line": 701
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 28,
+                        "durationMicroseconds": 125,
+                        "errorMessage": "Cannot generate efficient code for script lookup",
+                        "functionName": "color",
+                        "line": 725
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 39,
+                        "durationMicroseconds": 43,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 729
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 35,
+                        "durationMicroseconds": 237,
+                        "errorMessage": "Cannot access value for name qrScannerViewModel",
+                        "functionName": "text",
+                        "line": 736
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 36,
+                        "durationMicroseconds": 119,
+                        "errorMessage": "Cannot generate efficient code for script lookup",
+                        "functionName": "color",
+                        "line": 743
                     },
                     {
                         "codegenSuccessfull": true,
@@ -1297,47 +1497,47 @@
                         "durationMicroseconds": 67,
                         "errorMessage": "",
                         "functionName": "horizontalAlignment",
-                        "line": 706
+                        "line": 746
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 48,
-                        "durationMicroseconds": 66,
+                        "durationMicroseconds": 58,
                         "errorMessage": "",
                         "functionName": "verticalAlignment",
-                        "line": 707
+                        "line": 747
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 53,
-                        "durationMicroseconds": 140,
+                        "durationMicroseconds": 127,
                         "errorMessage": "",
                         "functionName": "preferredHeight",
-                        "line": 712
+                        "line": 752
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 52,
-                        "durationMicroseconds": 215,
+                        "durationMicroseconds": 110,
                         "errorMessage": "",
                         "functionName": "preferredWidth",
-                        "line": 713
+                        "line": 753
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 47,
-                        "durationMicroseconds": 77,
+                        "durationMicroseconds": 96,
                         "errorMessage": "",
                         "functionName": "alignment",
-                        "line": 715
+                        "line": 755
                     },
                     {
-                        "codegenSuccessfull": true,
+                        "codegenSuccessfull": false,
                         "column": 43,
-                        "durationMicroseconds": 123,
-                        "errorMessage": "",
+                        "durationMicroseconds": 117,
+                        "errorMessage": "Cannot generate efficient code for script lookup",
                         "functionName": "color",
-                        "line": 716
+                        "line": 756
                     },
                     {
                         "codegenSuccessfull": false,
@@ -1345,7 +1545,7 @@
                         "durationMicroseconds": 0,
                         "errorMessage": "Cannot resolve property type  for binding on running.",
                         "functionName": "running",
-                        "line": 725
+                        "line": 765
                     },
                     {
                         "codegenSuccessfull": false,
@@ -1353,7 +1553,7 @@
                         "durationMicroseconds": 0,
                         "errorMessage": "Cannot resolve property type  for binding on visible.",
                         "functionName": "visible",
-                        "line": 726
+                        "line": 766
                     },
                     {
                         "codegenSuccessfull": false,
@@ -1361,151 +1561,191 @@
                         "durationMicroseconds": 0,
                         "errorMessage": "Cannot resolve property type  for binding on centerIn.",
                         "functionName": "centerIn",
-                        "line": 724
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 43,
-                        "durationMicroseconds": 70,
-                        "errorMessage": "",
-                        "functionName": "fillMode",
-                        "line": 737
-                    },
-                    {
-                        "codegenSuccessfull": false,
-                        "column": 42,
-                        "durationMicroseconds": 290,
-                        "errorMessage": "Cannot access value for name qrScannerViewMode",
-                        "functionName": "visible",
-                        "line": 738
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 47,
-                        "durationMicroseconds": 50,
-                        "errorMessage": "",
-                        "functionName": "fill",
-                        "line": 734
-                    },
-                    {
-                        "codegenSuccessfull": false,
-                        "column": 56,
-                        "durationMicroseconds": 270,
-                        "errorMessage": "Cannot access value for name qrScannerViewModel",
-                        "functionName": "onCompleted",
-                        "line": 740
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 40,
-                        "durationMicroseconds": 113,
-                        "errorMessage": "",
-                        "functionName": "color",
-                        "line": 753
-                    },
-                    {
-                        "codegenSuccessfull": false,
-                        "column": 42,
-                        "durationMicroseconds": 307,
-                        "errorMessage": "Cannot access value for name qrScannerViewModel",
-                        "functionName": "visible",
-                        "line": 754
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 51,
-                        "durationMicroseconds": 59,
-                        "errorMessage": "",
-                        "functionName": "centerIn",
-                        "line": 756
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 53,
-                        "durationMicroseconds": 126,
-                        "errorMessage": "",
-                        "functionName": "preferredHeight",
-                        "line": 763
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 52,
-                        "durationMicroseconds": 117,
-                        "errorMessage": "",
-                        "functionName": "preferredWidth",
                         "line": 764
                     },
                     {
                         "codegenSuccessfull": true,
-                        "column": 47,
-                        "durationMicroseconds": 99,
+                        "column": 43,
+                        "durationMicroseconds": 69,
                         "errorMessage": "",
-                        "functionName": "alignment",
-                        "line": 765
+                        "functionName": "fillMode",
+                        "line": 775
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 42,
+                        "durationMicroseconds": 176,
+                        "errorMessage": "Cannot access value for name qrScannerViewModel",
+                        "functionName": "visible",
+                        "line": 776
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 47,
-                        "durationMicroseconds": 50,
+                        "durationMicroseconds": 118,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 772
                     },
                     {
-                        "codegenSuccessfull": true,
-                        "column": 58,
-                        "durationMicroseconds": 72,
-                        "errorMessage": "",
-                        "functionName": "horizontalAlignment",
-                        "line": 784
-                    },
-                    {
-                        "codegenSuccessfull": true,
+                        "codegenSuccessfull": false,
                         "column": 56,
-                        "durationMicroseconds": 74,
-                        "errorMessage": "",
-                        "functionName": "verticalAlignment",
-                        "line": 785
+                        "durationMicroseconds": 167,
+                        "errorMessage": "Cannot access value for name qrScannerViewModel",
+                        "functionName": "onCompleted",
+                        "line": 778
                     },
                     {
-                        "codegenSuccessfull": true,
-                        "column": 55,
-                        "durationMicroseconds": 169,
-                        "errorMessage": "",
-                        "functionName": "alignment",
+                        "codegenSuccessfull": false,
+                        "column": 42,
+                        "durationMicroseconds": 149,
+                        "errorMessage": "Cannot access value for name qrScannerViewModel",
+                        "functionName": "visible",
                         "line": 786
                     },
                     {
                         "codegenSuccessfull": false,
-                        "column": 43,
-                        "durationMicroseconds": 294,
-                        "errorMessage": "Cannot access value for name qrScannerViewModel",
-                        "functionName": "text",
-                        "line": 793
+                        "column": 40,
+                        "durationMicroseconds": 138,
+                        "errorMessage": "Cannot generate efficient code for script lookup",
+                        "functionName": "color",
+                        "line": 788
                     },
                     {
                         "codegenSuccessfull": true,
-                        "column": 58,
-                        "durationMicroseconds": 75,
+                        "column": 51,
+                        "durationMicroseconds": 44,
                         "errorMessage": "",
-                        "functionName": "horizontalAlignment",
-                        "line": 801
+                        "functionName": "centerIn",
+                        "line": 785
                     },
                     {
                         "codegenSuccessfull": true,
-                        "column": 56,
-                        "durationMicroseconds": 55,
+                        "column": 47,
+                        "durationMicroseconds": 72,
                         "errorMessage": "",
-                        "functionName": "verticalAlignment",
-                        "line": 802
+                        "functionName": "fillMode",
+                        "line": 792
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 55,
-                        "durationMicroseconds": 141,
+                        "durationMicroseconds": 41,
+                        "errorMessage": "",
+                        "functionName": "centerIn",
+                        "line": 790
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 36,
+                        "durationMicroseconds": 117,
+                        "errorMessage": "Cannot generate efficient code for script lookup",
+                        "functionName": "color",
+                        "line": 801
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 53,
+                        "durationMicroseconds": 119,
+                        "errorMessage": "",
+                        "functionName": "preferredHeight",
+                        "line": 802
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 52,
+                        "durationMicroseconds": 102,
+                        "errorMessage": "",
+                        "functionName": "preferredWidth",
+                        "line": 803
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 47,
+                        "durationMicroseconds": 67,
                         "errorMessage": "",
                         "functionName": "alignment",
-                        "line": 803
+                        "line": 804
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 47,
+                        "durationMicroseconds": 41,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 811
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 44,
+                        "durationMicroseconds": 117,
+                        "errorMessage": "Cannot generate efficient code for script lookup",
+                        "functionName": "color",
+                        "line": 822
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 58,
+                        "durationMicroseconds": 61,
+                        "errorMessage": "",
+                        "functionName": "horizontalAlignment",
+                        "line": 823
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 56,
+                        "durationMicroseconds": 54,
+                        "errorMessage": "",
+                        "functionName": "verticalAlignment",
+                        "line": 824
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 55,
+                        "durationMicroseconds": 135,
+                        "errorMessage": "",
+                        "functionName": "alignment",
+                        "line": 825
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 43,
+                        "durationMicroseconds": 274,
+                        "errorMessage": "Cannot access value for name qrScannerViewModel",
+                        "functionName": "text",
+                        "line": 832
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 44,
+                        "durationMicroseconds": 137,
+                        "errorMessage": "Cannot generate efficient code for script lookup",
+                        "functionName": "color",
+                        "line": 839
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 58,
+                        "durationMicroseconds": 61,
+                        "errorMessage": "",
+                        "functionName": "horizontalAlignment",
+                        "line": 841
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 56,
+                        "durationMicroseconds": 56,
+                        "errorMessage": "",
+                        "functionName": "verticalAlignment",
+                        "line": 842
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 55,
+                        "durationMicroseconds": 134,
+                        "errorMessage": "",
+                        "functionName": "alignment",
+                        "line": 843
                     }
                 ],
                 "filepath": "C:/IMAS/Research/QtApp/QtApp5/Views/QRScannerView.qml"

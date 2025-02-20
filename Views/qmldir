@@ -6,3 +6,4 @@ DataView 1.0 DataView.qml
 ReportView 1.0 ReportView.qml
 SettingView 1.0 SettingView.qml
 SupportView 1.0 SupportView.qml
+ThemeManager 1.0 ThemeManager.qml

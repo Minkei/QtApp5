@@ -1,7 +1,10 @@
 C:/IMAS/Research/QtApp/QtApp5/build/appQtApp5_autogen/N4CVMX36CW/moc_QRScannerViewModel.cpp: C:/IMAS/Research/QtApp/QtApp5/ViewModels/QRScannerViewModel.h \
   C:/IMAS/Research/QtApp/QtApp5/build/appQtApp5_autogen/moc_predefs.h \
+  C:/IMAS/Research/QtApp/QtApp5/Models/QRCodeData.h \
+  C:/IMAS/Research/QtApp/QtApp5/Models/QRCodeModel.h \
   C:/IMAS/Research/QtApp/QtApp5/Services/CameraService.h \
   C:/IMAS/Research/QtApp/QtApp5/Services/QRCodeService.h \
+  C:/Qt/6.8.2/mingw_64/include/QtCore/QAbstractListModel \
   C:/Qt/6.8.2/mingw_64/include/QtCore/QByteArray \
   C:/Qt/6.8.2/mingw_64/include/QtCore/QCryptographicHash \
   C:/Qt/6.8.2/mingw_64/include/QtCore/QDateTime \
@@ -25,6 +28,7 @@ C:/IMAS/Research/QtApp/QtApp5/build/appQtApp5_autogen/N4CVMX36CW/moc_QRScannerVi
   C:/Qt/6.8.2/mingw_64/include/QtCore/QTimer \
   C:/Qt/6.8.2/mingw_64/include/QtCore/QUrl \
   C:/Qt/6.8.2/mingw_64/include/QtCore/QVariant \
+  C:/Qt/6.8.2/mingw_64/include/QtCore/QVector \
   C:/Qt/6.8.2/mingw_64/include/QtCore/QtCore \
   C:/Qt/6.8.2/mingw_64/include/QtCore/QtCoreDepends \
   C:/Qt/6.8.2/mingw_64/include/QtCore/q20algorithm.h \
@@ -412,8 +416,10 @@ C:/IMAS/Research/QtApp/QtApp5/build/appQtApp5_autogen/N4CVMX36CW/moc_QRScannerVi
   C:/Qt/6.8.2/mingw_64/include/QtGui/qwindowdefs.h \
   C:/Qt/6.8.2/mingw_64/include/QtGui/qwindowdefs_win.h \
   C:/Qt/6.8.2/mingw_64/include/QtGui/qwindowsmimeconverter.h \
+  C:/Qt/6.8.2/mingw_64/include/QtMultimedia/QAudioOutput \
   C:/Qt/6.8.2/mingw_64/include/QtMultimedia/QCamera \
   C:/Qt/6.8.2/mingw_64/include/QtMultimedia/QMediaCaptureSession \
+  C:/Qt/6.8.2/mingw_64/include/QtMultimedia/QMediaPlayer \
   C:/Qt/6.8.2/mingw_64/include/QtMultimedia/QVideoFrame \
   C:/Qt/6.8.2/mingw_64/include/QtMultimedia/QVideoSink \
   C:/Qt/6.8.2/mingw_64/include/QtMultimedia/QtMultimedia \
@@ -869,6 +875,5 @@ C:/IMAS/Research/QtApp/QtApp5/build/appQtApp5_autogen/N4CVMX36CW/moc_QRScannerVi
   C:/Users/minke/vcpkg/installed/x64-mingw-dynamic/include/ZXing/Quadrilateral.h \
   C:/Users/minke/vcpkg/installed/x64-mingw-dynamic/include/ZXing/ReadBarcode.h \
   C:/Users/minke/vcpkg/installed/x64-mingw-dynamic/include/ZXing/ReaderOptions.h \
-  C:/Users/minke/vcpkg/installed/x64-mingw-dynamic/include/ZXing/Result.h \
   C:/Users/minke/vcpkg/installed/x64-mingw-dynamic/include/ZXing/StructuredAppend.h \
   C:/Users/minke/vcpkg/installed/x64-mingw-dynamic/include/ZXing/ZXAlgorithms.h

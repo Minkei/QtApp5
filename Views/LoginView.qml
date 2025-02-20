@@ -2,6 +2,7 @@ import QtQuick
 import QtQuick.Controls
 import QtQuick.Layouts
 import QtQuick.Controls.Basic
+import "../Themes/ThemeManager.js" as Theme
 
 Item {
     id: loginView
@@ -17,16 +18,9 @@ Item {
         source: "../Fonts/fa-solid-900.ttf"
     }
 
-    // Định nghĩa các màu sắc chính - giống MainView
-    property color primaryBlue: "#2563eb"
-    property color lightBlue: "#60a5fa"
-    property color hoverBlue: "#3b82f6"
-    property color textColor: "#1e3a8a"
-    property color backgroundColor: "#f0f9ff"
-
     Rectangle {
         anchors.fill: parent
-        color: loginView.backgroundColor
+        color: Theme.current.panelBackgroundColor_Normal
 
         Rectangle {
             id: mainContent
@@ -35,8 +29,8 @@ Item {
             anchors.horizontalCenter: parent.horizontalCenter
             anchors.verticalCenter: parent.verticalCenter
             radius: 8
-            color: "white"
-            border.color: loginView.lightBlue
+            color: Theme.current.panelBackgroundColor_Actived
+            border.color: Theme.current.panelBorderColor_Actived
             border.width: 1
 
             ColumnLayout {
@@ -58,7 +52,7 @@ Item {
                         pixelSize: 32
                         bold: true
                     }
-                    color: loginView.primaryBlue
+                    color: Theme.current.textColor_Normal
                     Layout.alignment: Qt.AlignHCenter
                 }
 
@@ -69,7 +63,7 @@ Item {
                         family: "Montserrat"
                         pixelSize: 16
                     }
-                    color: loginView.textColor
+                    color: Theme.current.textColor_Normal
                     Layout.alignment: Qt.AlignHCenter
                 }
 
@@ -80,8 +74,8 @@ Item {
                     Layout.alignment: Qt.AlignHCenter
                     Layout.topMargin: 30
                     radius: 8
-                    color: "white"
-                    border.color: loginView.lightBlue
+                    color: Theme.current.textFieldBackgroundColor_Actived
+                    border.color: Theme.current.textFieldBorderColor_Actived
                     border.width: 1
 
                     RowLayout {
@@ -95,7 +89,7 @@ Item {
                                 family: fontAW.name
                                 pixelSize: 18
                             }
-                            color: loginView.primaryBlue
+                            color: Theme.current.iconColor_Actived
                         }
 
                         TextField {
@@ -109,7 +103,7 @@ Item {
                                 family: "Montserrat"
                                 pixelSize: 14
                             }
-                            color: loginView.textColor
+                            color: Theme.current.textColor_Actived
                             Layout.fillWidth: true
                             background: Rectangle {
                                 color: "transparent"
@@ -119,11 +113,12 @@ Item {
 
                             onActiveFocusChanged: {
                                 if (activeFocus) {
-                                    // Clear cache khi focus thay đổi
-                                    // clear()
+
                                 }
                             }
-                            Component.onDestruction: {clear()}
+                            Component.onDestruction: {
+                                clear()
+                            }
                         }
                     }
                 }
@@ -135,8 +130,8 @@ Item {
                     Layout.alignment: Qt.AlignHCenter
                     Layout.topMargin: 10
                     radius: 8
-                    color: "white"
-                    border.color: loginView.lightBlue
+                    color: Theme.current.textFieldBackgroundColor_Actived
+                    border.color: Theme.current.textFieldBorderColor_Actived
                     border.width: 1
 
                     RowLayout {
@@ -150,7 +145,7 @@ Item {
                                 family: fontAW.name
                                 pixelSize: 18
                             }
-                            color: loginView.primaryBlue
+                            color: Theme.current.iconColor_Actived
                         }
 
                         TextField {
@@ -164,7 +159,7 @@ Item {
                                 family: "Montserrat"
                                 pixelSize: 14
                             }
-                            color: loginView.textColor
+                            color: Theme.current.textColor_Actived
                             Layout.fillWidth: true
                             background: Rectangle {
                                 color: "transparent"
@@ -179,12 +174,15 @@ Item {
 
                             onActiveFocusChanged: {
                                 if (activeFocus) {
+
                                     // Clear cache khi focus thay đổi
                                     // clear()
                                 }
                             }
 
-                            Component.onDestruction: {clear()}
+                            Component.onDestruction: {
+                                clear()
+                            }
                         }
 
                         Text {
@@ -193,15 +191,15 @@ Item {
                                 family: fontAW.name
                                 pixelSize: 18
                             }
-                            color: loginView.primaryBlue
+                            color: Theme.current.iconColor_Actived
 
                             MouseArea {
                                 anchors.fill: parent
                                 cursorShape: Qt.PointingHandCursor
                                 onClicked: loginView.showPassword = !loginView.showPassword
                                 hoverEnabled: true
-                                onEntered: parent.color = loginView.hoverBlue
-                                onExited: parent.color = loginView.primaryBlue
+                                onEntered: parent.color = Theme.current.iconColor_Actived
+                                onExited: parent.color = Theme.current.iconColor_Normal
                             }
                         }
                     }
@@ -245,14 +243,14 @@ Item {
                     Layout.preferredWidth: parent.width * 0.8
                     Layout.alignment: Qt.AlignHCenter
                     radius: 8
-                    color: loginView.primaryBlue
+                    color: Theme.current.buttonColor_Normal
 
                     MouseArea {
                         anchors.fill: parent
                         hoverEnabled: true
                         cursorShape: Qt.PointingHandCursor
-                        onEntered: parent.color = loginView.hoverBlue
-                        onExited: parent.color = loginView.primaryBlue
+                        onEntered: parent.color = Theme.current.buttonColor_Actived
+                        onExited: parent.color = Theme.current.buttonColor_Normal
                         onClicked: {
                             busyIndicator.visible = true
                             errorText.visible = false
@@ -268,7 +266,7 @@ Item {
                             pixelSize: 16
                             bold: true
                         }
-                        color: "white"
+                        color: Theme.current.textColor_Normal
                     }
                 }
 
@@ -288,7 +286,7 @@ Item {
                                 family: "Montserrat"
                                 pixelSize: 14
                             }
-                            color: loginView.textColor
+                            color: Theme.current.textColor_Normal
                         }
 
                         Text {
@@ -298,14 +296,14 @@ Item {
                                 pixelSize: 14
                                 bold: true
                             }
-                            color: loginView.primaryBlue
+                            color: Theme.current.textColor_Normal
 
                             MouseArea {
                                 anchors.fill: parent
                                 cursorShape: Qt.PointingHandCursor
                                 hoverEnabled: true
-                                onEntered: parent.color = loginView.hoverBlue
-                                onExited: parent.color = loginView.primaryBlue
+                                onEntered: parent.color = Theme.current.textColor_Actived
+                                onExited: parent.color = Theme.current.textColor_Normal
                             }
                         }
                     }

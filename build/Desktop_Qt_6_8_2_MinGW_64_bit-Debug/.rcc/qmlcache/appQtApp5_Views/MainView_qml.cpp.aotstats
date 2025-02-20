@@ -6,522 +6,522 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 22,
-                        "durationMicroseconds": 951,
+                        "durationMicroseconds": 625,
                         "errorMessage": "",
                         "functionName": "onTriggered",
-                        "line": 24
+                        "line": 23
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 16,
-                        "durationMicroseconds": 271,
+                        "durationMicroseconds": 139,
                         "errorMessage": "",
                         "functionName": "width",
+                        "line": 70
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 16,
+                        "durationMicroseconds": 577,
+                        "errorMessage": "Cannot generate efficient code for script lookup",
+                        "functionName": "color",
+                        "line": 76
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 23,
+                        "durationMicroseconds": 109,
+                        "errorMessage": "",
+                        "functionName": "left",
+                        "line": 78
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 22,
+                        "durationMicroseconds": 91,
+                        "errorMessage": "",
+                        "functionName": "top",
                         "line": 79
                     },
                     {
                         "codegenSuccessfull": true,
-                        "column": 16,
-                        "durationMicroseconds": 198,
+                        "column": 25,
+                        "durationMicroseconds": 99,
                         "errorMessage": "",
+                        "functionName": "bottom",
+                        "line": 80
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 23,
+                        "durationMicroseconds": 335,
+                        "errorMessage": "Cannot generate efficient code for script lookup",
                         "functionName": "color",
+                        "line": 84
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 23,
+                        "durationMicroseconds": 138,
+                        "errorMessage": "",
+                        "functionName": "width",
                         "line": 85
                     },
                     {
                         "codegenSuccessfull": true,
-                        "column": 23,
-                        "durationMicroseconds": 205,
-                        "errorMessage": "",
-                        "functionName": "left",
-                        "line": 87
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 22,
-                        "durationMicroseconds": 176,
-                        "errorMessage": "",
-                        "functionName": "top",
-                        "line": 88
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 25,
-                        "durationMicroseconds": 194,
-                        "errorMessage": "",
-                        "functionName": "bottom",
-                        "line": 89
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 23,
-                        "durationMicroseconds": 1264,
-                        "errorMessage": "",
-                        "functionName": "color",
-                        "line": 93
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 23,
-                        "durationMicroseconds": 349,
-                        "errorMessage": "",
-                        "functionName": "width",
-                        "line": 94
-                    },
-                    {
-                        "codegenSuccessfull": true,
                         "column": 24,
-                        "durationMicroseconds": 553,
+                        "durationMicroseconds": 157,
                         "errorMessage": "",
                         "functionName": "onEntered",
-                        "line": 105
+                        "line": 96
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 23,
-                        "durationMicroseconds": 187,
+                        "durationMicroseconds": 85,
                         "errorMessage": "",
                         "functionName": "onExited",
-                        "line": 109
+                        "line": 100
                     },
                     {
                         "codegenSuccessfull": false,
                         "column": 13,
-                        "durationMicroseconds": 277,
+                        "durationMicroseconds": 103,
                         "errorMessage": "Cannot load property buttonMouseArea from conversion to QVariant.",
                         "functionName": "isMouseOverAnyButton",
-                        "line": 116
+                        "line": 107
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 27,
-                        "durationMicroseconds": 105,
+                        "durationMicroseconds": 49,
                         "errorMessage": "",
                         "functionName": "fill",
-                        "line": 103
+                        "line": 94
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 23,
-                        "durationMicroseconds": 131,
+                        "durationMicroseconds": 40,
                         "errorMessage": "",
                         "functionName": "fill",
-                        "line": 132
+                        "line": 123
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 40,
-                        "durationMicroseconds": 173,
+                        "durationMicroseconds": 85,
                         "errorMessage": "",
                         "functionName": "preferredWidth",
-                        "line": 139
+                        "line": 130
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 39,
-                        "durationMicroseconds": 123,
+                        "durationMicroseconds": 39,
                         "errorMessage": "",
                         "functionName": "centerIn",
-                        "line": 143
+                        "line": 134
                     },
                     {
-                        "codegenSuccessfull": true,
+                        "codegenSuccessfull": false,
                         "column": 32,
-                        "durationMicroseconds": 214,
-                        "errorMessage": "",
+                        "durationMicroseconds": 136,
+                        "errorMessage": "Cannot generate efficient code for script lookup",
                         "functionName": "color",
-                        "line": 153
+                        "line": 144
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 34,
-                        "durationMicroseconds": 164,
+                        "durationMicroseconds": 74,
                         "errorMessage": "",
                         "functionName": "visible",
-                        "line": 154
+                        "line": 145
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 37,
-                        "durationMicroseconds": 348,
+                        "durationMicroseconds": 79,
                         "errorMessage": "",
                         "functionName": "family",
-                        "line": 150
+                        "line": 141
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 43,
-                        "durationMicroseconds": 221,
+                        "durationMicroseconds": 69,
                         "errorMessage": "",
                         "functionName": "alignment",
-                        "line": 155
+                        "line": 146
                     },
                     {
-                        "codegenSuccessfull": true,
+                        "codegenSuccessfull": false,
                         "column": 32,
-                        "durationMicroseconds": 224,
-                        "errorMessage": "",
+                        "durationMicroseconds": 125,
+                        "errorMessage": "Cannot generate efficient code for script lookup",
                         "functionName": "color",
-                        "line": 166
+                        "line": 157
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 34,
-                        "durationMicroseconds": 138,
+                        "durationMicroseconds": 56,
                         "errorMessage": "",
                         "functionName": "visible",
-                        "line": 167
+                        "line": 158
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 43,
-                        "durationMicroseconds": 174,
+                        "durationMicroseconds": 67,
                         "errorMessage": "",
                         "functionName": "alignment",
-                        "line": 168
+                        "line": 159
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 24,
-                        "durationMicroseconds": 290,
+                        "durationMicroseconds": 57,
                         "errorMessage": "",
                         "functionName": "model",
+                        "line": 166
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 47,
+                        "durationMicroseconds": 39,
+                        "errorMessage": "Cannot access value for name mainView",
+                        "functionName": "isSelected",
                         "line": 174
                     },
                     {
                         "codegenSuccessfull": false,
-                        "column": 47,
-                        "durationMicroseconds": 63,
-                        "errorMessage": "Cannot access value for name index",
-                        "functionName": "isSelected",
-                        "line": 181
-                    },
-                    {
-                        "codegenSuccessfull": false,
                         "column": 28,
-                        "durationMicroseconds": 61,
-                        "errorMessage": "Cannot access value for name mainView",
+                        "durationMicroseconds": 416,
+                        "errorMessage": "Cannot generate efficient code for script lookup",
                         "functionName": "color",
-                        "line": 182
+                        "line": 175
                     },
                     {
                         "codegenSuccessfull": false,
                         "column": 44,
-                        "durationMicroseconds": 36,
+                        "durationMicroseconds": 23,
                         "errorMessage": "Cannot access value for name mainView",
                         "functionName": "preferredWidth",
-                        "line": 178
+                        "line": 171
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 39,
-                        "durationMicroseconds": 152,
+                        "durationMicroseconds": 84,
                         "errorMessage": "",
                         "functionName": "alignment",
-                        "line": 179
+                        "line": 172
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 42,
-                        "durationMicroseconds": 135,
+                        "durationMicroseconds": 61,
                         "errorMessage": "",
                         "functionName": "type",
-                        "line": 194
+                        "line": 187
                     },
                     {
                         "codegenSuccessfull": false,
                         "column": 36,
-                        "durationMicroseconds": 203,
+                        "durationMicroseconds": 26,
                         "errorMessage": "Cannot access value for name collapseNavigationTimer",
                         "functionName": "onEntered",
-                        "line": 204
+                        "line": 197
                     },
                     {
                         "codegenSuccessfull": false,
                         "column": 35,
-                        "durationMicroseconds": 64,
+                        "durationMicroseconds": 20,
                         "errorMessage": "Cannot access value for name rectNavigationMouseArea",
                         "functionName": "onExited",
-                        "line": 209
+                        "line": 202
                     },
                     {
                         "codegenSuccessfull": false,
                         "column": 36,
-                        "durationMicroseconds": 55,
+                        "durationMicroseconds": 22,
                         "errorMessage": "Cannot access value for name mainView",
                         "functionName": "onClicked",
-                        "line": 216
+                        "line": 209
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 39,
-                        "durationMicroseconds": 108,
+                        "durationMicroseconds": 45,
                         "errorMessage": "",
                         "functionName": "fill",
-                        "line": 200
+                        "line": 193
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 35,
-                        "durationMicroseconds": 94,
+                        "durationMicroseconds": 40,
                         "errorMessage": "",
                         "functionName": "fill",
-                        "line": 225
+                        "line": 219
                     },
                     {
                         "codegenSuccessfull": false,
                         "column": 35,
-                        "durationMicroseconds": 416,
-                        "errorMessage": "Cannot access value for name iconText",
+                        "durationMicroseconds": 24,
+                        "errorMessage": "Cannot access value for name navigationRepeater",
                         "functionName": "text",
+                        "line": 228
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 36,
+                        "durationMicroseconds": 384,
+                        "errorMessage": "Cannot generate efficient code for script lookup",
+                        "functionName": "color",
+                        "line": 233
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 41,
+                        "durationMicroseconds": 22,
+                        "errorMessage": "Cannot access value for name fontAW",
+                        "functionName": "family",
+                        "line": 230
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 47,
+                        "durationMicroseconds": 70,
+                        "errorMessage": "",
+                        "functionName": "alignment",
                         "line": 234
                     },
                     {
                         "codegenSuccessfull": false,
-                        "column": 36,
-                        "durationMicroseconds": 134,
-                        "errorMessage": "Cannot access value for name primaryBlue",
-                        "functionName": "color",
+                        "column": 35,
+                        "durationMicroseconds": 28,
+                        "errorMessage": "Cannot access value for name navigationRepeater",
+                        "functionName": "text",
+                        "line": 238
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 38,
+                        "durationMicroseconds": 19,
+                        "errorMessage": "Cannot access value for name mainView",
+                        "functionName": "visible",
                         "line": 239
                     },
                     {
                         "codegenSuccessfull": false,
-                        "column": 41,
-                        "durationMicroseconds": 38,
-                        "errorMessage": "Cannot access value for name fontAW",
-                        "functionName": "family",
-                        "line": 236
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 47,
-                        "durationMicroseconds": 646,
-                        "errorMessage": "",
-                        "functionName": "alignment",
-                        "line": 241
-                    },
-                    {
-                        "codegenSuccessfull": false,
-                        "column": 35,
-                        "durationMicroseconds": 412,
-                        "errorMessage": "Cannot access value for name buttonText",
-                        "functionName": "text",
+                        "column": 36,
+                        "durationMicroseconds": 379,
+                        "errorMessage": "Cannot generate efficient code for script lookup",
+                        "functionName": "color",
                         "line": 245
                     },
                     {
-                        "codegenSuccessfull": false,
-                        "column": 38,
-                        "durationMicroseconds": 54,
-                        "errorMessage": "Cannot access value for name mainView",
-                        "functionName": "visible",
-                        "line": 246
-                    },
-                    {
-                        "codegenSuccessfull": false,
-                        "column": 36,
-                        "durationMicroseconds": 158,
-                        "errorMessage": "Cannot access value for name mainView",
-                        "functionName": "color",
-                        "line": 252
-                    },
-                    {
                         "codegenSuccessfull": true,
                         "column": 47,
-                        "durationMicroseconds": 291,
+                        "durationMicroseconds": 69,
                         "errorMessage": "",
                         "functionName": "alignment",
-                        "line": 255
+                        "line": 248
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 35,
-                        "durationMicroseconds": 194,
+                        "durationMicroseconds": 161,
                         "errorMessage": "",
                         "functionName": "fillWidth",
-                        "line": 272
+                        "line": 265
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 35,
-                        "durationMicroseconds": 171,
+                        "durationMicroseconds": 69,
                         "errorMessage": "",
                         "functionName": "alignment",
-                        "line": 275
+                        "line": 268
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 31,
-                        "durationMicroseconds": 117,
+                        "durationMicroseconds": 43,
                         "errorMessage": "",
                         "functionName": "fill",
-                        "line": 279
+                        "line": 272
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 33,
-                        "durationMicroseconds": 260,
+                        "durationMicroseconds": 123,
                         "errorMessage": "",
                         "functionName": "radius",
-                        "line": 294
+                        "line": 284
                     },
                     {
-                        "codegenSuccessfull": true,
+                        "codegenSuccessfull": false,
                         "column": 32,
-                        "durationMicroseconds": 221,
-                        "errorMessage": "",
+                        "durationMicroseconds": 114,
+                        "errorMessage": "Cannot generate efficient code for script lookup",
                         "functionName": "color",
-                        "line": 295
+                        "line": 285
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 43,
-                        "durationMicroseconds": 140,
+                        "durationMicroseconds": 86,
                         "errorMessage": "",
                         "functionName": "alignment",
-                        "line": 293
+                        "line": 283
                     },
                     {
-                        "codegenSuccessfull": true,
+                        "codegenSuccessfull": false,
                         "column": 36,
-                        "durationMicroseconds": 197,
-                        "errorMessage": "",
+                        "durationMicroseconds": 113,
+                        "errorMessage": "Cannot generate efficient code for script lookup",
                         "functionName": "color",
-                        "line": 304
+                        "line": 294
                     },
                     {
                         "codegenSuccessfull": false,
                         "column": 38,
-                        "durationMicroseconds": 495,
+                        "durationMicroseconds": 210,
                         "errorMessage": "Cannot access value for name userModel",
                         "functionName": "visible",
-                        "line": 305
+                        "line": 295
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 47,
-                        "durationMicroseconds": 152,
+                        "durationMicroseconds": 43,
                         "errorMessage": "",
                         "functionName": "centerIn",
-                        "line": 298
+                        "line": 288
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 41,
-                        "durationMicroseconds": 186,
+                        "durationMicroseconds": 64,
                         "errorMessage": "",
                         "functionName": "family",
-                        "line": 301
+                        "line": 291
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 34,
-                        "durationMicroseconds": 150,
+                        "durationMicroseconds": 58,
                         "errorMessage": "",
                         "functionName": "visible",
-                        "line": 320
+                        "line": 303
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 43,
-                        "durationMicroseconds": 121,
+                        "durationMicroseconds": 41,
                         "errorMessage": "",
                         "functionName": "fill",
-                        "line": 325
+                        "line": 308
                     },
                     {
                         "codegenSuccessfull": false,
                         "column": 39,
-                        "durationMicroseconds": 370,
+                        "durationMicroseconds": 177,
                         "errorMessage": "Cannot access value for name userModel",
                         "functionName": "text",
+                        "line": 311
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 40,
+                        "durationMicroseconds": 117,
+                        "errorMessage": "Cannot generate efficient code for script lookup",
+                        "functionName": "color",
+                        "line": 316
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 40,
+                        "durationMicroseconds": 122,
+                        "errorMessage": "Cannot generate efficient code for script lookup",
+                        "functionName": "color",
                         "line": 328
                     },
                     {
                         "codegenSuccessfull": true,
-                        "column": 40,
-                        "durationMicroseconds": 231,
+                        "column": 50,
+                        "durationMicroseconds": 66,
                         "errorMessage": "",
-                        "functionName": "color",
+                        "functionName": "cursorShape",
                         "line": 333
                     },
                     {
-                        "codegenSuccessfull": true,
-                        "column": 40,
-                        "durationMicroseconds": 221,
-                        "errorMessage": "",
-                        "functionName": "color",
-                        "line": 345
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 50,
-                        "durationMicroseconds": 243,
-                        "errorMessage": "",
-                        "functionName": "cursorShape",
-                        "line": 350
-                    },
-                    {
                         "codegenSuccessfull": false,
                         "column": 48,
-                        "durationMicroseconds": 86,
+                        "durationMicroseconds": 50,
                         "errorMessage": "Type QQuickText::font with type QFont does not have a property color for writing",
                         "functionName": "onEntered",
-                        "line": 351
+                        "line": 335
                     },
                     {
                         "codegenSuccessfull": false,
                         "column": 48,
-                        "durationMicroseconds": 435,
+                        "durationMicroseconds": 204,
                         "errorMessage": "Cannot access value for name mainViewModel",
                         "functionName": "onClicked",
-                        "line": 354
+                        "line": 338
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 51,
-                        "durationMicroseconds": 159,
+                        "durationMicroseconds": 44,
                         "errorMessage": "",
                         "functionName": "fill",
-                        "line": 348
+                        "line": 331
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 23,
-                        "durationMicroseconds": 285,
+                        "durationMicroseconds": 103,
                         "errorMessage": "",
                         "functionName": "left",
-                        "line": 380
+                        "line": 364
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 24,
-                        "durationMicroseconds": 196,
+                        "durationMicroseconds": 92,
                         "errorMessage": "",
                         "functionName": "right",
-                        "line": 381
+                        "line": 365
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 22,
-                        "durationMicroseconds": 271,
+                        "durationMicroseconds": 88,
                         "errorMessage": "",
                         "functionName": "top",
-                        "line": 382
+                        "line": 366
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 25,
-                        "durationMicroseconds": 250,
+                        "durationMicroseconds": 88,
                         "errorMessage": "",
                         "functionName": "bottom",
-                        "line": 383
+                        "line": 367
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 27,
-                        "durationMicroseconds": 160,
+                        "durationMicroseconds": 39,
                         "errorMessage": "",
                         "functionName": "fill",
-                        "line": 394
+                        "line": 378
                     }
                 ],
                 "filepath": "C:/IMAS/Research/QtApp/QtApp5/Views/MainView.qml"

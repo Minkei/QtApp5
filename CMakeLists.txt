@@ -48,20 +48,40 @@ qt_add_qml_module(appQtApp5
         Views/ReportView.qml
         Views/SettingView.qml
         Views/SupportView.qml
+
+
+    # Repositories folder
     SOURCES Repositories/FirebaseAuth.h Repositories/FirebaseAuth.cpp
 
+    # Models folder
     SOURCES Models/UserModel.h Models/UserModel.cpp
+    SOURCES Models/QRCodeData.h Models/QRCodeData.cpp
+    SOURCES Models/QRCodeModel.h Models/QRCodeModel.cpp
 
+    # ViewModels folder
     SOURCES ViewModels/LoginViewModel.h ViewModels/LoginViewModel.cpp
     SOURCES ViewModels/MainViewModel.h ViewModels/MainViewModel.cpp
+    SOURCES ViewModels/QRScannerViewModel.h ViewModels/QRScannerViewModel.cpp
 
+    # Services folder
     RESOURCES MyResources.qrc
 
+    # Fonts 
     RESOURCES Fonts/fa-solid-900.ttf
-    SOURCES ViewModels/QRScannerViewModel.h ViewModels/QRScannerViewModel.cpp
+
+    # Services
     SOURCES Services/CameraService.h Services/CameraService.cpp
-    RESOURCES Images/video-slash-solid.svg
     SOURCES Services/QRCodeService.h Services/QRCodeService.cpp
+    
+    # Images
+    RESOURCES Images/video-slash-solid.svg
+    
+    # Audio
+    RESOURCES Audio/short-beep-tone-47916.wav
+
+    # Themes
+    RESOURCES Themes/ThemeManager.js
+
 )
 
 set_target_properties(appQtApp5 PROPERTIES

@@ -13,7 +13,8 @@
 		"C:/IMAS/Research/QtApp/QtApp5/Images/imas-logo.png",
 		"C:/IMAS/Research/QtApp/QtApp5/Images/imas-bg.jpg",
 		"C:/IMAS/Research/QtApp/QtApp5/Images/etek-logo.png",
-		"C:/IMAS/Research/QtApp/QtApp5/Fonts/fa-solid-900.ttf"
+		"C:/IMAS/Research/QtApp/QtApp5/Fonts/fa-solid-900.ttf",
+		"C:/IMAS/Research/QtApp/QtApp5/Audio/short-beep-tone-47916.wav"
 	],
 	"LOCK_FILE" : "C:/IMAS/Research/QtApp/QtApp5/build/Desktop_Qt_6_8_2_MinGW_64_bit-Debug/CMakeFiles/appQtApp5_autogen.dir/AutoRcc_MyResources_EWIEGA46WW_Lock.lock",
 	"MULTI_CONFIG" : false,

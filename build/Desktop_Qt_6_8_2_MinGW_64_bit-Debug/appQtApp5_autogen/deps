@@ -1,5 +1,9 @@
 appQtApp5_autogen/timestamp: \
 	C:/IMAS/Research/QtApp/QtApp5/CMakeLists.txt \
+	C:/IMAS/Research/QtApp/QtApp5/Models/QRCodeData.cpp \
+	C:/IMAS/Research/QtApp/QtApp5/Models/QRCodeData.h \
+	C:/IMAS/Research/QtApp/QtApp5/Models/QRCodeModel.cpp \
+	C:/IMAS/Research/QtApp/QtApp5/Models/QRCodeModel.h \
 	C:/IMAS/Research/QtApp/QtApp5/Models/UserModel.cpp \
 	C:/IMAS/Research/QtApp/QtApp5/Models/UserModel.h \
 	C:/IMAS/Research/QtApp/QtApp5/MyResources.qrc \
@@ -22,6 +26,7 @@ appQtApp5_autogen/timestamp: \
 	C:/IMAS/Research/QtApp/QtApp5/build/Desktop_Qt_6_8_2_MinGW_64_bit-Debug/CMakeFiles/3.29.3/CMakeSystem.cmake \
 	C:/IMAS/Research/QtApp/QtApp5/build/Desktop_Qt_6_8_2_MinGW_64_bit-Debug/appQtApp5_autogen/moc_predefs.h \
 	C:/IMAS/Research/QtApp/QtApp5/main.cpp \
+	C:/Qt/6.8.2/mingw_64/include/QtCore/QAbstractListModel \
 	C:/Qt/6.8.2/mingw_64/include/QtCore/QByteArray \
 	C:/Qt/6.8.2/mingw_64/include/QtCore/QCryptographicHash \
 	C:/Qt/6.8.2/mingw_64/include/QtCore/QDateTime \
@@ -49,6 +54,7 @@ appQtApp5_autogen/timestamp: \
 	C:/Qt/6.8.2/mingw_64/include/QtCore/QTimer \
 	C:/Qt/6.8.2/mingw_64/include/QtCore/QUrl \
 	C:/Qt/6.8.2/mingw_64/include/QtCore/QVariant \
+	C:/Qt/6.8.2/mingw_64/include/QtCore/QVector \
 	C:/Qt/6.8.2/mingw_64/include/QtCore/QtCore \
 	C:/Qt/6.8.2/mingw_64/include/QtCore/QtCoreDepends \
 	C:/Qt/6.8.2/mingw_64/include/QtCore/q20algorithm.h \
@@ -436,8 +442,10 @@ appQtApp5_autogen/timestamp: \
 	C:/Qt/6.8.2/mingw_64/include/QtGui/qwindowdefs.h \
 	C:/Qt/6.8.2/mingw_64/include/QtGui/qwindowdefs_win.h \
 	C:/Qt/6.8.2/mingw_64/include/QtGui/qwindowsmimeconverter.h \
+	C:/Qt/6.8.2/mingw_64/include/QtMultimedia/QAudioOutput \
 	C:/Qt/6.8.2/mingw_64/include/QtMultimedia/QCamera \
 	C:/Qt/6.8.2/mingw_64/include/QtMultimedia/QMediaCaptureSession \
+	C:/Qt/6.8.2/mingw_64/include/QtMultimedia/QMediaPlayer \
 	C:/Qt/6.8.2/mingw_64/include/QtMultimedia/QVideoFrame \
 	C:/Qt/6.8.2/mingw_64/include/QtMultimedia/QVideoSink \
 	C:/Qt/6.8.2/mingw_64/include/QtMultimedia/QtMultimedia \
@@ -1506,7 +1514,6 @@ appQtApp5_autogen/timestamp: \
 	C:/Users/minke/vcpkg/installed/x64-mingw-dynamic/include/ZXing/Quadrilateral.h \
 	C:/Users/minke/vcpkg/installed/x64-mingw-dynamic/include/ZXing/ReadBarcode.h \
 	C:/Users/minke/vcpkg/installed/x64-mingw-dynamic/include/ZXing/ReaderOptions.h \
-	C:/Users/minke/vcpkg/installed/x64-mingw-dynamic/include/ZXing/Result.h \
 	C:/Users/minke/vcpkg/installed/x64-mingw-dynamic/include/ZXing/StructuredAppend.h \
 	C:/Users/minke/vcpkg/installed/x64-mingw-dynamic/include/ZXing/ZXAlgorithms.h \
 	C:/Users/minke/vcpkg/installed/x64-mingw-dynamic/share/ZXing/ZXingConfig.cmake \

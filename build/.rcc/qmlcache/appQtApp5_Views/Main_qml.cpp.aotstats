@@ -5,11 +5,19 @@
                 "entries": [
                     {
                         "codegenSuccessfull": false,
+                        "column": 12,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Cannot resolve property type  for binding on color.",
+                        "functionName": "color",
+                        "line": 11
+                    },
+                    {
+                        "codegenSuccessfull": false,
                         "column": 32,
-                        "durationMicroseconds": 170,
+                        "durationMicroseconds": 145,
                         "errorMessage": "Cannot access value for name userModel",
                         "functionName": "isLoginView",
-                        "line": 14
+                        "line": 15
                     },
                     {
                         "codegenSuccessfull": false,
@@ -17,55 +25,55 @@
                         "durationMicroseconds": 0,
                         "errorMessage": "Cannot resolve property type  for binding on flags.",
                         "functionName": "flags",
-                        "line": 16
+                        "line": 17
                     },
                     {
                         "codegenSuccessfull": false,
                         "column": 17,
-                        "durationMicroseconds": 237,
+                        "durationMicroseconds": 216,
                         "errorMessage": "Cannot access value for name userModel",
                         "functionName": "source",
-                        "line": 30
+                        "line": 31
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 23,
-                        "durationMicroseconds": 288,
+                        "durationMicroseconds": 254,
                         "errorMessage": "",
                         "functionName": "fill",
-                        "line": 27
+                        "line": 28
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 21,
-                        "durationMicroseconds": 204,
+                        "durationMicroseconds": 184,
                         "errorMessage": "",
                         "functionName": "target",
-                        "line": 33
-                    },
-                    {
-                        "codegenSuccessfull": false,
-                        "column": 13,
-                        "durationMicroseconds": 47,
-                        "errorMessage": "Cannot retrieve a non-object type by ID: window",
-                        "functionName": "onLoginSuccess",
                         "line": 34
                     },
                     {
                         "codegenSuccessfull": false,
+                        "column": 13,
+                        "durationMicroseconds": 37,
+                        "errorMessage": "Cannot retrieve a non-object type by ID: window",
+                        "functionName": "onLoginSuccess",
+                        "line": 35
+                    },
+                    {
+                        "codegenSuccessfull": false,
                         "column": 17,
-                        "durationMicroseconds": 63,
+                        "durationMicroseconds": 65,
                         "errorMessage": "Cannot access value for name userModel",
                         "functionName": "target",
-                        "line": 44
+                        "line": 45
                     },
                     {
                         "codegenSuccessfull": false,
                         "column": 9,
-                        "durationMicroseconds": 83,
+                        "durationMicroseconds": 57,
                         "errorMessage": "Cannot access value for name userModel",
                         "functionName": "onIdTokenChanged",
-                        "line": 45
+                        "line": 46
                     }
                 ],
                 "filepath": "C:/IMAS/Research/QtApp/QtApp5/Views/Main.qml"

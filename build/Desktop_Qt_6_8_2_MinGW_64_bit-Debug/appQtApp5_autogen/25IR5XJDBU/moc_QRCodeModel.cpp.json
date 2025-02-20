@@ -1,0 +1,38 @@
+{
+    "classes": [
+        {
+            "className": "QRCodeModel",
+            "lineNumber": 8,
+            "object": true,
+            "qualifiedClassName": "QRCodeModel",
+            "signals": [
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "data",
+                            "type": "QRCodeData"
+                        }
+                    ],
+                    "index": 0,
+                    "name": "qrCodeAdded",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 1,
+                    "name": "qrCodesCleared",
+                    "returnType": "void"
+                }
+            ],
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QAbstractListModel"
+                }
+            ]
+        }
+    ],
+    "inputFile": "QRCodeModel.h",
+    "outputRevision": 68
+}

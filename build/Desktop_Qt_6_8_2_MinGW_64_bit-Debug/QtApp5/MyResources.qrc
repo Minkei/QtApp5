@@ -5,5 +5,6 @@
         <file>Images/imas-bg.jpg</file>
         <file>Images/imas-logo.png</file>
         <file>Images/video-slash-solid.svg</file>
+        <file>Audio/short-beep-tone-47916.wav</file>
     </qresource>
 </RCC>

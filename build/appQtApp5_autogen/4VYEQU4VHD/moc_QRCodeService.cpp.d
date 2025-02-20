@@ -343,6 +343,5 @@ C:/IMAS/Research/QtApp/QtApp5/build/appQtApp5_autogen/4VYEQU4VHD/moc_QRCodeServi
   C:/Users/minke/vcpkg/installed/x64-mingw-dynamic/include/ZXing/Quadrilateral.h \
   C:/Users/minke/vcpkg/installed/x64-mingw-dynamic/include/ZXing/ReadBarcode.h \
   C:/Users/minke/vcpkg/installed/x64-mingw-dynamic/include/ZXing/ReaderOptions.h \
-  C:/Users/minke/vcpkg/installed/x64-mingw-dynamic/include/ZXing/Result.h \
   C:/Users/minke/vcpkg/installed/x64-mingw-dynamic/include/ZXing/StructuredAppend.h \
   C:/Users/minke/vcpkg/installed/x64-mingw-dynamic/include/ZXing/ZXAlgorithms.h

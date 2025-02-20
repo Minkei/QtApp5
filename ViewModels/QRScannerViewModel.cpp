@@ -5,7 +5,11 @@ QRScannerViewModel::QRScannerViewModel(QObject *parent) : QObject{parent},
     m_isStreaming(false), 
     m_cameraService(new CameraService(this)),
     m_qrCodeService(new QRCodeService(this)),
-    m_videoSink(nullptr)
+    m_videoSink(nullptr),
+    m_audioPlayer(new QMediaPlayer(this)),
+    m_audioOutput(new QAudioOutput(this)),
+    m_qrCodeModel(new QRCodeModel(this))
+    
 {
     refreshCameraList();
 
@@ -21,7 +25,16 @@ QRScannerViewModel::QRScannerViewModel(QObject *parent) : QObject{parent},
     connect(m_qrCodeService, &QRCodeService::qrCodeDecoded, this, [this](const QString &qrCodeData) { 
         m_qrCodeData = qrCodeData; 
         emit qrCodeDataChanged();
-    });  
+    });
+
+    // Audio Notification
+    m_audioPlayer->setAudioOutput(m_audioOutput);
+    m_audioOutput->setVolume(100);
+    m_audioPlayer->setSource(QUrl("../Audio/short-beep-tone-47916.wav"));
+
+    // Store QR Code in Model
+    connect(m_qrCodeModel, &QRCodeModel::qrCodeAdded, this, &QRScannerViewModel::qrCodeAdded);
+    connect(m_qrCodeModel, &QRCodeModel::qrCodesCleared, this, &QRScannerViewModel::qrCodesCleared);
 }
 
 // Properties
@@ -65,9 +78,21 @@ QString QRScannerViewModel::qrCodeDataLatest() const
     return m_qrCodeDataLatest;
 }
 
+bool QRScannerViewModel::isAudio() const
+{
+    return m_isAudio;
+}
+
+QRCodeModel* QRScannerViewModel::qrCodeModel() const
+{
+    return m_qrCodeModel;
+}
+
+
 // Methods
 void QRScannerViewModel::toggleStreaming() {
-    if(m_availableCameras.isEmpty()) {
+    if(m_availableCameras.isEmpty() || m_selectedCamera.isEmpty()) {
+        qDebug() << "No camera selected!";
         return;
     }
 
@@ -101,6 +126,12 @@ void QRScannerViewModel::toggleStreaming() {
         m_isStreaming = false;
     }
     emit isStreamingChanged();
+}
+
+void QRScannerViewModel::toggleAudio()
+{
+    m_isAudio = !m_isAudio;
+    emit isAudioChanged();
 }
 
 void QRScannerViewModel::refreshCameraList() {
@@ -170,9 +201,21 @@ void QRScannerViewModel::processFrame(const QVideoFrame &frame) {
         if(!result.isEmpty() && result != m_qrCodeDataLatest && result != "No QR Code detected") {
             m_qrCodeDataLatest = result;
             emit qrCodeDataLatestChanged();
+
+            if(m_isAudio) {
+                m_audioPlayer->stop();
+                m_audioPlayer->play();
+                qDebug() << "Play beep!";
+            }
+
             qDebug() << "QRCode Latest: " << m_qrCodeDataLatest;
         }
         m_isLoading = false;
         emit isLoadingChanged();
     });
+}
+
+void QRScannerViewModel::clearQRCodes()
+{
+    m_qrCodeModel->clearQRCodes();
 }

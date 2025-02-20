@@ -457,6 +457,9 @@ Vulkan_LIBRARY:FILEPATH=C:/VulkanSDK/1.4.304.0/Lib/vulkan-1.lib
 //Path to a program.
 WINDEPLOYQT_EXECUTABLE:FILEPATH=C:/Qt/6.8.2/mingw_64/bin/windeployqt.exe
 
+//The directory containing a CMake configuration file for ZXing.
+ZXing_DIR:PATH=C:/Users/minke/vcpkg/installed/x64-mingw-dynamic/share/ZXing
+
 //The directory containing a CMake configuration file for absl.
 absl_DIR:PATH=C:/Users/minke/vcpkg/installed/x64-windows/share/absl
 

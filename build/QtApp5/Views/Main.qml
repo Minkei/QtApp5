@@ -1,13 +1,14 @@
 // Main.qml
 import QtQuick
 import QtQuick.Controls
+import "../Themes/ThemeManager.js" as Theme
 
 // import QtQuick.Layouts
 ApplicationWindow {
     id: window
     width: 1360
     height: 768
-    color: "white"
+    color: Theme.current.mainBackground
     visible: true
     title: qsTr("QRScanner")
 

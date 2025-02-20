@@ -8,9 +8,12 @@
 #include <QDateTime>
 #include <QtMultimedia>
 #include <QVideoSink>
+#include <QMediaPlayer>
+#include <QAudioOutput>
 
 #include <Services/CameraService.h>
 #include <Services/QRCodeService.h>
+#include <Models/QRCodeModel.h>
 
 
 
@@ -33,6 +36,9 @@ class QRScannerViewModel : public QObject
     Q_PROPERTY(QString qrCodeData READ qrCodeData NOTIFY qrCodeDataChanged)
     Q_PROPERTY(QString qrCodeDataLatest READ qrCodeDataLatest NOTIFY qrCodeDataLatestChanged)
 
+    // Audio Notification
+    Q_PROPERTY(bool isAudio READ isAudio  NOTIFY isAudioChanged)
+
 
 public:
     explicit QRScannerViewModel(QObject *parent = nullptr);
@@ -51,12 +57,20 @@ public:
     // QRCode properties
     QString qrCodeData() const;
     QString qrCodeDataLatest() const;
+
+    // Audio Notification
+    bool isAudio() const;
     
     // Methods
     Q_INVOKABLE void setSelectedCamera(const QString &camera);
     Q_INVOKABLE void refreshCameraList();
     Q_INVOKABLE void toggleStreaming();
+    Q_INVOKABLE void toggleAudio();
     Q_INVOKABLE void setVideoSink(QVideoSink *videoSink);
+
+    // Store QR in Model
+    Q_INVOKABLE QRCodeModel* qrCodeModel() const;
+    Q_INVOKABLE void clearQRCodes();
 
 
 public slots:
@@ -79,6 +93,13 @@ signals:
     void qrCodeDataChanged();
     void qrCodeDataLatestChanged();
 
+    // Audio Notification
+    void isAudioChanged();
+
+    // Store QR code in Model
+    void qrCodeAdded(const QRCodeData &data);
+    void qrCodesCleared();
+
 private slots:
     void updateDateTime();
     void handleCameraError(const QString &error);
@@ -99,6 +120,14 @@ private:
     QRCodeService *m_qrCodeService;
     QString m_qrCodeData;
     QString m_qrCodeDataLatest;
+
+    // Audio Notification
+    bool m_isAudio = true;
+    QMediaPlayer *m_audioPlayer;
+    QAudioOutput *m_audioOutput;
+
+    // Store QR Code in Model
+    QRCodeModel *m_qrCodeModel;
 
 };
 #endif // QRSCANNERVIEWMODEL_H

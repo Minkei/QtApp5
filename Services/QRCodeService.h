@@ -6,7 +6,7 @@
 #include <QImage>
 #include <ZXing/ReadBarcode.h>
 #include <ZXing/DecodeHints.h>
-#include <ZXing/Result.h>
+#include <ZXing/Barcode.h>
 #include <ZXing/ImageView.h>
 
 

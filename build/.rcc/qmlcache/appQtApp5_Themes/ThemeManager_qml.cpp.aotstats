@@ -1,0 +1,20 @@
+[
+    {
+        "moduleFiles": [
+            {
+                "entries": [
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 36,
+                        "durationMicroseconds": 384,
+                        "errorMessage": "",
+                        "functionName": "current",
+                        "line": 88
+                    }
+                ],
+                "filepath": "C:/IMAS/Research/QtApp/QtApp5/Themes/ThemeManager.qml"
+            }
+        ],
+        "moduleId": "QtApp5(appQtApp5)"
+    }
+]

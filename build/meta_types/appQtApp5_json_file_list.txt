@@ -1,3 +1,4 @@
+C:/IMAS/Research/QtApp/QtApp5/build/appQtApp5_autogen/include/../25IR5XJDBU/moc_QRCodeModel.cpp.json
 C:/IMAS/Research/QtApp/QtApp5/build/appQtApp5_autogen/include/../25IR5XJDBU/moc_UserModel.cpp.json
 C:/IMAS/Research/QtApp/QtApp5/build/appQtApp5_autogen/include/../4VYEQU4VHD/moc_CameraService.cpp.json
 C:/IMAS/Research/QtApp/QtApp5/build/appQtApp5_autogen/include/../4VYEQU4VHD/moc_QRCodeService.cpp.json

@@ -910,6 +910,18 @@
 	"HEADERS" : 
 	[
 		[
+			"C:/IMAS/Research/QtApp/QtApp5/Models/QRCodeData.h",
+			"MU",
+			"25IR5XJDBU/moc_QRCodeData.cpp",
+			null
+		],
+		[
+			"C:/IMAS/Research/QtApp/QtApp5/Models/QRCodeModel.h",
+			"MU",
+			"25IR5XJDBU/moc_QRCodeModel.cpp",
+			null
+		],
+		[
 			"C:/IMAS/Research/QtApp/QtApp5/Models/UserModel.h",
 			"MU",
 			"25IR5XJDBU/moc_UserModel.cpp",
@@ -1067,6 +1079,8 @@
 	"SETTINGS_FILE" : "C:/IMAS/Research/QtApp/QtApp5/build/CMakeFiles/appQtApp5_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
+		[ "C:/IMAS/Research/QtApp/QtApp5/Models/QRCodeData.cpp", "MU", null ],
+		[ "C:/IMAS/Research/QtApp/QtApp5/Models/QRCodeModel.cpp", "MU", null ],
 		[ "C:/IMAS/Research/QtApp/QtApp5/Models/UserModel.cpp", "MU", null ],
 		[
 			"C:/IMAS/Research/QtApp/QtApp5/Repositories/FirebaseAuth.cpp",
