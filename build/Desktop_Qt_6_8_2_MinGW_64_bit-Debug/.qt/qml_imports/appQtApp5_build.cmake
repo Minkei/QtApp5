@@ -30,6 +30,6 @@ set(qml_import_scanner_import_27 "CLASSNAME;QtQuickControls2WindowsStyleImplPlug
 set(qml_import_scanner_import_28 "CLASSNAME;QtQuickControls2BasicStyleImplPlugin;LINKTARGET;Qt6::qtquickcontrols2basicstyleimplplugin;NAME;QtQuick.Controls.Basic.impl;PATH;C:/Qt/6.8.2/mingw_64/qml/QtQuick/Controls/Basic/impl;PLUGIN;qtquickcontrols2basicstyleimplplugin;PLUGINISOPTIONAL;;PREFER;:/qt-project.org/imports/QtQuick/Controls/Basic/impl/;RELATIVEPATH;QtQuick/Controls/Basic/impl;TYPE;module;")
 set(qml_import_scanner_import_29 "NAME;../Themes/ThemeManager.js;PATH;C:/IMAS/Research/QtApp/QtApp5/build/Desktop_Qt_6_8_2_MinGW_64_bit-Debug/QtApp5/Themes/ThemeManager.js;TYPE;javascript;")
 set(qml_import_scanner_import_30 "CLASSNAME;QMultimediaQuickModule;COMPONENTS;C:/Qt/6.8.2/mingw_64/qml/QtMultimedia/Video.qml;LINKTARGET;Qt6::quickmultimedia;NAME;QtMultimedia;PATH;C:/Qt/6.8.2/mingw_64/qml/QtMultimedia;PLUGIN;quickmultimediaplugin;PREFER;:/qt-project.org/imports/QtMultimedia/;RELATIVEPATH;QtMultimedia;TYPE;module;")
-set(qml_import_scanner_import_31 "NAME;./ThemeManager.qml;PATH;C:/IMAS/Research/QtApp/QtApp5/build/QtApp5/Views/ThemeManager.qml;TYPE;directory;")
+set(qml_import_scanner_import_31 "NAME;../Themes/ThemeManager.js;PATH;C:/IMAS/Research/QtApp/QtApp5/build/QtApp5/Themes/ThemeManager.js;TYPE;javascript;")
 set(qml_import_scanner_import_32 "NAME;../Themes/ThemeManager.js;PATH;C:/IMAS/Research/QtApp/QtApp5/Themes/ThemeManager.js;TYPE;javascript;")
 

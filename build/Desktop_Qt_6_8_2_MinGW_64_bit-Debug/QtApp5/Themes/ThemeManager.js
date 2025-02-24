@@ -1,7 +1,7 @@
 .pragma library
 
 // Theme state
-var isDarkTheme = false;
+var isDarkTheme = true;
 
 // Dark Theme Colors
 var darkTheme = {

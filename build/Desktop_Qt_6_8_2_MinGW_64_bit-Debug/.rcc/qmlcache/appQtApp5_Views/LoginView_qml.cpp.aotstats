@@ -6,7 +6,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 16,
-                        "durationMicroseconds": 755,
+                        "durationMicroseconds": 1094,
                         "errorMessage": "Cannot generate efficient code for script lookup",
                         "functionName": "color",
                         "line": 23
@@ -14,7 +14,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 23,
-                        "durationMicroseconds": 65,
+                        "durationMicroseconds": 97,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 22
@@ -22,7 +22,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 21,
-                        "durationMicroseconds": 145,
+                        "durationMicroseconds": 224,
                         "errorMessage": "",
                         "functionName": "height",
                         "line": 28
@@ -30,7 +30,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 20,
-                        "durationMicroseconds": 135,
+                        "durationMicroseconds": 201,
                         "errorMessage": "Cannot generate efficient code for script lookup",
                         "functionName": "color",
                         "line": 32
@@ -38,7 +38,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 39,
-                        "durationMicroseconds": 115,
+                        "durationMicroseconds": 1199,
                         "errorMessage": "",
                         "functionName": "horizontalCenter",
                         "line": 29
@@ -46,7 +46,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 37,
-                        "durationMicroseconds": 95,
+                        "durationMicroseconds": 156,
                         "errorMessage": "",
                         "functionName": "verticalCenter",
                         "line": 30
@@ -54,7 +54,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 27,
-                        "durationMicroseconds": 123,
+                        "durationMicroseconds": 285,
                         "errorMessage": "Cannot generate efficient code for script lookup",
                         "functionName": "color",
                         "line": 33
@@ -62,7 +62,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 31,
-                        "durationMicroseconds": 50,
+                        "durationMicroseconds": 262,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 38
@@ -70,7 +70,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 28,
-                        "durationMicroseconds": 203,
+                        "durationMicroseconds": 206,
                         "errorMessage": "Cannot generate efficient code for script lookup",
                         "functionName": "color",
                         "line": 55
@@ -78,7 +78,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 39,
-                        "durationMicroseconds": 71,
+                        "durationMicroseconds": 115,
                         "errorMessage": "",
                         "functionName": "alignment",
                         "line": 56
@@ -86,7 +86,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 28,
-                        "durationMicroseconds": 123,
+                        "durationMicroseconds": 208,
                         "errorMessage": "Cannot generate efficient code for script lookup",
                         "functionName": "color",
                         "line": 66
@@ -94,7 +94,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 39,
-                        "durationMicroseconds": 73,
+                        "durationMicroseconds": 103,
                         "errorMessage": "",
                         "functionName": "alignment",
                         "line": 67
@@ -102,7 +102,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 28,
-                        "durationMicroseconds": 115,
+                        "durationMicroseconds": 188,
                         "errorMessage": "Cannot generate efficient code for script lookup",
                         "functionName": "color",
                         "line": 77
@@ -110,7 +110,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 44,
-                        "durationMicroseconds": 157,
+                        "durationMicroseconds": 229,
                         "errorMessage": "",
                         "functionName": "preferredWidth",
                         "line": 73
@@ -118,7 +118,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 39,
-                        "durationMicroseconds": 74,
+                        "durationMicroseconds": 106,
                         "errorMessage": "",
                         "functionName": "alignment",
                         "line": 74
@@ -126,7 +126,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 35,
-                        "durationMicroseconds": 135,
+                        "durationMicroseconds": 196,
                         "errorMessage": "Cannot generate efficient code for script lookup",
                         "functionName": "color",
                         "line": 78
@@ -134,7 +134,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 39,
-                        "durationMicroseconds": 70,
+                        "durationMicroseconds": 83,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 82
@@ -142,7 +142,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 36,
-                        "durationMicroseconds": 168,
+                        "durationMicroseconds": 187,
                         "errorMessage": "Cannot generate efficient code for script lookup",
                         "functionName": "color",
                         "line": 92
@@ -150,7 +150,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 41,
-                        "durationMicroseconds": 104,
+                        "durationMicroseconds": 119,
                         "errorMessage": "",
                         "functionName": "family",
                         "line": 89
@@ -158,7 +158,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 36,
-                        "durationMicroseconds": 179,
+                        "durationMicroseconds": 228,
                         "errorMessage": "Cannot generate efficient code for script lookup",
                         "functionName": "color",
                         "line": 106
@@ -166,7 +166,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 35,
-                        "durationMicroseconds": 670,
+                        "durationMicroseconds": 593,
                         "errorMessage": "Cannot access value for name loginViewModel",
                         "functionName": "text",
                         "line": 111
@@ -174,7 +174,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 44,
-                        "durationMicroseconds": 564,
+                        "durationMicroseconds": 485,
                         "errorMessage": "Cannot access value for name loginViewModel",
                         "functionName": "onTextChanged",
                         "line": 112
@@ -182,7 +182,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 51,
-                        "durationMicroseconds": 156,
+                        "durationMicroseconds": 129,
                         "errorMessage": "",
                         "functionName": "onActiveFocusChanged",
                         "line": 114
@@ -190,7 +190,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 48,
-                        "durationMicroseconds": 154,
+                        "durationMicroseconds": 120,
                         "errorMessage": "",
                         "functionName": "tab",
                         "line": 101
@@ -198,7 +198,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 54,
-                        "durationMicroseconds": 113,
+                        "durationMicroseconds": 95,
                         "errorMessage": "",
                         "functionName": "onDestruction",
                         "line": 119
@@ -206,7 +206,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 28,
-                        "durationMicroseconds": 251,
+                        "durationMicroseconds": 198,
                         "errorMessage": "Cannot generate efficient code for script lookup",
                         "functionName": "color",
                         "line": 133
@@ -214,7 +214,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 44,
-                        "durationMicroseconds": 145,
+                        "durationMicroseconds": 210,
                         "errorMessage": "",
                         "functionName": "preferredWidth",
                         "line": 129
@@ -222,7 +222,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 39,
-                        "durationMicroseconds": 76,
+                        "durationMicroseconds": 134,
                         "errorMessage": "",
                         "functionName": "alignment",
                         "line": 130
@@ -230,7 +230,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 35,
-                        "durationMicroseconds": 122,
+                        "durationMicroseconds": 188,
                         "errorMessage": "Cannot generate efficient code for script lookup",
                         "functionName": "color",
                         "line": 134
@@ -238,7 +238,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 39,
-                        "durationMicroseconds": 48,
+                        "durationMicroseconds": 82,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 138
@@ -246,7 +246,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 36,
-                        "durationMicroseconds": 164,
+                        "durationMicroseconds": 224,
                         "errorMessage": "Cannot generate efficient code for script lookup",
                         "functionName": "color",
                         "line": 148
@@ -254,7 +254,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 41,
-                        "durationMicroseconds": 87,
+                        "durationMicroseconds": 138,
                         "errorMessage": "",
                         "functionName": "family",
                         "line": 145
@@ -262,7 +262,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 39,
-                        "durationMicroseconds": 187,
+                        "durationMicroseconds": 306,
                         "errorMessage": "",
                         "functionName": "echoMode",
                         "line": 157
@@ -270,7 +270,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 36,
-                        "durationMicroseconds": 119,
+                        "durationMicroseconds": 219,
                         "errorMessage": "Cannot generate efficient code for script lookup",
                         "functionName": "color",
                         "line": 162
@@ -278,7 +278,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 35,
-                        "durationMicroseconds": 396,
+                        "durationMicroseconds": 588,
                         "errorMessage": "Cannot access value for name loginViewModel",
                         "functionName": "text",
                         "line": 167
@@ -286,7 +286,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 44,
-                        "durationMicroseconds": 336,
+                        "durationMicroseconds": 474,
                         "errorMessage": "Cannot access value for name loginViewModel",
                         "functionName": "onTextChanged",
                         "line": 168
@@ -294,7 +294,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 51,
-                        "durationMicroseconds": 80,
+                        "durationMicroseconds": 699,
                         "errorMessage": "",
                         "functionName": "onActiveFocusChanged",
                         "line": 175
@@ -302,7 +302,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 48,
-                        "durationMicroseconds": 83,
+                        "durationMicroseconds": 194,
                         "errorMessage": "",
                         "functionName": "tab",
                         "line": 155
@@ -310,7 +310,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 51,
-                        "durationMicroseconds": 375,
+                        "durationMicroseconds": 659,
                         "errorMessage": "Cannot access value for name loginViewModel",
                         "functionName": "onReturnPressed",
                         "line": 169
@@ -318,7 +318,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 54,
-                        "durationMicroseconds": 61,
+                        "durationMicroseconds": 147,
                         "errorMessage": "",
                         "functionName": "onDestruction",
                         "line": 183
@@ -326,7 +326,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 35,
-                        "durationMicroseconds": 183,
+                        "durationMicroseconds": 367,
                         "errorMessage": "",
                         "functionName": "text",
                         "line": 189
@@ -334,7 +334,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 36,
-                        "durationMicroseconds": 139,
+                        "durationMicroseconds": 323,
                         "errorMessage": "Cannot generate efficient code for script lookup",
                         "functionName": "color",
                         "line": 194
@@ -342,7 +342,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 41,
-                        "durationMicroseconds": 74,
+                        "durationMicroseconds": 176,
                         "errorMessage": "",
                         "functionName": "family",
                         "line": 191
@@ -350,7 +350,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 46,
-                        "durationMicroseconds": 83,
+                        "durationMicroseconds": 197,
                         "errorMessage": "",
                         "functionName": "cursorShape",
                         "line": 198
@@ -358,7 +358,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 44,
-                        "durationMicroseconds": 236,
+                        "durationMicroseconds": 783,
                         "errorMessage": "",
                         "functionName": "onClicked",
                         "line": 199
@@ -366,7 +366,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 44,
-                        "durationMicroseconds": 40,
+                        "durationMicroseconds": 79,
                         "errorMessage": "Type (component in C:/IMAS/Research/QtApp/QtApp5/Views/LoginView.qml)::parent with type QQuickItem does not have a property color for writing",
                         "functionName": "onEntered",
                         "line": 201
@@ -374,7 +374,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 43,
-                        "durationMicroseconds": 23,
+                        "durationMicroseconds": 50,
                         "errorMessage": "Type (component in C:/IMAS/Research/QtApp/QtApp5/Views/LoginView.qml)::parent with type QQuickItem does not have a property color for writing",
                         "functionName": "onExited",
                         "line": 202
@@ -382,7 +382,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 47,
-                        "durationMicroseconds": 92,
+                        "durationMicroseconds": 162,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 197
@@ -390,7 +390,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 39,
-                        "durationMicroseconds": 43,
+                        "durationMicroseconds": 97,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 215
@@ -398,7 +398,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 38,
-                        "durationMicroseconds": 42,
+                        "durationMicroseconds": 111,
                         "errorMessage": "",
                         "functionName": "running",
                         "line": 220
@@ -406,7 +406,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 47,
-                        "durationMicroseconds": 40,
+                        "durationMicroseconds": 90,
                         "errorMessage": "",
                         "functionName": "centerIn",
                         "line": 218
@@ -414,7 +414,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 35,
-                        "durationMicroseconds": 263,
+                        "durationMicroseconds": 408,
                         "errorMessage": "Cannot access value for name loginViewModel",
                         "functionName": "text",
                         "line": 227
@@ -422,7 +422,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 50,
-                        "durationMicroseconds": 74,
+                        "durationMicroseconds": 188,
                         "errorMessage": "",
                         "functionName": "horizontalAlignment",
                         "line": 233
@@ -430,7 +430,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 48,
-                        "durationMicroseconds": 55,
+                        "durationMicroseconds": 107,
                         "errorMessage": "",
                         "functionName": "verticalAlignment",
                         "line": 234
@@ -438,7 +438,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 43,
-                        "durationMicroseconds": 44,
+                        "durationMicroseconds": 83,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 226
@@ -446,7 +446,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 28,
-                        "durationMicroseconds": 138,
+                        "durationMicroseconds": 309,
                         "errorMessage": "Cannot generate efficient code for script lookup",
                         "functionName": "color",
                         "line": 246
@@ -454,7 +454,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 44,
-                        "durationMicroseconds": 120,
+                        "durationMicroseconds": 255,
                         "errorMessage": "",
                         "functionName": "preferredWidth",
                         "line": 243
@@ -462,7 +462,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 39,
-                        "durationMicroseconds": 113,
+                        "durationMicroseconds": 179,
                         "errorMessage": "",
                         "functionName": "alignment",
                         "line": 244
@@ -470,7 +470,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 38,
-                        "durationMicroseconds": 76,
+                        "durationMicroseconds": 125,
                         "errorMessage": "",
                         "functionName": "cursorShape",
                         "line": 251
@@ -478,7 +478,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 36,
-                        "durationMicroseconds": 29,
+                        "durationMicroseconds": 50,
                         "errorMessage": "Type (component in C:/IMAS/Research/QtApp/QtApp5/Views/LoginView.qml)::parent with type QQuickItem does not have a property color for writing",
                         "functionName": "onEntered",
                         "line": 252
@@ -486,7 +486,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 35,
-                        "durationMicroseconds": 23,
+                        "durationMicroseconds": 36,
                         "errorMessage": "Type (component in C:/IMAS/Research/QtApp/QtApp5/Views/LoginView.qml)::parent with type QQuickItem does not have a property color for writing",
                         "functionName": "onExited",
                         "line": 253
@@ -494,7 +494,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 36,
-                        "durationMicroseconds": 214,
+                        "durationMicroseconds": 368,
                         "errorMessage": "Cannot access value for name loginViewModel",
                         "functionName": "onClicked",
                         "line": 254
@@ -502,7 +502,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 39,
-                        "durationMicroseconds": 49,
+                        "durationMicroseconds": 70,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 249
@@ -510,7 +510,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 32,
-                        "durationMicroseconds": 125,
+                        "durationMicroseconds": 203,
                         "errorMessage": "Cannot generate efficient code for script lookup",
                         "functionName": "color",
                         "line": 269
@@ -518,7 +518,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 43,
-                        "durationMicroseconds": 46,
+                        "durationMicroseconds": 72,
                         "errorMessage": "",
                         "functionName": "centerIn",
                         "line": 262
@@ -526,7 +526,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 43,
-                        "durationMicroseconds": 48,
+                        "durationMicroseconds": 62,
                         "errorMessage": "",
                         "functionName": "centerIn",
                         "line": 280
@@ -534,7 +534,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 36,
-                        "durationMicroseconds": 113,
+                        "durationMicroseconds": 196,
                         "errorMessage": "Cannot generate efficient code for script lookup",
                         "functionName": "color",
                         "line": 289
@@ -542,7 +542,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 36,
-                        "durationMicroseconds": 123,
+                        "durationMicroseconds": 206,
                         "errorMessage": "Cannot generate efficient code for script lookup",
                         "functionName": "color",
                         "line": 299
@@ -550,7 +550,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 46,
-                        "durationMicroseconds": 71,
+                        "durationMicroseconds": 116,
                         "errorMessage": "",
                         "functionName": "cursorShape",
                         "line": 303
@@ -558,7 +558,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 44,
-                        "durationMicroseconds": 27,
+                        "durationMicroseconds": 46,
                         "errorMessage": "Type (component in C:/IMAS/Research/QtApp/QtApp5/Views/LoginView.qml)::parent with type QQuickItem does not have a property color for writing",
                         "functionName": "onEntered",
                         "line": 305
@@ -566,7 +566,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 43,
-                        "durationMicroseconds": 23,
+                        "durationMicroseconds": 56,
                         "errorMessage": "Type (component in C:/IMAS/Research/QtApp/QtApp5/Views/LoginView.qml)::parent with type QQuickItem does not have a property color for writing",
                         "functionName": "onExited",
                         "line": 306
@@ -574,7 +574,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 47,
-                        "durationMicroseconds": 40,
+                        "durationMicroseconds": 96,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 302
@@ -582,7 +582,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 17,
-                        "durationMicroseconds": 46,
+                        "durationMicroseconds": 75,
                         "errorMessage": "Cannot access value for name loginViewModel",
                         "functionName": "target",
                         "line": 320
@@ -590,7 +590,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 9,
-                        "durationMicroseconds": 61,
+                        "durationMicroseconds": 95,
                         "errorMessage": "Cannot access value for name loginViewModel",
                         "functionName": "onLoginSuccess",
                         "line": 321
@@ -598,7 +598,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 9,
-                        "durationMicroseconds": 39,
+                        "durationMicroseconds": 55,
                         "errorMessage": "Cannot access value for name loginViewModel",
                         "functionName": "onErrorMessageChanged",
                         "line": 326
@@ -606,7 +606,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 28,
-                        "durationMicroseconds": 74,
+                        "durationMicroseconds": 121,
                         "errorMessage": "Cannot generate efficient code for call to untyped JavaScript function",
                         "functionName": "onCompleted",
                         "line": 334

@@ -7,5 +7,6 @@
         "expected": "cpp",
         "optional": "cpp",
         "variant": "cpp"
-    }
+    },
+    "codeQL.createQuery.qlPackLocation": "c:\\IMAS\\Research\\QtApp\\QtApp5"
 }

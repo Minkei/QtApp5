@@ -14,6 +14,7 @@
 #include <Services/CameraService.h>
 #include <Services/QRCodeService.h>
 #include <Models/QRCodeModel.h>
+#include <Models/UserModel.h>
 
 
 
@@ -35,9 +36,13 @@ class QRScannerViewModel : public QObject
     // QRCode
     Q_PROPERTY(QString qrCodeData READ qrCodeData NOTIFY qrCodeDataChanged)
     Q_PROPERTY(QString qrCodeDataLatest READ qrCodeDataLatest NOTIFY qrCodeDataLatestChanged)
+    Q_PROPERTY(QObject* qrCodeModel READ qrCodeModel NOTIFY qrCodeModelChanged)
 
     // Audio Notification
     Q_PROPERTY(bool isAudio READ isAudio  NOTIFY isAudioChanged)
+
+    // Current user
+    Q_PROPERTY(UserModel* userModel READ userModel CONSTANT)
 
 
 public:
@@ -69,8 +74,11 @@ public:
     Q_INVOKABLE void setVideoSink(QVideoSink *videoSink);
 
     // Store QR in Model
-    Q_INVOKABLE QRCodeModel* qrCodeModel() const;
+    Q_INVOKABLE QObject* qrCodeModel() const;
     Q_INVOKABLE void clearQRCodes();
+
+    // Current User
+    UserModel* userModel() const;
 
 
 public slots:
@@ -99,6 +107,7 @@ signals:
     // Store QR code in Model
     void qrCodeAdded(const QRCodeData &data);
     void qrCodesCleared();
+    void qrCodeModelChanged();
 
 private slots:
     void updateDateTime();
@@ -128,6 +137,9 @@ private:
 
     // Store QR Code in Model
     QRCodeModel *m_qrCodeModel;
+
+    // Current user
+    UserModel *m_userModel;
 
 };
 #endif // QRSCANNERVIEWMODEL_H

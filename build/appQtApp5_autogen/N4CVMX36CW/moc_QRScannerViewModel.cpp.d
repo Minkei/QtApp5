@@ -2,6 +2,7 @@ C:/IMAS/Research/QtApp/QtApp5/build/appQtApp5_autogen/N4CVMX36CW/moc_QRScannerVi
   C:/IMAS/Research/QtApp/QtApp5/build/appQtApp5_autogen/moc_predefs.h \
   C:/IMAS/Research/QtApp/QtApp5/Models/QRCodeData.h \
   C:/IMAS/Research/QtApp/QtApp5/Models/QRCodeModel.h \
+  C:/IMAS/Research/QtApp/QtApp5/Models/UserModel.h \
   C:/IMAS/Research/QtApp/QtApp5/Services/CameraService.h \
   C:/IMAS/Research/QtApp/QtApp5/Services/QRCodeService.h \
   C:/Qt/6.8.2/mingw_64/include/QtCore/QAbstractListModel \
@@ -13,6 +14,9 @@ C:/IMAS/Research/QtApp/QtApp5/build/appQtApp5_autogen/N4CVMX36CW/moc_QRScannerVi
   C:/Qt/6.8.2/mingw_64/include/QtCore/QFlags \
   C:/Qt/6.8.2/mingw_64/include/QtCore/QHash \
   C:/Qt/6.8.2/mingw_64/include/QtCore/QIODevice \
+  C:/Qt/6.8.2/mingw_64/include/QtCore/QJsonArray \
+  C:/Qt/6.8.2/mingw_64/include/QtCore/QJsonDocument \
+  C:/Qt/6.8.2/mingw_64/include/QtCore/QJsonObject \
   C:/Qt/6.8.2/mingw_64/include/QtCore/QList \
   C:/Qt/6.8.2/mingw_64/include/QtCore/QMap \
   C:/Qt/6.8.2/mingw_64/include/QtCore/QMargins \
@@ -20,6 +24,7 @@ C:/IMAS/Research/QtApp/QtApp5/build/appQtApp5_autogen/N4CVMX36CW/moc_QRScannerVi
   C:/Qt/6.8.2/mingw_64/include/QtCore/QMutex \
   C:/Qt/6.8.2/mingw_64/include/QtCore/QObject \
   C:/Qt/6.8.2/mingw_64/include/QtCore/QRect \
+  C:/Qt/6.8.2/mingw_64/include/QtCore/QSettings \
   C:/Qt/6.8.2/mingw_64/include/QtCore/QSharedDataPointer \
   C:/Qt/6.8.2/mingw_64/include/QtCore/QSize \
   C:/Qt/6.8.2/mingw_64/include/QtCore/QSizeF \

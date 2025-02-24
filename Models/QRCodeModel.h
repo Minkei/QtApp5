@@ -28,6 +28,7 @@ public:
     QVector<QRCodeData> getQRCodes() const;
     void clearQRCodes();
     bool contains(const QString &content) const;
+    void printQRCodes() const ;
 
 signals:
     void qrCodeAdded(const QRCodeData &data);

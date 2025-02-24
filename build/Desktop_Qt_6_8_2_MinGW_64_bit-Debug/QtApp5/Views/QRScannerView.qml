@@ -6,14 +6,11 @@ import QtQuick.Controls
 import QtMultimedia 6.2
 import "../Themes/ThemeManager.js" as Theme
 
-
 Item {
     id: qrscanner
     anchors.fill: parent
     width: 1300
     height: 768
-
-
 
     property bool isPopupOpen: false
 
@@ -254,14 +251,14 @@ Item {
                                     cursorShape: Qt.PointingHandCursor
                                     onClicked: {
                                         qrScannerViewModel.setSelectedCamera(
-                                            listViewPopupSelectCamera.model)
-                                        selectedCamera.text = listViewPopupSelectCamera.model
+                                            modelData)
+                                        selectedCamera.text = modelData
                                         popupSelectCamera.close()
                                     }
                                 }
 
                                 contentItem: Text {
-                                    text: listViewPopupSelectCamera.model
+                                    text: modelData
                                     font {
                                         family: "Montserrat"
                                         pixelSize: 14
@@ -544,6 +541,12 @@ Item {
                     Layout.topMargin: 0
                     color: Theme.current.panelBackgroundColor_Normal
 
+                    property int noColumnWidth: rectDataTable.width * 0.1
+                    property int qrCodeColumnWidth: rectDataTable.width * 0.4
+                    property int dateColumnWidth: rectDataTable.width * 0.1
+                    property int timeColumnWidth: rectDataTable.width * 0.1
+                    property int picColumnWidth: rectDataTable.width * 0.3
+
                     ColumnLayout {
                         id: columnLayoutDataTable
                         anchors.fill: parent
@@ -551,7 +554,7 @@ Item {
 
                         Rectangle {
                             id: rectTableHeader
-                            Layout.preferredHeight: 40
+                            Layout.preferredHeight: 50
                             Layout.fillWidth: true
                             color: "transparent"
                             Layout.alignment: Qt.AlignTop
@@ -561,32 +564,122 @@ Item {
                                 anchors.fill: parent
                                 spacing: 0
 
-                                Repeater {
-                                    id: repeaterTableHeader
-                                    model: ["No.", "QR Code", "Date", "Time", "PIC"]
-
-                                    Rectangle {
-                                        Layout.preferredWidth: parent.width / 5
-                                        Layout.fillHeight: true
-                                        color: "transparent"
-
-                                        Text {
-                                            anchors.fill: parent
-                                            text: listViewPopupSelectCamera.model
-                                            horizontalAlignment: Text.AlignHCenter
-                                            verticalAlignment: Text.AlignVCenter
-                                            font {
-                                                family: "Montserrat"
-                                                pixelSize: 14
-                                                bold: true
-                                            }
-                                            color: Theme.current.textColor_Normal
+                                Rectangle {
+                                    // border.color: "white"
+                                    // border.width: 1
+                                    Layout.preferredWidth: rectDataTable.noColumnWidth
+                                    Layout.fillHeight: parent
+                                    color: "transparent"
+                                    Text {
+                                        anchors.fill: parent
+                                        text: "No"
+                                        anchors.centerIn: parent
+                                        horizontalAlignment: Text.AlignHCenter
+                                        verticalAlignment: Text.AlignVCenter
+                                        Layout.alignment: Qt.AlignHCenter | Qt.AlignVCenter
+                                        font {
+                                            family: "Montserrat"
+                                            pixelSize: 14
+                                            bold: true
                                         }
+                                        color: Theme.current.textColor_Normal
                                     }
+                                }
+
+                                Rectangle {
+                                    // border.color: "white"
+                                    // border.width: 1
+                                    Layout.preferredWidth: rectDataTable.qrCodeColumnWidth
+                                    Layout.fillHeight: parent
+                                    color: "transparent"
+                                    Text {
+                                        anchors.fill: parent
+                                        text: "QR Code"
+                                        anchors.centerIn: parent
+                                        horizontalAlignment: Text.AlignHCenter
+                                        verticalAlignment: Text.AlignVCenter
+                                        Layout.alignment: Qt.AlignHCenter | Qt.AlignVCenter
+                                        font {
+                                            family: "Montserrat"
+                                            pixelSize: 14
+                                            bold: true
+                                        }
+                                        color: Theme.current.textColor_Normal
+                                    }
+                                }
+
+                                Rectangle {
+                                    // border.color: "white"
+                                    // border.width: 1
+                                    Layout.preferredWidth: rectDataTable.dateColumnWidth
+                                    Layout.fillHeight: parent
+                                    color: "transparent"
+                                    Text {
+                                        anchors.fill: parent
+                                        text: "Date"
+                                        anchors.centerIn: parent
+                                        horizontalAlignment: Text.AlignHCenter
+                                        verticalAlignment: Text.AlignVCenter
+                                        Layout.alignment: Qt.AlignHCenter | Qt.AlignVCenter
+                                        font {
+                                            family: "Montserrat"
+                                            pixelSize: 14
+                                            bold: true
+                                        }
+                                        color: Theme.current.textColor_Normal
+                                    }
+                                }
+
+                                Rectangle {
+                                    // border.color: "white"
+                                    // border.width: 1
+                                    Layout.preferredWidth: rectDataTable.timeColumnWidth
+                                    Layout.fillHeight: parent
+                                    color: "transparent"
+                                    Text {
+                                        anchors.fill: parent
+                                        text: "Time"
+                                        anchors.centerIn: parent
+                                        horizontalAlignment: Text.AlignHCenter
+                                        verticalAlignment: Text.AlignVCenter
+                                        Layout.alignment: Qt.AlignHCenter | Qt.AlignVCenter
+                                        font {
+                                            family: "Montserrat"
+                                            pixelSize: 14
+                                            bold: true
+                                        }
+                                        color: Theme.current.textColor_Normal
+                                    }
+                                }
+
+                                Rectangle {
+                                    // border.color: "white"
+                                    // border.width: 1
+                                    Layout.preferredWidth: rectDataTable.picColumnWidth
+                                    Layout.fillHeight: parent
+                                    color: "transparent"
+                                    Text {
+                                        anchors.fill: parent
+                                        text: "PIC"
+                                        anchors.centerIn: parent
+                                        horizontalAlignment: Text.AlignHCenter
+                                        verticalAlignment: Text.AlignVCenter
+                                        Layout.alignment: Qt.AlignHCenter | Qt.AlignVCenter
+                                        font {
+                                            family: "Montserrat"
+                                            pixelSize: 14
+                                            bold: true
+                                        }
+                                        color: Theme.current.textColor_Normal
+                                    }
+                                }
+                                Item {
+                                    Layout.fillWidth: true
                                 }
                             }
                         }
 
+                        ///
                         Rectangle {
                             id: rectTableContent
                             Layout.fillHeight: true
@@ -596,11 +689,11 @@ Item {
                             ListView {
                                 id: listViewTableContent
                                 anchors.fill: parent
-                                model: qrScannerViewModel.qrCodeData
+                                model: qrScannerViewModel.qrCodeModel
 
                                 delegate: Rectangle {
                                     width: parent.width
-                                    height: 40
+                                    height: 60
                                     color: "transparent"
 
                                     RowLayout {
@@ -609,13 +702,15 @@ Item {
                                         spacing: 0
 
                                         Rectangle {
+                                            // border.color: "white"
+                                            // border.width: 1
                                             id: rectTableContentNo
-                                            Layout.preferredWidth: parent.width / 5
+                                            Layout.preferredWidth: rectDataTable.noColumnWidth
                                             Layout.fillHeight: parent
                                             color: "transparent"
                                             Text {
                                                 anchors.fill: parent
-                                                text: index + 1
+                                                text: model.index + 1
                                                 anchors.centerIn: parent
                                                 horizontalAlignment: Text.AlignHCenter
                                                 verticalAlignment: Text.AlignVCenter
@@ -629,16 +724,21 @@ Item {
                                         }
 
                                         Rectangle {
+                                            // border.color: "white"
+                                            // border.width: 1
                                             id: rectTableContentQRCodeContent
-                                            Layout.preferredWidth: parent.width / 5
+                                            Layout.preferredWidth: rectDataTable.qrCodeColumnWidth
                                             Layout.fillHeight: parent
                                             color: "transparent"
                                             Text {
-                                                anchors.fill: parent
-                                                text: listViewTableContent.model.content
-                                                anchors.centerIn: parent
-                                                horizontalAlignment: Text.AlignHCenter
+                                                text: model.content
+                                                anchors.left: parent.left
+                                                anchors.top: parent.top
+                                                anchors.bottom: parent.bottom
+                                                // anchors.centerIn: parent
+                                                horizontalAlignment: Text.AlignLeft
                                                 verticalAlignment: Text.AlignVCenter
+                                                anchors.horizontalCenter: parent.horizontalCenter
                                                 Layout.alignment: Qt.AlignHCenter | Qt.AlignVCenter
                                                 font {
                                                     family: "Montserrat"
@@ -649,13 +749,15 @@ Item {
                                         }
 
                                         Rectangle {
+                                            // border.color: "white"
+                                            // border.width: 1
                                             id: rectTableContentScannedDate
-                                            Layout.preferredWidth: parent.width / 5
+                                            Layout.preferredWidth: rectDataTable.dateColumnWidth
                                             Layout.fillHeight: parent
                                             color: "transparent"
                                             Text {
                                                 anchors.fill: parent
-                                                text: listViewTableContent.model.scannedDay
+                                                text: model.scannedDay
                                                 anchors.centerIn: parent
                                                 horizontalAlignment: Text.AlignHCenter
                                                 verticalAlignment: Text.AlignVCenter
@@ -669,13 +771,15 @@ Item {
                                         }
 
                                         Rectangle {
+                                            // border.color: "white"
+                                            // border.width: 1
                                             id: rectTableContentScannedTime
-                                            Layout.preferredWidth: parent.width / 5
+                                            Layout.preferredWidth: rectDataTable.timeColumnWidth
                                             Layout.fillHeight: parent
                                             color: "transparent"
                                             Text {
                                                 anchors.fill: parent
-                                                text: modelData.scannedTime
+                                                text: model.scannedTime
                                                 anchors.centerIn: parent
                                                 horizontalAlignment: Text.AlignHCenter
                                                 verticalAlignment: Text.AlignVCenter
@@ -688,13 +792,16 @@ Item {
                                             }
                                         }
                                         Rectangle {
+
+                                            // border.color: "white"
+                                            // border.width: 1
                                             id: rectTableContentPIC
-                                            Layout.preferredWidth: parent.width / 5
+                                            Layout.preferredWidth: rectDataTable.picColumnWidth
                                             Layout.fillHeight: parent
                                             color: "transparent"
                                             Text {
                                                 anchors.fill: parent
-                                                text: listViewTableContent.model.pic
+                                                text: model.pic
                                                 anchors.centerIn: parent
                                                 horizontalAlignment: Text.AlignHCenter
                                                 verticalAlignment: Text.AlignVCenter
@@ -715,6 +822,7 @@ Item {
                         }
                     }
                 }
+                /////
                 Rectangle {
                     id: rectCameraViewPort
                     Layout.fillHeight: true

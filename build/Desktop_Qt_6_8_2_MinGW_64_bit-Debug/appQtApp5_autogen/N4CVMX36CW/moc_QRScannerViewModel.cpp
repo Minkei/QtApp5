@@ -59,6 +59,7 @@ static constexpr auto qt_meta_stringdata_ZN18QRScannerViewModelE = QtMocHelpers:
     "QRCodeData",
     "data",
     "qrCodesCleared",
+    "qrCodeModelChanged",
     "processFrame",
     "QVideoFrame",
     "frame",
@@ -74,7 +75,6 @@ static constexpr auto qt_meta_stringdata_ZN18QRScannerViewModelE = QtMocHelpers:
     "QVideoSink*",
     "videoSink",
     "qrCodeModel",
-    "QRCodeModel*",
     "clearQRCodes",
     "currentDate",
     "currentTime",
@@ -84,7 +84,9 @@ static constexpr auto qt_meta_stringdata_ZN18QRScannerViewModelE = QtMocHelpers:
     "isLoading",
     "qrCodeData",
     "qrCodeDataLatest",
-    "isAudio"
+    "isAudio",
+    "userModel",
+    "UserModel*"
 );
 #else  // !QT_MOC_HAS_STRINGDATA
 #error "qtmochelpers.h not found or too old."
@@ -96,41 +98,42 @@ Q_CONSTINIT static const uint qt_meta_data_ZN18QRScannerViewModelE[] = {
       12,       // revision
        0,       // classname
        0,    0, // classinfo
-      23,   14, // methods
-      10,  187, // properties
+      24,   14, // methods
+      12,  194, // properties
        0,    0, // enums/sets
        0,    0, // constructors
        0,       // flags
-      13,       // signalCount
+      14,       // signalCount
 
  // signals: name, argc, parameters, tag, flags, initial metatype offsets
-       1,    0,  152,    2, 0x06,   11 /* Public */,
-       3,    0,  153,    2, 0x06,   12 /* Public */,
-       4,    0,  154,    2, 0x06,   13 /* Public */,
-       5,    0,  155,    2, 0x06,   14 /* Public */,
-       6,    0,  156,    2, 0x06,   15 /* Public */,
-       7,    0,  157,    2, 0x06,   16 /* Public */,
-       8,    1,  158,    2, 0x06,   17 /* Public */,
-      10,    0,  161,    2, 0x06,   19 /* Public */,
-      11,    0,  162,    2, 0x06,   20 /* Public */,
-      12,    0,  163,    2, 0x06,   21 /* Public */,
-      13,    0,  164,    2, 0x06,   22 /* Public */,
-      14,    1,  165,    2, 0x06,   23 /* Public */,
-      17,    0,  168,    2, 0x06,   25 /* Public */,
+       1,    0,  158,    2, 0x06,   13 /* Public */,
+       3,    0,  159,    2, 0x06,   14 /* Public */,
+       4,    0,  160,    2, 0x06,   15 /* Public */,
+       5,    0,  161,    2, 0x06,   16 /* Public */,
+       6,    0,  162,    2, 0x06,   17 /* Public */,
+       7,    0,  163,    2, 0x06,   18 /* Public */,
+       8,    1,  164,    2, 0x06,   19 /* Public */,
+      10,    0,  167,    2, 0x06,   21 /* Public */,
+      11,    0,  168,    2, 0x06,   22 /* Public */,
+      12,    0,  169,    2, 0x06,   23 /* Public */,
+      13,    0,  170,    2, 0x06,   24 /* Public */,
+      14,    1,  171,    2, 0x06,   25 /* Public */,
+      17,    0,  174,    2, 0x06,   27 /* Public */,
+      18,    0,  175,    2, 0x06,   28 /* Public */,
 
  // slots: name, argc, parameters, tag, flags, initial metatype offsets
-      18,    1,  169,    2, 0x0a,   26 /* Public */,
-      21,    0,  172,    2, 0x08,   28 /* Private */,
-      22,    1,  173,    2, 0x08,   29 /* Private */,
+      19,    1,  176,    2, 0x0a,   29 /* Public */,
+      22,    0,  179,    2, 0x08,   31 /* Private */,
+      23,    1,  180,    2, 0x08,   32 /* Private */,
 
  // methods: name, argc, parameters, tag, flags, initial metatype offsets
-      24,    1,  176,    2, 0x02,   31 /* Public */,
-      26,    0,  179,    2, 0x02,   33 /* Public */,
-      27,    0,  180,    2, 0x02,   34 /* Public */,
-      28,    0,  181,    2, 0x02,   35 /* Public */,
-      29,    1,  182,    2, 0x02,   36 /* Public */,
-      32,    0,  185,    2, 0x102,   38 /* Public | MethodIsConst  */,
-      34,    0,  186,    2, 0x02,   39 /* Public */,
+      25,    1,  183,    2, 0x02,   34 /* Public */,
+      27,    0,  186,    2, 0x02,   36 /* Public */,
+      28,    0,  187,    2, 0x02,   37 /* Public */,
+      29,    0,  188,    2, 0x02,   38 /* Public */,
+      30,    1,  189,    2, 0x02,   39 /* Public */,
+      33,    0,  192,    2, 0x102,   41 /* Public | MethodIsConst  */,
+      34,    0,  193,    2, 0x02,   42 /* Public */,
 
  // signals: parameters
     QMetaType::Void,
@@ -146,19 +149,20 @@ Q_CONSTINIT static const uint qt_meta_data_ZN18QRScannerViewModelE[] = {
     QMetaType::Void,
     QMetaType::Void, 0x80000000 | 15,   16,
     QMetaType::Void,
+    QMetaType::Void,
 
  // slots: parameters
-    QMetaType::Void, 0x80000000 | 19,   20,
+    QMetaType::Void, 0x80000000 | 20,   21,
     QMetaType::Void,
-    QMetaType::Void, QMetaType::QString,   23,
+    QMetaType::Void, QMetaType::QString,   24,
 
  // methods: parameters
-    QMetaType::Void, QMetaType::QString,   25,
+    QMetaType::Void, QMetaType::QString,   26,
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
-    QMetaType::Void, 0x80000000 | 30,   31,
-    0x80000000 | 33,
+    QMetaType::Void, 0x80000000 | 31,   32,
+    QMetaType::QObjectStar,
     QMetaType::Void,
 
  // properties: name, type, flags, notifyId, revision
@@ -168,10 +172,12 @@ Q_CONSTINIT static const uint qt_meta_data_ZN18QRScannerViewModelE[] = {
       38, QMetaType::QString, 0x00015103, uint(3), 0,
       39, QMetaType::Bool, 0x00015001, uint(4), 0,
       40, QMetaType::Bool, 0x00015001, uint(5), 0,
-      31, 0x80000000 | 30, 0x0001510b, uint(7), 0,
+      32, 0x80000000 | 31, 0x0001510b, uint(7), 0,
       41, QMetaType::QString, 0x00015001, uint(8), 0,
       42, QMetaType::QString, 0x00015001, uint(9), 0,
+      33, QMetaType::QObjectStar, 0x00015001, uint(13), 0,
       43, QMetaType::Bool, 0x00015001, uint(10), 0,
+      44, 0x80000000 | 45, 0x00015409, uint(-1), 0,
 
        0        // eod
 };
@@ -201,8 +207,12 @@ Q_CONSTINIT const QMetaObject QRScannerViewModel::staticMetaObject = { {
         QtPrivate::TypeAndForceComplete<QString, std::true_type>,
         // property 'qrCodeDataLatest'
         QtPrivate::TypeAndForceComplete<QString, std::true_type>,
+        // property 'qrCodeModel'
+        QtPrivate::TypeAndForceComplete<QObject*, std::true_type>,
         // property 'isAudio'
         QtPrivate::TypeAndForceComplete<bool, std::true_type>,
+        // property 'userModel'
+        QtPrivate::TypeAndForceComplete<UserModel*, std::true_type>,
         // Q_OBJECT / Q_GADGET
         QtPrivate::TypeAndForceComplete<QRScannerViewModel, std::true_type>,
         // method 'currentDateChanged'
@@ -233,6 +243,8 @@ Q_CONSTINIT const QMetaObject QRScannerViewModel::staticMetaObject = { {
         QtPrivate::TypeAndForceComplete<const QRCodeData &, std::false_type>,
         // method 'qrCodesCleared'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'qrCodeModelChanged'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'processFrame'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         QtPrivate::TypeAndForceComplete<const QVideoFrame &, std::false_type>,
@@ -254,7 +266,7 @@ Q_CONSTINIT const QMetaObject QRScannerViewModel::staticMetaObject = { {
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         QtPrivate::TypeAndForceComplete<QVideoSink *, std::false_type>,
         // method 'qrCodeModel'
-        QtPrivate::TypeAndForceComplete<QRCodeModel *, std::false_type>,
+        QtPrivate::TypeAndForceComplete<QObject *, std::false_type>,
         // method 'clearQRCodes'
         QtPrivate::TypeAndForceComplete<void, std::false_type>
     >,
@@ -279,31 +291,32 @@ void QRScannerViewModel::qt_static_metacall(QObject *_o, QMetaObject::Call _c, i
         case 10: _t->isAudioChanged(); break;
         case 11: _t->qrCodeAdded((*reinterpret_cast< std::add_pointer_t<QRCodeData>>(_a[1]))); break;
         case 12: _t->qrCodesCleared(); break;
-        case 13: _t->processFrame((*reinterpret_cast< std::add_pointer_t<QVideoFrame>>(_a[1]))); break;
-        case 14: _t->updateDateTime(); break;
-        case 15: _t->handleCameraError((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
-        case 16: _t->setSelectedCamera((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
-        case 17: _t->refreshCameraList(); break;
-        case 18: _t->toggleStreaming(); break;
-        case 19: _t->toggleAudio(); break;
-        case 20: _t->setVideoSink((*reinterpret_cast< std::add_pointer_t<QVideoSink*>>(_a[1]))); break;
-        case 21: { QRCodeModel* _r = _t->qrCodeModel();
-            if (_a[0]) *reinterpret_cast< QRCodeModel**>(_a[0]) = std::move(_r); }  break;
-        case 22: _t->clearQRCodes(); break;
+        case 13: _t->qrCodeModelChanged(); break;
+        case 14: _t->processFrame((*reinterpret_cast< std::add_pointer_t<QVideoFrame>>(_a[1]))); break;
+        case 15: _t->updateDateTime(); break;
+        case 16: _t->handleCameraError((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
+        case 17: _t->setSelectedCamera((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
+        case 18: _t->refreshCameraList(); break;
+        case 19: _t->toggleStreaming(); break;
+        case 20: _t->toggleAudio(); break;
+        case 21: _t->setVideoSink((*reinterpret_cast< std::add_pointer_t<QVideoSink*>>(_a[1]))); break;
+        case 22: { QObject* _r = _t->qrCodeModel();
+            if (_a[0]) *reinterpret_cast< QObject**>(_a[0]) = std::move(_r); }  break;
+        case 23: _t->clearQRCodes(); break;
         default: ;
         }
     }
     if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
         switch (_id) {
         default: *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType(); break;
-        case 13:
+        case 14:
             switch (*reinterpret_cast<int*>(_a[1])) {
             default: *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType(); break;
             case 0:
                 *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType::fromType< QVideoFrame >(); break;
             }
             break;
-        case 20:
+        case 21:
             switch (*reinterpret_cast<int*>(_a[1])) {
             default: *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType(); break;
             case 0:
@@ -405,12 +418,21 @@ void QRScannerViewModel::qt_static_metacall(QObject *_o, QMetaObject::Call _c, i
                 return;
             }
         }
+        {
+            using _q_method_type = void (QRScannerViewModel::*)();
+            if (_q_method_type _q_method = &QRScannerViewModel::qrCodeModelChanged; *reinterpret_cast<_q_method_type *>(_a[1]) == _q_method) {
+                *result = 13;
+                return;
+            }
+        }
     }
     if (_c == QMetaObject::RegisterPropertyMetaType) {
         switch (_id) {
         default: *reinterpret_cast<int*>(_a[0]) = -1; break;
         case 6:
             *reinterpret_cast<int*>(_a[0]) = qRegisterMetaType< QVideoSink* >(); break;
+        case 11:
+            *reinterpret_cast<int*>(_a[0]) = qRegisterMetaType< UserModel* >(); break;
         }
     }
     if (_c == QMetaObject::ReadProperty) {
@@ -425,7 +447,9 @@ void QRScannerViewModel::qt_static_metacall(QObject *_o, QMetaObject::Call _c, i
         case 6: *reinterpret_cast< QVideoSink**>(_v) = _t->videoSink(); break;
         case 7: *reinterpret_cast< QString*>(_v) = _t->qrCodeData(); break;
         case 8: *reinterpret_cast< QString*>(_v) = _t->qrCodeDataLatest(); break;
-        case 9: *reinterpret_cast< bool*>(_v) = _t->isAudio(); break;
+        case 9: *reinterpret_cast< QObject**>(_v) = _t->qrCodeModel(); break;
+        case 10: *reinterpret_cast< bool*>(_v) = _t->isAudio(); break;
+        case 11: *reinterpret_cast< UserModel**>(_v) = _t->userModel(); break;
         default: break;
         }
     }
@@ -458,20 +482,20 @@ int QRScannerViewModel::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 23)
+        if (_id < 24)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 23;
+        _id -= 24;
     }
     if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 23)
+        if (_id < 24)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 23;
+        _id -= 24;
     }
     if (_c == QMetaObject::ReadProperty || _c == QMetaObject::WriteProperty
             || _c == QMetaObject::ResetProperty || _c == QMetaObject::BindableProperty
             || _c == QMetaObject::RegisterPropertyMetaType) {
         qt_static_metacall(this, _c, _id, _a);
-        _id -= 10;
+        _id -= 12;
     }
     return _id;
 }
@@ -554,5 +578,11 @@ void QRScannerViewModel::qrCodeAdded(const QRCodeData & _t1)
 void QRScannerViewModel::qrCodesCleared()
 {
     QMetaObject::activate(this, &staticMetaObject, 12, nullptr);
+}
+
+// SIGNAL 13
+void QRScannerViewModel::qrCodeModelChanged()
+{
+    QMetaObject::activate(this, &staticMetaObject, 13, nullptr);
 }
 QT_WARNING_POP

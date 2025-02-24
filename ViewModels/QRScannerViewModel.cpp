@@ -8,7 +8,8 @@ QRScannerViewModel::QRScannerViewModel(QObject *parent) : QObject{parent},
     m_videoSink(nullptr),
     m_audioPlayer(new QMediaPlayer(this)),
     m_audioOutput(new QAudioOutput(this)),
-    m_qrCodeModel(new QRCodeModel(this))
+    m_qrCodeModel(new QRCodeModel(this)),
+    m_userModel(&UserModel::getInstance())
     
 {
     refreshCameraList();
@@ -19,13 +20,7 @@ QRScannerViewModel::QRScannerViewModel(QObject *parent) : QObject{parent},
 
     // Camera
     connect(m_cameraService, &CameraService::cameraError, this, &QRScannerViewModel::handleCameraError);
-    connect(m_cameraService, &CameraService::frameCaptured, this, &QRScannerViewModel::processFrame); 
-
-    // QRCode
-    connect(m_qrCodeService, &QRCodeService::qrCodeDecoded, this, [this](const QString &qrCodeData) { 
-        m_qrCodeData = qrCodeData; 
-        emit qrCodeDataChanged();
-    });
+    connect(m_cameraService, &CameraService::frameCaptured, this, &QRScannerViewModel::processFrame);
 
     // Audio Notification
     m_audioPlayer->setAudioOutput(m_audioOutput);
@@ -83,9 +78,14 @@ bool QRScannerViewModel::isAudio() const
     return m_isAudio;
 }
 
-QRCodeModel* QRScannerViewModel::qrCodeModel() const
+QObject* QRScannerViewModel::qrCodeModel() const
 {
     return m_qrCodeModel;
+}
+
+UserModel *QRScannerViewModel::userModel() const
+{
+    return m_userModel;
 }
 
 
@@ -202,6 +202,16 @@ void QRScannerViewModel::processFrame(const QVideoFrame &frame) {
             m_qrCodeDataLatest = result;
             emit qrCodeDataLatestChanged();
 
+            // Create QRCodeData new
+            QRCodeData newQRCode(result, m_userModel->email());
+
+            // Add QRCode to model
+            m_qrCodeModel->addQRCode(newQRCode);
+            emit qrCodeModelChanged();
+            
+            // Debug QRCodeModel
+            m_qrCodeModel->printQRCodes();
+
             if(m_isAudio) {
                 m_audioPlayer->stop();
                 m_audioPlayer->play();
@@ -219,3 +229,5 @@ void QRScannerViewModel::clearQRCodes()
 {
     m_qrCodeModel->clearQRCodes();
 }
+
+

@@ -7,6 +7,7 @@
 #include <Models/UserModel.h>
 #include <ViewModels/QRScannerViewModel.h>
 #include <Services/QRCodeService.h>
+#include <Models/QRCodeModel.h>
 
 
 
@@ -23,7 +24,7 @@ int main(int argc, char *argv[])
     QRScannerViewModel qrScannerViewModel;
     
     UserModel::getInstance().clearUserData();
-    UserModel::getInstance().loadFromSetting(); 
+    UserModel::getInstance().loadFromSetting();
 
     engine.rootContext()->setContextProperty("loginViewModel", &loginViewModel);
     engine.rootContext()->setContextProperty("mainViewModel", &mainViewModel);

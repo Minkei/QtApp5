@@ -3,6 +3,7 @@
 QRCodeModel::QRCodeModel(QObject *parent)
     : QAbstractListModel(parent)
 {
+    // addQRCode("Hello", "sdfdsf");
 }
 
 int QRCodeModel::rowCount(const QModelIndex &parent) const
@@ -48,6 +49,7 @@ QHash<int, QByteArray> QRCodeModel::roleNames() const
 void QRCodeModel::addQRCode(const QRCodeData &data)
 {
     if (contains(data.content())) {
+        qDebug() << "Duplicate QR code: " << data.content();
         return; // Skip duplicate QR code
     }
 
@@ -55,6 +57,7 @@ void QRCodeModel::addQRCode(const QRCodeData &data)
     m_qrCodes.append(data);
     endInsertRows();
     emit qrCodeAdded(data);
+    qDebug() << "QR code added: " << data.content();
 }
 
 QVector<QRCodeData> QRCodeModel::getQRCodes() const
@@ -68,6 +71,7 @@ void QRCodeModel::clearQRCodes()
     m_qrCodes.clear();
     endRemoveRows();
     emit qrCodesCleared();
+    qDebug() << "QR codes cleared";
 }
 
 bool QRCodeModel::contains(const QString &content) const
@@ -78,4 +82,11 @@ bool QRCodeModel::contains(const QString &content) const
         }
     }
     return false;
+}
+
+void QRCodeModel::printQRCodes() const
+{
+    for (const QRCodeData &data : m_qrCodes) {        
+        qDebug() << "ID: " << data.id() << ", Content: " << data.content() << ", Scanned Day: " << data.scannedDay() << ", Scanned Time: " << data.scannedTime() << ", Pic: " << data.pic();
+    }
 }
