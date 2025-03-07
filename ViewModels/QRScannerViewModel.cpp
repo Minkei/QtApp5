@@ -3,7 +3,7 @@
 
 QRScannerViewModel::QRScannerViewModel(QObject *parent) : QObject{parent}, 
     m_isStreaming(false), 
-    m_cameraService(new CameraService(this)),
+    m_cameraService(CameraService::instance()),
     m_qrCodeService(new QRCodeService(this)),
     m_videoSink(nullptr),
     m_audioPlayer(new QMediaPlayer(this)),
@@ -12,6 +12,13 @@ QRScannerViewModel::QRScannerViewModel(QObject *parent) : QObject{parent},
     m_userModel(&UserModel::getInstance())
     
 {
+#ifdef Q_OS_WINDOWS
+    qputenv("QT_MULTIMEDIA_PREFERRED_PLUGINS", "windowsmedia");
+
+#endif
+
+    // Enable multimedia debug output
+    QLoggingCategory::setFilterRules("qt.multimedia.debug=true");
     refreshCameraList();
 
     // Date and time
@@ -136,7 +143,9 @@ void QRScannerViewModel::toggleAudio()
 
 void QRScannerViewModel::refreshCameraList() {
     m_availableCameras.clear();
+    qDebug() << "Current multimedia backend: " << QMediaDevices::defaultVideoInput();
     const auto cameras = QMediaDevices::videoInputs();
+    qDebug() << "Found:" << cameras.count() << "cameras";
     for (const auto &camera : cameras) {
         m_availableCameras.append(camera.description());
     }

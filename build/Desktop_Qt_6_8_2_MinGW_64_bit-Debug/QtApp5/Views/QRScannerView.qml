@@ -685,7 +685,7 @@ Item {
                             Layout.fillHeight: true
                             Layout.fillWidth: true
                             color: "transparent"
-
+                            clip: true
                             ListView {
                                 id: listViewTableContent
                                 anchors.fill: parent

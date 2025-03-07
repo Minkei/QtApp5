@@ -1,5 +1,6 @@
 #ifndef MAINVIEWMODEL_H
 #define MAINVIEWMODEL_H
+#include <Services/CameraService.h>
 
 #include <QObject>
 
@@ -15,6 +16,9 @@ public slots:
 
 signals:
     void logoutSucces();
+
+private:
+    CameraService *m_cameraService;
 };
 
 #endif // MAINVIEWMODEL_H

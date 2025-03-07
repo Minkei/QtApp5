@@ -613,7 +613,7 @@
         "classes": [
             {
                 "className": "MainViewModel",
-                "lineNumber": 6,
+                "lineNumber": 7,
                 "object": true,
                 "qualifiedClassName": "MainViewModel",
                 "signals": [

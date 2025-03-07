@@ -67,12 +67,12 @@
 	"dependencies" : 
 	[
 		{
-			"backtrace" : 5,
-			"id" : "appQtApp5_copy_res::@6890427a1f51a3e7e1df"
+			"backtrace" : 0,
+			"id" : "appQtApp5_qmlimportscan::@6890427a1f51a3e7e1df"
 		},
 		{
-			"backtrace" : 0,
-			"id" : "appQtApp5_generate_qmlls_ini_file::@6890427a1f51a3e7e1df"
+			"backtrace" : 5,
+			"id" : "appQtApp5_copy_res::@6890427a1f51a3e7e1df"
 		},
 		{
 			"backtrace" : 7,
@@ -80,7 +80,7 @@
 		},
 		{
 			"backtrace" : 0,
-			"id" : "appQtApp5_qmlimportscan::@6890427a1f51a3e7e1df"
+			"id" : "appQtApp5_generate_qmlls_ini_file::@6890427a1f51a3e7e1df"
 		}
 	],
 	"folder" : 

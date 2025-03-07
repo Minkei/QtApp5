@@ -14,7 +14,12 @@ class CameraService : public QObject
     Q_OBJECT
 
 public:
-    explicit CameraService(QObject *parent = nullptr);
+    // Get only one instance of CameraService
+    static CameraService* instance() {
+        static CameraService *s_instance = new CameraService();
+        return s_instance;
+    }
+
     void startCamera();
     void stopCamera();
     void setVideoSink(QVideoSink *videoSink);
@@ -32,6 +37,11 @@ private slots:
     void handleFrameCaptured(const QVideoFrame &frame);
 
 private:
+    // Constructor được đặt là private để chỉ cho phép truy cập qua instance()
+    explicit CameraService(QObject *parent = nullptr);
+    // Vô hiệu hóa copy constructor và assignment operator
+    CameraService(const CameraService&) = delete;
+    CameraService& operator=(const CameraService&) = delete;
     QCamera *m_camera;
     QMediaCaptureSession m_captureSession;
 };

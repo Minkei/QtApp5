@@ -340,6 +340,7 @@ Item {
                                             "Log out button is clicked!")
                                         // Command
                                         mainViewModel.logoutByViewModel()
+
                                     }
                                 }
                             }

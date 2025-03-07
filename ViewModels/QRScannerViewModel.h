@@ -120,8 +120,8 @@ private:
     // Camera
     QStringList m_availableCameras;
     QString m_selectedCamera;
-    bool m_isStreaming;
-    bool m_isLoading;
+    bool m_isStreaming = false;
+    bool m_isLoading = false;
     CameraService *m_cameraService;
     QVideoSink *m_videoSink;
 
@@ -140,6 +140,7 @@ private:
 
     // Current user
     UserModel *m_userModel;
+
 
 };
 #endif // QRSCANNERVIEWMODEL_H
